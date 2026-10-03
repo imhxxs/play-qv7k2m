@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="320" height="220" role="img" aria-label="소반 위의 쌀알">
+  <rect width="320" height="220" fill="#6b1c16"/>
+  <ellipse cx="160" cy="118" rx="140" ry="82" fill="#1a1414"/>
+  <ellipse cx="160" cy="112" rx="132" ry="74" fill="#231b1a"/>
+  <g fill="#f4efe2">
+    <ellipse cx="120" cy="100" rx="4" ry="2" transform="rotate(20 120 100)"/><ellipse cx="132" cy="112" rx="4" ry="2" transform="rotate(-30 132 112)"/>
+    <ellipse cx="146" cy="96" rx="4" ry="2" transform="rotate(60 146 96)"/><ellipse cx="158" cy="120" rx="4" ry="2"/>
+    <ellipse cx="170" cy="104" rx="4" ry="2" transform="rotate(-50 170 104)"/><ellipse cx="184" cy="116" rx="4" ry="2" transform="rotate(10 184 116)"/>
+    <ellipse cx="196" cy="98" rx="4" ry="2" transform="rotate(80 196 98)"/><ellipse cx="208" cy="126" rx="4" ry="2" transform="rotate(-15 208 126)"/>
+    <ellipse cx="140" cy="132" rx="4" ry="2" transform="rotate(40 140 132)"/><ellipse cx="174" cy="138" rx="4" ry="2" transform="rotate(-70 174 138)"/>
+    <ellipse cx="110" cy="124" rx="4" ry="2" transform="rotate(5 110 124)"/><ellipse cx="220" cy="106" rx="4" ry="2" transform="rotate(35 220 106)"/>
+    <ellipse cx="96" cy="108" rx="4" ry="2" transform="rotate(-20 96 108)"/><ellipse cx="230" cy="122" rx="4" ry="2" transform="rotate(65 230 122)"/>
+    <ellipse cx="160" cy="88" rx="4" ry="2" transform="rotate(-80 160 88)"/>
+  </g>
+  <text x="160" y="206" text-anchor="middle" font-family="serif" font-size="13" fill="#f3d27a" letter-spacing="4">쌀 점</text>
+</svg>

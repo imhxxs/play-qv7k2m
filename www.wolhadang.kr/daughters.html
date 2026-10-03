@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b100c">
+<title>신딸 소개 — 월하당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="wolhadang.css">
+</head>
+<body class="wh">
+<!-- 月下堂 홈페이지 · 2025.10 막내 명월 제작 -->
+<div id="wh-band" class="wh-band"></div>
+<table class="wh-frame" role="presentation">
+<colgroup><col class="wh-col-side"><col></colgroup>
+<tbody>
+<tr><td class="wh-head" id="wh-head" colspan="2"></td></tr>
+<tr>
+<td class="wh-side" id="wh-side"></td>
+<td class="wh-main" id="wh-main">
+<main>
+  <h1 class="wh-title">신딸 소개 <small>월하당 › 신딸 소개</small></h1>
+  <p>송만신 어머니께 신을 받은 신딸들을 소개합니다. <span class="wh-dim">(신딸 — 내림굿을 해 주신 신어머니께 신을 받은 제자)</span></p>
+
+  <div data-view="X-wolhadang-daughters">
+  <section class="wh-panel wh-daughter" aria-labelledby="d1-t">
+    <div class="wh-daughter__pic">
+      <div class="wh-noimg" role="img" aria-label="사진 준비 중"><span><b>NO IMAGE</b>사진 준비 중</span></div>
+      <p class="wh-dim" style="margin:4px 0 0;text-align:center">큰언니 사진 아직 못 받았어요 ㅠㅠ</p>
+    </div>
+    <div class="wh-daughter__info">
+      <h2 class="wh-sub" id="d1-t" style="margin-top:0">큰신딸 — 선희보살</h2>
+      <table class="wh-tbl">
+        <tbody>
+          <tr><th scope="row">신명</th><td>선희보살</td></tr>
+          <tr><th scope="row">내림</th><td>2001년</td></tr>
+          <tr><th scope="row">지금</th><td>선희당 운영 &nbsp;<a class="wh-btn wh-btn--plain" data-site="seonhee" data-page="index" style="min-height:44px;padding:4px 12px">선희당 운영 ▶</a></td></tr>
+        </tbody>
+      </table>
+      <p>어머니의 큰신딸이자 막내의 큰언니예요. 신딸 중에 제일 오래 어머니 곁에 있었습니다. 지금은 따로 선희당을 운영합니다.</p>
+    </div>
+  </section>
+
+  <section class="wh-panel wh-daughter" aria-labelledby="d2-t">
+    <figure class="wh-daughter__pic wh-photo" style="margin:0">
+      <button type="button" class="wh-zoombtn" id="hand-zoom" aria-label="막내 손 사진 크게 보기"><img src="../assets/wolhadang/hand-right.svg" width="480" height="360" alt="흰 한복 소매 아래로 나온 오른손. 오른손목에 술 없는 오색실을 여러 번 감았다. 다섯 손가락이 가지런하다."></button>
+      <figcaption>막내 손. 얼굴은 부끄러워서 손으로 대신합니다 ^^;</figcaption>
+    </figure>
+    <div class="wh-daughter__info">
+      <h2 class="wh-sub" id="d2-t" style="margin-top:0">막내 — 명월선녀</h2>
+      <table class="wh-tbl">
+        <tbody>
+          <tr><th scope="row">신명</th><td>명월선녀(明月仙女)</td></tr>
+          <tr><th scope="row">내림</th><td>2026년 9월 5일</td></tr>
+          <tr><th scope="row">하는 일</th><td>신당 살림, 홈페이지 만들기, 배우는 중</td></tr>
+        </tbody>
+      </table>
+      <p>이 홈페이지를 만든 막내입니다. 회사에서 웹디자인을 하다가 신을 받았어요. 아직 배우는 중이라 점은 보지 않습니다.</p>
+      <p class="wh-dim">신병일기는 솔글에 써요. 부끄러우니까 주소는 비밀 ^^</p>
+    </div>
+  </section>
+  <div class="wh-collect"><md-collect card="X-wolhadang-daughters"></md-collect></div>
+  </div>
+</main>
+</td>
+</tr>
+<tr><td class="wh-foot" id="wh-foot" colspan="2"></td></tr>
+</tbody>
+</table>
+<script type="module">
+  import { start } from './wolhadang.js';
+  import { openViewer } from './viewer.js';
+  const game = start({ page: 'daughters', title: '신딸 소개 — 월하당' });
+  document.getElementById('hand-zoom').addEventListener('click', () => {
+    openViewer(game, { items: [{
+      title: '막내 손', date: '신딸 소개', src: '../assets/wolhadang/hand-right.svg', aspect: 4 / 3, card: 'X-wolhadang-daughters',
+      caption: '<b>막내 손</b> — 얼굴은 부끄러워서 손으로 대신합니다 ^^; 오른손목에 감은 오색실.',
+    }] });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>저수지 큰 소나무 (2026.08.30)</title>
+  <!-- 다은 블로그 '놋거울'. 창작 일러스트. 아침 안개 낀 서월저수지 물가의 큰 소나무, 드러난 뿌리 사이를 조금 판 자리,
+       삭은 한지 뭉치와 모종삽. 위치를 특정할 수 있는 표지는 없다. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe3dc"/><stop offset=".6" stop-color="#cdd4cc"/><stop offset="1" stop-color="#b9c2b8"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3cdc8"/><stop offset="1" stop-color="#8f9d98"/></linearGradient>
+    <linearGradient id="bank" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b5a43"/><stop offset="1" stop-color="#43372a"/></linearGradient>
+    <linearGradient id="bark" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a2f20"/><stop offset=".5" stop-color="#7a4a30"/><stop offset="1" stop-color="#3d271a"/></linearGradient>
+    <filter id="mist" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="needle" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".09" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- 먼 산 -->
+  <path d="M0 360 C180 300 320 330 480 290 C640 250 760 300 900 280 C1040 260 1120 290 1200 280 V430 H0 Z" fill="#a5afa6" opacity=".7" filter="url(#mist)"/>
+  <!-- 물 -->
+  <rect y="410" width="1200" height="390" fill="url(#water)"/>
+  <g stroke="#e4e9e6" stroke-width="2" opacity=".5"><path d="M600 470 h220 M680 520 h300 M760 590 h260 M560 650 h180"/></g>
+  <!-- 물에 비친 소나무 -->
+  <g opacity=".22" transform="translate(0 830) scale(1 -1)">
+    <path d="M420 420 C430 340 400 260 440 180 C470 120 520 110 560 80" fill="none" stroke="#2c241c" stroke-width="40"/>
+    <ellipse cx="560" cy="80" rx="220" ry="50" fill="#2b3a2a"/>
+  </g>
+  <!-- 물가 둔덕 -->
+  <path d="M0 460 C120 430 260 440 380 470 C480 494 560 540 600 600 C640 660 660 730 700 800 H0 Z" fill="url(#bank)"/>
+  <!-- 소나무 -->
+  <g>
+    <path d="M300 560 C300 470 270 380 300 300 C330 220 380 180 430 150 C470 126 520 120 560 100" fill="none" stroke="url(#bark)" stroke-width="54" stroke-linecap="round"/>
+    <path d="M300 300 C250 260 190 250 130 260" fill="none" stroke="#5a3826" stroke-width="22" stroke-linecap="round"/>
+    <path d="M430 150 C470 190 540 210 640 210" fill="none" stroke="#5a3826" stroke-width="18" stroke-linecap="round"/>
+    <path d="M290 420 C330 400 380 400 420 380" fill="none" stroke="#5a3826" stroke-width="14" stroke-linecap="round"/>
+    <!-- 수피 결 -->
+    <g stroke="#2d1c12" stroke-width="3" opacity=".6" fill="none"><path d="M292 520 l18 -10 M286 470 l22 -8 M284 410 l20 -12 M292 350 l24 -6 M310 290 l22 -14"/></g>
+    <!-- 솔잎 층 -->
+    <g filter="url(#needle)">
+      <ellipse cx="560" cy="96" rx="200" ry="42" fill="#2f4a33"/>
+      <ellipse cx="660" cy="200" rx="130" ry="32" fill="#36533a"/>
+      <ellipse cx="140" cy="250" rx="120" ry="30" fill="#33503a"/>
+      <ellipse cx="430" cy="374" rx="90" ry="24" fill="#3a5a40"/>
+      <ellipse cx="500" cy="80" rx="120" ry="26" fill="#3c5e42"/>
+    </g>
+    <!-- 드러난 뿌리 -->
+    <g fill="none" stroke="#5c3c28" stroke-linecap="round">
+      <path d="M290 560 C250 590 200 600 150 640" stroke-width="20"/>
+      <path d="M310 560 C350 600 400 610 460 650" stroke-width="18"/>
+      <path d="M300 570 C300 610 290 650 300 700" stroke-width="14"/>
+    </g>
+  </g>
+  <!-- 판 자리와 한지 뭉치 -->
+  <ellipse cx="380" cy="660" rx="70" ry="22" fill="#2c2219"/>
+  <g transform="translate(390 652) rotate(-8)">
+    <path d="M-46 -6 C-40 -30 -10 -36 14 -30 C40 -26 52 -8 46 6 C36 22 -30 26 -46 -6 Z" fill="#d9caa6"/>
+    <path d="M-30 -14 C-10 -4 10 -20 30 -8 M-20 6 C0 0 14 10 34 0" stroke="#a8946c" stroke-width="2" fill="none"/>
+    <path d="M-46 -6 C-36 -2 -40 10 -30 14" stroke="#8a6c45" stroke-width="3" fill="none" opacity=".6"/>
+  </g>
+  <!-- 모종삽 -->
+  <g transform="translate(480 640) rotate(28)">
+    <path d="M0 0 C-14 -30 -10 -62 0 -80 C10 -62 14 -30 0 0 Z" fill="#9aa3a6"/>
+    <rect x="-4" y="0" width="8" height="30" fill="#5d6366"/>
+    <rect x="-8" y="30" width="16" height="60" rx="6" fill="#a4482e"/>
+  </g>
+  <!-- 안개 -->
+  <rect y="300" width="1200" height="200" fill="#eef1ec" opacity=".35" filter="url(#mist)"/>
+</svg>

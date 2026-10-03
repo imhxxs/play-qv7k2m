@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9bcbd"/><stop offset="1" stop-color="#dcdbd4"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d8778"/><stop offset="1" stop-color="#5f5a4f"/>
+    </linearGradient>
+    <pattern id="stone" width="34" height="18" patternUnits="userSpaceOnUse">
+      <rect width="34" height="18" fill="#9c968a"/>
+      <path d="M0 9h34M17 0v9M5 9v9M28 9v9" stroke="#6f6a60" stroke-width="1.4"/>
+      <ellipse cx="9" cy="4.5" rx="6" ry="3" fill="#aaa498"/><ellipse cx="25" cy="4.5" rx="5" ry="2.6" fill="#a29c90"/>
+      <ellipse cx="16" cy="13.5" rx="7" ry="3" fill="#a7a195"/>
+    </pattern>
+    <g id="mum">
+      <circle r="5.2" fill="#f4f2ec"/><circle r="2" fill="#d8d4c8"/>
+    </g>
+    <g id="wreath">
+      <!-- 삼각대 -->
+      <path d="M0 70 L-26 250 M0 70 L26 250 M0 70 L3 252" stroke="#3b3833" stroke-width="3" fill="none"/>
+      <!-- 국화 고리 -->
+      <circle r="52" fill="#e7e4da"/>
+      <circle r="31" fill="#3a3733"/>
+      <g>
+        <use href="#mum" x="0" y="-44"/><use href="#mum" x="22" y="-38"/><use href="#mum" x="38" y="-22"/><use href="#mum" x="44" y="0"/>
+        <use href="#mum" x="38" y="22"/><use href="#mum" x="22" y="38"/><use href="#mum" x="0" y="44"/><use href="#mum" x="-22" y="38"/>
+        <use href="#mum" x="-38" y="22"/><use href="#mum" x="-44" y="0"/><use href="#mum" x="-38" y="-22"/><use href="#mum" x="-22" y="-38"/>
+        <use href="#mum" x="11" y="-34"/><use href="#mum" x="30" y="-12"/><use href="#mum" x="30" y="12"/><use href="#mum" x="11" y="34"/>
+        <use href="#mum" x="-11" y="34"/><use href="#mum" x="-30" y="12"/><use href="#mum" x="-30" y="-12"/><use href="#mum" x="-11" y="-34"/>
+      </g>
+      <!-- 검은 띠 -->
+      <path d="M-14 40 L-22 196 L-8 196 L-2 44z" fill="#1d1c1a"/>
+      <path d="M14 40 L22 196 L8 196 L2 44z" fill="#1d1c1a"/>
+      <g fill="#e9e6dc" font-family="'Nanum Myeongjo','Noto Serif KR',serif" font-size="13" text-anchor="middle">
+        <text x="-14" y="80">謹</text><text x="-15" y="98">弔</text>
+        <text x="15" y="80">삼</text><text x="15.5" y="96">가</text><text x="16" y="112">고</text><text x="16.5" y="128">인</text>
+      </g>
+    </g>
+  </defs>
+  <rect width="640" height="420" fill="url(#sky)"/>
+  <!-- 먼 산 -->
+  <path d="M0 150 C80 110 150 120 210 100 C280 78 350 96 420 84 C500 72 570 98 640 92 V200 H0z" fill="#a6a8a4"/>
+  <path d="M0 175 C90 150 160 160 240 145 C330 128 430 150 520 138 C580 132 610 140 640 136 V220 H0z" fill="#8f928e"/>
+  <!-- 감나무 가지 -->
+  <path d="M500 0 C520 40 560 60 600 70 M560 58 C580 30 600 20 640 18 M545 48 C540 80 560 100 590 110" stroke="#4f4a42" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g fill="#6d6559"><circle cx="602" cy="70" r="7"/><circle cx="590" cy="110" r="6"/><circle cx="628" cy="22" r="6"/></g>
+  <!-- 돌담 -->
+  <rect x="0" y="206" width="640" height="90" fill="url(#stone)"/>
+  <path d="M0 200 H640 V212 H0z" fill="#4b4741"/>
+  <!-- 대문 -->
+  <g>
+    <rect x="236" y="150" width="168" height="150" fill="#5a5148"/>
+    <path d="M206 158 C260 138 380 138 434 158 L446 152 C380 120 260 120 194 152z" fill="#2f2d2a"/>
+    <path d="M214 166 H426" stroke="#2b2926" stroke-width="10"/>
+    <g stroke="#3c3934" stroke-width="2"><path d="M220 160 v8M236 158 v10M252 156 v12M268 155 v13M284 154 v14M300 153 v15M316 153 v15M332 153 v15M348 154 v14M364 155 v13M380 156 v12M396 158 v10M412 160 v8"/></g>
+    <rect x="250" y="176" width="68" height="124" fill="#6f655a" stroke="#3a3530" stroke-width="3"/>
+    <rect x="322" y="176" width="68" height="124" fill="#6b6156" stroke="#3a3530" stroke-width="3"/>
+    <g stroke="#4a443d" stroke-width="2" fill="none"><path d="M256 200 h56M256 250 h56M328 200 h56M328 250 h56"/></g>
+    <circle cx="310" cy="238" r="5" fill="none" stroke="#2c2a27" stroke-width="2.4"/><circle cx="330" cy="238" r="5" fill="none" stroke="#2c2a27" stroke-width="2.4"/>
+    <!-- 현판 -->
+    <rect x="286" y="168" width="68" height="20" fill="#2a2724"/>
+    <text x="320" y="183" text-anchor="middle" font-size="13" fill="#d9d2c0" font-family="'Nanum Myeongjo','Noto Serif KR',serif" letter-spacing="3">月下堂</text>
+  </g>
+  <!-- 길 -->
+  <path d="M0 296 H640 V420 H0z" fill="url(#ground)"/>
+  <path d="M190 420 L270 300 H370 L450 420z" fill="#9b9587" opacity=".55"/>
+  <ellipse cx="420" cy="380" rx="60" ry="9" fill="#c6c3ba" opacity=".55"/>
+  <ellipse cx="150" cy="350" rx="40" ry="6" fill="#c6c3ba" opacity=".45"/>
+  <!-- 근조 화환(원근) -->
+  <use href="#wreath" transform="translate(40 150) scale(.86)"/>
+  <use href="#wreath" transform="translate(132 160) scale(.8)"/>
+  <use href="#wreath" transform="translate(196 168) scale(.72)"/>
+  <use href="#wreath" transform="translate(462 166) scale(.74)"/>
+  <use href="#wreath" transform="translate(560 156) scale(.88)"/>
+  <!-- 흐린 빛 -->
+  <rect width="640" height="420" fill="#fff" opacity=".06"/>
+</svg>

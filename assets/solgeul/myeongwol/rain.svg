@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>처마 끝 (2026.07.21)</title>
+  <!-- 다은 블로그 '장마'. 창작 일러스트. 신당 마루에서 본 처마 끝, 빗줄기, 감나무 아래까지 번진 물웅덩이. -->
+  <defs>
+    <linearGradient id="air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa29c"/><stop offset="1" stop-color="#6f7772"/></linearGradient>
+    <linearGradient id="yard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a6253"/><stop offset="1" stop-color="#4b4539"/></linearGradient>
+    <linearGradient id="puddle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b5bcb6"/><stop offset="1" stop-color="#818a85"/></linearGradient>
+    <filter id="mist" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <pattern id="rainP" width="120" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+      <path d="M10 0 v40 M50 30 v50 M90 70 v40 M30 100 v46 M70 120 v36 M110 10 v30" stroke="#e8ece8" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#air)"/>
+  <!-- 담장과 먼 지붕 -->
+  <path d="M0 420 H1200 V470 H0 Z" fill="#5a5850" opacity=".6" filter="url(#mist)"/>
+  <rect y="460" width="1200" height="340" fill="url(#yard)"/>
+  <!-- 감나무 -->
+  <g filter="url(#mist)" opacity=".75"><ellipse cx="930" cy="220" rx="240" ry="150" fill="#4f5f4a"/></g>
+  <path d="M930 600 C920 520 940 420 920 330 C910 290 930 250 960 220" fill="none" stroke="#3a3128" stroke-width="34" stroke-linecap="round"/>
+  <path d="M928 360 C880 330 840 320 800 324" fill="none" stroke="#3a3128" stroke-width="14" stroke-linecap="round"/>
+  <!-- 물웅덩이 -->
+  <ellipse cx="640" cy="640" rx="420" ry="70" fill="url(#puddle)"/>
+  <g fill="none" stroke="#dfe4df" stroke-width="2" opacity=".6">
+    <ellipse cx="480" cy="640" rx="40" ry="8"/><ellipse cx="480" cy="640" rx="70" ry="14" opacity=".5"/>
+    <ellipse cx="720" cy="620" rx="30" ry="6"/><ellipse cx="720" cy="620" rx="56" ry="11" opacity=".5"/>
+    <ellipse cx="860" cy="660" rx="26" ry="5"/><ellipse cx="600" cy="670" rx="34" ry="7"/>
+  </g>
+  <path d="M930 640 C930 700 940 740 936 760" stroke="#2d2620" stroke-width="20" opacity=".35"/>
+  <!-- 비 -->
+  <rect width="1200" height="800" fill="url(#rainP)"/>
+  <!-- 처마(위)와 서까래 끝 -->
+  <path d="M0 0 H1200 V110 C900 140 300 140 0 120 Z" fill="#26231f"/>
+  <g fill="#3a352e">
+    <rect x="40" y="104" width="34" height="34" rx="4"/><rect x="170" y="112" width="34" height="34" rx="4"/><rect x="300" y="118" width="34" height="34" rx="4"/>
+    <rect x="430" y="121" width="34" height="34" rx="4"/><rect x="560" y="122" width="34" height="34" rx="4"/><rect x="690" y="122" width="34" height="34" rx="4"/>
+    <rect x="820" y="120" width="34" height="34" rx="4"/><rect x="950" y="116" width="34" height="34" rx="4"/><rect x="1080" y="110" width="34" height="34" rx="4"/>
+  </g>
+  <!-- 처마 끝 낙숫물 -->
+  <g stroke="#eef1ee" stroke-linecap="round" filter="url(#soft)">
+    <path d="M120 150 V260" stroke-width="3" opacity=".7"/><path d="M250 156 V300" stroke-width="2.5" opacity=".6"/><path d="M380 160 V280" stroke-width="3" opacity=".7"/>
+    <path d="M510 162 V320" stroke-width="2.5" opacity=".6"/><path d="M640 162 V270" stroke-width="3" opacity=".7"/><path d="M770 160 V310" stroke-width="2.5" opacity=".6"/>
+    <path d="M900 158 V290" stroke-width="3" opacity=".7"/><path d="M1030 152 V260" stroke-width="2.5" opacity=".6"/>
+  </g>
+  <!-- 마루 끝(아래) -->
+  <path d="M0 740 H1200 V800 H0 Z" fill="#3a2f24"/>
+  <path d="M0 740 H1200" stroke="#5b4a36" stroke-width="4"/>
+</svg>

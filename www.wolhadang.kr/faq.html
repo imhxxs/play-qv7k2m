@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b100c">
+<title>자주 묻는 질문 — 월하당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="wolhadang.css">
+</head>
+<body class="wh">
+<!-- 月下堂 홈페이지 · 2025.10 막내 명월 제작 -->
+<!-- 사주 메뉴: 손님들이 찾는다고 내가 넣음. 어머니는 철학관 가라 하심 -->
+<div id="wh-band" class="wh-band"></div>
+<table class="wh-frame" role="presentation">
+<colgroup><col class="wh-col-side"><col></colgroup>
+<tbody>
+<tr><td class="wh-head" id="wh-head" colspan="2"></td></tr>
+<tr>
+<td class="wh-side" id="wh-side"></td>
+<td class="wh-main" id="wh-main">
+<main>
+  <h1 class="wh-title">자주 묻는 질문 <small>월하당 › FAQ</small></h1>
+  <p>처음 오시는 손님들이 자주 물으시는 것들을 모았습니다. <span class="wh-dim">※ 어머니께서 계실 때 쓴 글입니다. 고치지 않고 둡니다. — 명월</span></p>
+
+  <ol class="wh-faq" data-view="E05">
+    <li id="price"><p class="q">굿값은 얼마인가요?</p><p class="a">형편대로 말씀하세요. 굿값이 없어 쌀 한 말로 하신 집도 있습니다. 월하당은 굿을 권하지 않습니다.</p></li>
+    <li id="saju"><p class="q">사주도 보시나요?</p><p class="a">만신님은 신점만 보십니다. 사주 메뉴는 손님들이 찾는다고 막내가 넣었는데, 만신님은 사주는 철학관에 가서 보라 하십니다.</p></li>
+    <li id="sick"><p class="q">아픈데 신병인가요?</p><p class="a">만신님은 병원부터 다녀오라 하십니다. 병원에 다녀온 뒤에도 마음이 놓이지 않으면 그때 오세요.</p></li>
+    <li id="jakdu-day"><p class="q">작두 오르는 날 만신님은 식사를 하시나요?</p><p class="a">작두 오르는 날 만신님은 18시 이후 장군님 첫 잔 외에는 아무것도 입에 대지 않으십니다. 손님들이 음식을 권하셔도 받지 않으세요.</p></li>
+    <li id="health"><p class="q">만신님 지병이 있으시다던데 굿은 괜찮으세요?</p><p class="a">만신님은 부정맥이 있으십니다. 부정맥 약은 아침에 챙기십니다. 굿 날에도 아침에 드시고, 굿판에서는 약을 드시지 않습니다.</p></li>
+    <li id="cup"><p class="q">장군님 잔은 넘치게 가득 올리나요?</p><p class="a">아닙니다. 월하당에서는 장군님 첫 잔을 칠부로 한 번만 올립니다. <a href="gut.html">굿 안내</a>의 장군거리 법도를 봐 주세요.</p></li>
+    <li id="photo"><p class="q">굿 하는 걸 찍어도 되나요?</p><p class="a">마당에서는 괜찮습니다. 신당 안은 만신님 허락을 받으셔야 합니다.</p></li>
+    <li id="maknae"><p class="q">막내 선생님께도 점을 볼 수 있나요?</p><p class="a">막내는 아직 배우는 중입니다 ^^ 지금은 어머니 일을 돕고 홈페이지를 고칩니다.</p></li>
+    <li id="rice"><p class="q">온라인 쌀점은 맞나요?</p><p class="a">재미로 보세요. 진짜 점은 만신님께 직접 보셔야 합니다.</p></li>
+    <li id="reserve"><p class="q">예약은 어떻게 하나요?</p><p class="a"><a href="contact.html">상담 문의</a>에 남겨 주시면 연락드립니다. 지금은 상중이라 49재 뒤에 다시 받습니다.</p></li>
+  </ol>
+  <div class="wh-collect"><md-collect card="E05"></md-collect></div>
+</main>
+</td>
+</tr>
+<tr><td class="wh-foot" id="wh-foot" colspan="2"></td></tr>
+</tbody>
+</table>
+<script type="module">
+  import { start } from './wolhadang.js';
+  start({ page: 'faq', title: '자주 묻는 질문 — 월하당' });
+</script>
+</body>
+</html>

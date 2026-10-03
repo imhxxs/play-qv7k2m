@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>서월산 아래 월하당 (2025.10.14)</title>
+  <!-- 창작 일러스트: 해 질 녘 서월산 아래 기와집 신당, 마당 감나무, 초승달 -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a52"/><stop offset=".45" stop-color="#7a4a6a"/><stop offset=".8" stop-color="#e08a5a"/><stop offset="1" stop-color="#f3b878"/></linearGradient>
+    <linearGradient id="mt1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3550"/><stop offset="1" stop-color="#4a3a48"/></linearGradient>
+    <linearGradient id="mt2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a3a"/><stop offset="1" stop-color="#2a2430"/></linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3a44"/><stop offset="1" stop-color="#22222a"/></linearGradient>
+    <linearGradient id="wallh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9dcc0"/><stop offset="1" stop-color="#c9b48e"/></linearGradient>
+    <radialGradient id="win" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#ffe2a0"/><stop offset="1" stop-color="#e09a40"/></radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="8"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .4 0 0 0 .13 0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <!-- 초승달 -->
+  <circle cx="632" cy="96" r="30" fill="#fff6d8" filter="url(#glow)" opacity=".6"/>
+  <path d="M632 66 a30 30 0 1 0 22 50 a24 24 0 1 1 -22 -50z" fill="#fff4d0"/>
+  <g fill="#fff" opacity=".7"><circle cx="120" cy="60" r="1.4"/><circle cx="260" cy="40" r="1"/><circle cx="420" cy="80" r="1.2"/><circle cx="520" cy="30" r="1"/><circle cx="720" cy="170" r="1.2"/></g>
+  <!-- 서월산 -->
+  <path d="M0 330 L120 240 L200 270 L320 160 L410 230 L470 200 L580 270 L700 220 L800 280 V600 H0 Z" fill="url(#mt1)"/>
+  <path d="M0 380 L90 330 L180 350 L280 300 L380 340 L480 310 L600 350 L720 320 L800 350 V600 H0 Z" fill="url(#mt2)"/>
+  <!-- 담장 -->
+  <path d="M40 470 H760 V505 H40 Z" fill="#8a7a66"/>
+  <path d="M34 462 H766 L760 474 H40 Z" fill="#3a3a44"/>
+  <!-- 신당 -->
+  <path d="M190 330 H600 V470 H190 Z" fill="url(#wallh)"/>
+  <g stroke="#5a3418" stroke-width="7"><path d="M200 330 V470M300 330V470M400 330V470M500 330V470M590 330V470"/></g>
+  <rect x="318" y="372" width="64" height="98" fill="#8b1616"/><path d="M350 372 V470" stroke="#5a0a0a" stroke-width="2"/>
+  <rect x="222" y="362" width="60" height="50" fill="url(#win)"/><rect x="420" y="362" width="60" height="50" fill="url(#win)"/><rect x="516" y="362" width="56" height="50" fill="url(#win)"/>
+  <g stroke="#7a5428" stroke-width="1.5"><path d="M222 387h60M252 362v50M420 387h60M450 362v50M516 387h56M544 362v50"/></g>
+  <g filter="url(#glow)" opacity=".5" fill="#ffc870"><rect x="222" y="362" width="60" height="50"/><rect x="420" y="362" width="60" height="50"/><rect x="516" y="362" width="56" height="50"/></g>
+  <!-- 지붕 -->
+  <path d="M150 336 C220 318 300 300 395 296 C490 300 570 318 640 336 L612 300 C540 282 470 256 395 252 C320 256 250 282 178 300 Z" fill="url(#roof)"/>
+  <path d="M150 336 C220 318 300 300 395 296 C490 300 570 318 640 336" fill="none" stroke="#14141a" stroke-width="5"/>
+  <g stroke="#4a4a56" stroke-width="2" opacity=".8"><path d="M210 312 L222 292M250 306 L260 280M290 300 L298 272M330 297 L336 266M370 296 L373 258M410 296 L412 256M450 298 L452 262M490 302 L496 268M530 308 L538 276M570 316 L582 290"/></g>
+  <path d="M290 262 C330 246 460 246 500 262" stroke="#14141a" stroke-width="7" fill="none"/>
+  <!-- 현판 -->
+  <rect x="346" y="320" width="98" height="26" fill="#2c180c" stroke="#a87a3a" stroke-width="2"/>
+  <g stroke="#e8c46a" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M360 325v14q0 3-3 4M360 325h10v16M360 330h10M360 335h10"/><path d="M380 326h20M390 326v16M392 331l4 3"/><path d="M412 324v3M406 325l1 2M418 325l-1 2M404 328h24M412 330h8v3h-8zM406 337h20M416 333v8M404 342h24"/>
+  </g>
+  <!-- 감나무 -->
+  <path d="M676 470 C672 420 664 390 640 360 M668 420 C690 392 708 380 726 372 M652 380 C630 360 618 350 600 346" stroke="#3a2414" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g fill="#2a3a24" opacity=".85"><circle cx="640" cy="350" r="34"/><circle cx="690" cy="340" r="38"/><circle cx="730" cy="370" r="28"/><circle cx="604" cy="344" r="22"/></g>
+  <g fill="#f07a20"><circle cx="628" cy="340" r="6"/><circle cx="660" cy="324" r="6"/><circle cx="700" cy="356" r="6"/><circle cx="724" cy="334" r="6"/><circle cx="742" cy="380" r="5"/><circle cx="610" cy="360" r="5"/><circle cx="680" cy="372" r="6"/></g>
+  <!-- 마당 -->
+  <path d="M0 505 H800 V600 H0 Z" fill="#6a5440"/>
+  <path d="M0 505 H800" stroke="#4a3a2a" stroke-width="3"/>
+  <g fill="#e66b8d" opacity=".9"><path d="M110 470 v-80 l26 10 -26 10z"/></g>
+  <path d="M110 470 V380" stroke="#3a2414" stroke-width="3"/>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <text x="772" y="584" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="20" font-weight="700" fill="#ff8a2a" opacity=".9">2025.10.14</text>
+</svg>

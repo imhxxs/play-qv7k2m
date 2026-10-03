@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b100c">
+<meta name="description" content="서월산 아래 월하당(月下堂). 황해도굿·작두 송만신 신점·점사·굿.">
+<title>월하당(月下堂) — 송만신 신점·점사·사주·굿 봐드립니다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="wolhadang.css">
+</head>
+<body class="wh">
+<!-- ============================================================
+     月下堂 홈페이지 · 2025.10 막내 명월 제작
+     어머니 말씀: "옛날 점집 홈페이지처럼 반짝반짝하게"
+     ============================================================ -->
+<!-- 상중 모드: 쌀점 결과 상문 고정 (9/20 명월) -->
+<!-- 자동응답 문구 = 어머니 공수 녹음 받아 적은 것 -->
+<!-- 사주 메뉴: 손님들이 찾는다고 내가 넣음. 어머니는 철학관 가라 하심 -->
+<div id="wh-band" class="wh-band"></div>
+<table class="wh-frame" role="presentation">
+<colgroup><col class="wh-col-side"><col></colgroup>
+<tbody>
+<tr><td class="wh-head" id="wh-head" colspan="2"></td></tr>
+<tr>
+<td class="wh-side" id="wh-side"></td>
+<td class="wh-main" id="wh-main">
+<main>
+  <h1 class="wh-sr">월하당 — 처음으로</h1>
+
+  <section class="wh-panel wh-panel--black wh-mourning-notice" aria-labelledby="geunjo-t">
+    <div class="wh-candles" id="home-candles"></div>
+    <h2 id="geunjo-t">謹 弔</h2>
+    <p class="who">故 송만신(宋福禮) 어머니</p>
+    <p>월하당을 마흔일곱 해 지켜 오신 송만신 어머니께서<br>2026년 9월 19일 밤, 진적굿을 모시던 중 신령님 곁으로 가셨습니다.</p>
+    <p>어머니를 아껴 주신 손님들께 엎드려 감사드립니다.<br>월하당은 49재(11월 6일)까지 상중이며, 상담과 굿 예약은 그 뒤에 다시 받습니다.</p>
+    <p class="sign">2026년 9월 20일 · 막내 명월 올림</p>
+  </section>
+
+  <nav class="wh-quick" aria-label="바로가기">
+    <a href="rice.html">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M4 16h26c0 8-6 13-13 13S4 24 4 16z" fill="#6b3a1e"/><path d="M6 16c2-6 6-8 11-8s9 2 11 8z" fill="#fbf6e8" stroke="#d8cdb4"/><g fill="#e9e0c8"><ellipse cx="11" cy="13" rx="1.6" ry=".8"/><ellipse cx="16" cy="11" rx="1.6" ry=".8" transform="rotate(30 16 11)"/><ellipse cx="21" cy="13" rx="1.6" ry=".8" transform="rotate(-20 21 13)"/></g></svg>
+      온라인 쌀점</a>
+    <a href="guide.html">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><path d="M3 15 17 5l14 10" fill="none" stroke="#5a3a24" stroke-width="2.4"/><path d="M2 15c5-2 25-2 30 0l-2 3H4z" fill="#3b3b44"/><rect x="7" y="18" width="20" height="12" fill="#f3e9cf" stroke="#8a6a3a"/><rect x="14" y="21" width="6" height="9" fill="#8b1616"/></svg>
+      처음 오시는 분</a>
+    <a href="gallery.html">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="9" width="28" height="19" rx="2" fill="#2b2b2b"/><rect x="11" y="6" width="9" height="5" fill="#2b2b2b"/><circle cx="17" cy="18.5" r="6" fill="#6d8fb3" stroke="#ddd" stroke-width="2"/><circle cx="26" cy="13" r="1.5" fill="#f3d27a"/></svg>
+      신당 갤러리</a>
+    <a href="contact.html">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="3" y="8" width="28" height="19" fill="#fffaf0" stroke="#8b1616" stroke-width="2"/><path d="m4 9 13 10L30 9" fill="none" stroke="#8b1616" stroke-width="2"/></svg>
+      상담 문의</a>
+  </nav>
+
+  <div class="wh-grid2">
+    <section class="wh-panel" aria-labelledby="recent-t">
+      <h2 class="wh-sub" id="recent-t" style="margin-top:0">공지사항 <a href="notice.html" class="wh-more">더보기 +</a></h2>
+      <ul class="wh-list" id="recent"></ul>
+    </section>
+    <section class="wh-panel" aria-labelledby="words-t">
+      <h2 class="wh-sub" id="words-t" style="margin-top:0">만신님 말씀</h2>
+      <blockquote class="wh-quote">
+        "아픈 데가 있으면 병원부터 가라.<br>신령님도 그걸 바라신다."<br>
+        "굿값보다 사람이 먼저다. 쌀 한 말이면 굿 한다."
+        <cite>— 송만신 어머니, 손님들께 늘 하시던 말씀</cite>
+      </blockquote>
+      <p class="wh-dim">어머니 말씀이 듣고 싶으시면 <a href="contact.html">상담 문의</a>를 남겨 주세요. 메일로 어머니 말씀이 갑니다.</p>
+    </section>
+  </div>
+
+  <section class="wh-panel" aria-labelledby="about-t">
+    <h2 class="wh-sub" id="about-t" style="margin-top:0">월하당(月下堂)은요</h2>
+    <p>서월산 아래, 달 아래 집이라는 뜻의 월하당입니다. 송만신 어머니께서 황해도굿과 작두로 마흔 해 넘게 손님들을 맞아 오신 신당입니다.
+    신점·점사·굿 모두 어머니가 직접 보셨고, 아픈 손님은 늘 병원부터 보내셨습니다.</p>
+    <p class="wh-links"><a href="about.html">▶ 만신 소개</a> <a href="daughters.html">▶ 신딸 소개</a> <a href="gut.html">▶ 굿 안내</a> <a href="reviews.html">▶ 손님 후기</a></p>
+  </section>
+</main>
+</td>
+</tr>
+<tr><td class="wh-foot" id="wh-foot" colspan="2"></td></tr>
+</tbody>
+</table>
+<script type="module">
+  import { start, candleSvg, esc } from './wolhadang.js';
+  import { NOTICES } from './notice-data.js';
+
+  const game = start({ page: 'index', title: '월하당(月下堂) — 송만신 신점·점사·사주·굿 봐드립니다' });
+  document.getElementById('home-candles').innerHTML = candleSvg('m1') + candleSvg('m2');
+
+  const recent = [...NOTICES].sort((a, b) => b.no - a.no).slice(0, 6);
+  document.getElementById('recent').innerHTML = recent.map((n) => `
+    <li><a href="notice.html?id=${n.id}"><span class="cat">[${esc(n.cat)}]</span><span class="t">${esc(n.title)}</span><span class="d">${esc(n.date.slice(5))}</span></a></li>`).join('');
+</script>
+</body>
+</html>

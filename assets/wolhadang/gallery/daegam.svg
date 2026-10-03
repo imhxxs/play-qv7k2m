@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>대감거리 (2025.10.18)</title>
+  <!-- 창작 일러스트: 굿판을 뒤에서 본 모습. 쾌자 입은 만신이 부채를 펼쳐 들었다. 얼굴은 보이지 않는다. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a2a1a"/><stop offset="1" stop-color="#2a140c"/></linearGradient>
+    <radialGradient id="light" cx="50%" cy="35%" r="60%"><stop offset="0" stop-color="#ffd890" stop-opacity=".45"/><stop offset="1" stop-color="#ffd890" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="2.4"/></filter>
+    <filter id="mblur"><feGaussianBlur stdDeviation="3 0.6"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="5"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .35 0 0 0 .16 0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- 뒤 벽 지화 -->
+  <g filter="url(#blur)">
+    <g fill="#e66b8d"><circle cx="90" cy="120" r="22"/><circle cx="170" cy="90" r="18"/><circle cx="640" cy="100" r="22"/><circle cx="720" cy="140" r="18"/></g>
+    <g fill="#f3d27a"><circle cx="130" cy="160" r="18"/><circle cx="680" cy="70" r="16"/><circle cx="600" cy="150" r="16"/></g>
+    <g fill="#f6f1e2"><circle cx="210" cy="140" r="16"/><circle cx="740" cy="90" r="16"/><circle cx="60" cy="70" r="14"/></g>
+    <rect x="300" y="60" width="200" height="40" fill="#2c180c"/>
+  </g>
+  <rect width="800" height="600" fill="url(#light)"/>
+  <!-- 만신(뒷모습) -->
+  <g>
+    <path d="M392 150 C360 150 350 176 352 196 L448 196 C450 176 440 150 408 150 Z" fill="#1d1d28"/>
+    <ellipse cx="400" cy="196" rx="74" ry="10" fill="#14141c"/>
+    <path d="M400 150 C392 128 396 112 404 100" stroke="#c0392b" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M330 230 C360 210 440 210 470 230 L520 470 H280 Z" fill="#2a4a8a"/>
+    <path d="M370 222 L350 470 H450 L430 222 Z" fill="#b3242a"/>
+    <path d="M330 230 L280 300 L318 320 L352 262 Z" fill="#2a4a8a"/>
+    <path d="M470 230 L540 250 L560 220 L476 214 Z" fill="#2a4a8a"/>
+    <!-- 펼친 부채 -->
+    <g transform="translate(590 200) rotate(-18)" filter="url(#mblur)">
+      <path d="M0 0 L-90 -70 A115 115 0 0 1 90 -70 Z" fill="#f3e2b0" stroke="#8a5a2a" stroke-width="2"/>
+      <path d="M0 0 L-60 -96 M0 0 L-30 -110 M0 0 L0 -114 M0 0 L30 -110 M0 0 L60 -96" stroke="#b8862a" stroke-width="1.5"/>
+      <circle cx="-34" cy="-80" r="12" fill="#d32f2f"/><circle cx="34" cy="-80" r="10" fill="#2f5fd3"/>
+      <path d="M-50 -60 q50 -26 100 0" fill="none" stroke="#2f9a4a" stroke-width="4"/>
+    </g>
+    <ellipse cx="560" cy="214" rx="12" ry="10" fill="#d6a27a"/>
+  </g>
+  <!-- 앉은 손님들 뒷머리 -->
+  <g fill="#120c0a">
+    <ellipse cx="80" cy="560" rx="70" ry="80"/><ellipse cx="230" cy="580" rx="80" ry="86"/><ellipse cx="400" cy="590" rx="74" ry="80"/>
+    <ellipse cx="560" cy="575" rx="78" ry="84"/><ellipse cx="720" cy="560" rx="72" ry="80"/>
+  </g>
+  <path d="M150 480 q10 -6 22 0" stroke="#3a2a22" stroke-width="2" fill="none"/>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <text x="772" y="584" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="20" font-weight="700" fill="#ff8a2a" opacity=".9">2025.10.18</text>
+</svg>

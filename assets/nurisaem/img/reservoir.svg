@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="서월저수지 둘레길">
+  <defs><linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fa8ad"/><stop offset="1" stop-color="#4f6a72"/></linearGradient></defs>
+  <rect width="320" height="200" fill="#d6dbd3"/>
+  <path d="M0 70 L60 48 L120 64 L190 40 L260 60 L320 50 V100 H0Z" fill="#8a9a88"/>
+  <rect x="0" y="96" width="320" height="104" fill="url(#w)"/>
+  <g stroke="#cfdcde" stroke-width="1.2" opacity=".6"><path d="M30 120 h40 M120 132 h60 M220 118 h50 M60 150 h70 M190 160 h80"/></g>
+  <path d="M0 170 Q160 158 320 172 V200 H0Z" fill="#8e8a72"/>
+  <g transform="translate(240 50)">
+    <path d="M10 58 Q14 30 8 0" stroke="#4a3a2a" stroke-width="5" fill="none"/>
+    <ellipse cx="-4" cy="10" rx="30" ry="9" fill="#2f4a36"/><ellipse cx="18" cy="-2" rx="26" ry="8" fill="#355540"/>
+    <ellipse cx="2" cy="26" rx="22" ry="7" fill="#2f4a36"/>
+  </g>
+  <path d="M240 108 q10 4 20 0" stroke="#3f5a60" stroke-width="2" fill="none" opacity=".5"/>
+</svg>

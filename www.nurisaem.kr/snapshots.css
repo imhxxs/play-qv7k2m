@@ -1,0 +1,55 @@
+/* 누리샘 '저장된 페이지' 스냅숏의 모양(저장 당시 원래 사이트의 생김새를 흉내 낸다).
+   모든 선택자는 .ns-snap__frame 아래로 가둔다. 링크·메뉴는 저장본이라 동작하지 않는다. */
+
+/* ── 선희당(2010년대 상업 점집: 보라·금) ───────────────── */
+.ns-snap__frame .sh { font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color: #2b2233; background: #fbf8fd; font-size: 15px; line-height: 1.7; }
+.sh-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; padding: 6px 16px; background: #2a1440; color: #d9c6ec; font-size: 12px; }
+.sh-head { background: linear-gradient(120deg, #3b1660, #6c2f9c 60%, #a1478f); color: #fff; padding: 14px 16px 0; }
+.sh-logo { display: flex; align-items: center; gap: 10px; }
+.sh-logo__mark { width: 44px; height: 44px; flex: none; }
+.sh-logo__text { display: flex; flex-direction: column; line-height: 1.25; }
+.sh-logo__text b { font-size: 22px; letter-spacing: .04em; color: #f6dc8a; }
+.sh-logo__text small { font-size: 12px; color: #ead7f7; }
+.sh-nav { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 10px; padding: 8px 0; border-top: 1px solid rgba(255, 255, 255, .18); font-size: 14px; color: #f3e8fb; }
+.sh-nav .is-on { color: #f6dc8a; font-weight: 700; border-bottom: 2px solid #f6dc8a; }
+.sh-banner { padding: 8px 16px; background: #f1cf6b; color: #3b1660; font-size: 13px; text-align: center; }
+.sh-board { padding: 16px clamp(14px, 4vw, 32px) 20px; }
+.sh-crumb { margin: 0 0 6px; font-size: 12px; color: #8a7a99; }
+.sh-title { margin: 0; font-size: clamp(19px, 5vw, 24px); line-height: 1.4; color: #2a1440; padding-bottom: 8px; border-bottom: 2px solid #5b2a86; }
+.sh-badge { display: inline-block; vertical-align: 3px; padding: 1px 8px; margin-right: 4px; border-radius: 4px; background: #5b2a86; color: #f6dc8a; font-size: 12px; }
+.sh-meta { margin: 6px 0 16px; font-size: 13px; color: #8a7a99; }
+.sh-body p { margin: 0 0 12px; }
+.sh-info { margin: 0 0 14px; padding: 12px 14px 12px 30px; background: #f4ecfa; border-left: 4px solid #c9a24a; border-radius: 4px; }
+.sh-info li { margin: 2px 0; }
+.sh-info b { color: #5b2a86; margin-right: 6px; }
+.sh-sign { text-align: right; color: #5b2a86; font-weight: 700; }
+.sh-comments { margin-top: 20px; border-top: 1px solid #e3d6ee; padding-top: 10px; }
+.sh-comments h2 { font-size: 14px; margin: 0 0 6px; color: #5b2a86; }
+.sh-comments ol { margin: 0; padding: 0; list-style: none; }
+.sh-comments li { padding: 8px 0; border-bottom: 1px dashed #e3d6ee; }
+.sh-comments p { margin: 0; }
+.sh-c__who { font-size: 13px; }
+.sh-c__who span { color: #a094ab; margin-left: 6px; }
+.sh-pager { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 0; font-size: 13px; color: #8a7a99; }
+.sh-foot { padding: 14px 16px 16px; background: #2a1440; color: #b9a6cc; font-size: 11.5px; line-height: 1.6; }
+.sh-foot p { margin: 0 0 2px; }
+
+/* ── 서월일보(지역신문) ───────────────────────────── */
+.ns-snap__frame .sw { font-family: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", serif; color: #1d1d1d; background: #f7f3e8; font-size: 16px; line-height: 1.85; }
+.sw-mast { text-align: center; padding: 14px 16px 8px; border-bottom: 3px double #1d1d1d; }
+.sw-mast p { margin: 0; }
+.sw-date { font-family: "Noto Sans KR", sans-serif; font-size: 12px; color: #6a6355; }
+.sw-logo { font-size: clamp(30px, 8vw, 42px); font-weight: 900; letter-spacing: .12em; line-height: 1.2; }
+.sw-motto { font-size: 13px; color: #6a6355; }
+.sw-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 16px; padding: 6px 12px; border-bottom: 1px solid #1d1d1d; font-family: "Noto Sans KR", sans-serif; font-size: 14px; }
+.sw-nav .is-on { font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.sw-art { max-width: 720px; margin: 0 auto; padding: 18px clamp(14px, 4vw, 28px) 26px; }
+.sw-sec { margin: 0; font-family: "Noto Sans KR", sans-serif; font-size: 13px; font-weight: 700; color: #8b1e1e; }
+.sw-art h1 { margin: 4px 0 6px; font-family: "Noto Sans KR", sans-serif; font-weight: 900; font-size: clamp(22px, 6vw, 30px); line-height: 1.3; }
+.sw-sub { margin: 0 0 8px; font-size: 16px; color: #3d382e; }
+.sw-by { margin: 0 0 14px; font-family: "Noto Sans KR", sans-serif; font-size: 12.5px; color: #6a6355; border-bottom: 1px solid #cfc6b1; padding-bottom: 10px; }
+.sw-fig { margin: 0 0 16px; }
+.sw-fig img { display: block; width: 100%; height: auto; filter: grayscale(.85) contrast(1.05); border: 1px solid #cfc6b1; }
+.sw-fig figcaption { font-family: "Noto Sans KR", sans-serif; font-size: 12.5px; color: #5a5446; padding-top: 4px; }
+.sw-art p { margin: 0 0 12px; }
+.sw-end { font-family: "Noto Sans KR", sans-serif; font-size: 13px; color: #6a6355; border-top: 1px solid #cfc6b1; padding-top: 10px; }

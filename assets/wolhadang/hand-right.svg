@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+  <title>막내(명월선녀)의 오른손</title>
+  <!-- 창작 일러스트. 흰 한복 소매, 오른손 손등(엄지가 위), 오른손목에 술 없는 오색실, 다섯 손가락 모두 손톱이 있다. -->
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3e9d0"/><stop offset="1" stop-color="#ddcca6"/></linearGradient>
+    <radialGradient id="skin" cx="45%" cy="35%" r="80%"><stop offset="0" stop-color="#f2cfb2"/><stop offset=".7" stop-color="#e2b593"/><stop offset="1" stop-color="#c99a78"/></radialGradient>
+    <linearGradient id="sleeve" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#f1efe8"/><stop offset="1" stop-color="#d9d6cc"/></linearGradient>
+    <radialGradient id="bell" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#fff0b8"/><stop offset="1" stop-color="#a87a2e"/></radialGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .44 0 0 0 0 .32 0 0 0 .12 0"/></filter>
+  </defs>
+  <rect width="480" height="360" fill="url(#paper)"/>
+  <g stroke="#e6d8b6" stroke-width="1.2" opacity=".9"><path d="M0 60 C120 70 300 50 480 66"/><path d="M0 300 C160 292 320 310 480 296"/></g>
+  <!-- 방울(장식) -->
+  <g transform="translate(410 70)">
+    <path d="M-4 -40 V-14" stroke="#7a5420" stroke-width="3"/>
+    <circle cx="-10" cy="-6" r="10" fill="url(#bell)"/><circle cx="8" cy="-4" r="10" fill="url(#bell)"/><circle cx="-2" cy="12" r="10" fill="url(#bell)"/>
+    <g fill="#3a2a10"><path d="M-14 -4h8M4 -2h8M-6 14h8" stroke="#3a2a10" stroke-width="1.5"/></g>
+    <path d="M2 -40 c10 4 16 14 18 30" stroke="#d32f2f" stroke-width="3" fill="none"/><path d="M-8 -40 c-10 6-14 16-14 30" stroke="#2f5fd3" stroke-width="3" fill="none"/>
+  </g>
+  <!-- 그림자 -->
+  <ellipse cx="270" cy="262" rx="170" ry="26" fill="#6a4a2a" opacity=".28" filter="url(#sh)"/>
+
+  <!-- 흰 한복 소매 -->
+  <path d="M0 70 C70 60 140 90 176 120 L192 236 C150 270 70 300 0 300 Z" fill="url(#sleeve)" stroke="#bdb8aa" stroke-width="1.5"/>
+  <g fill="none" stroke="#d2cec2" stroke-width="2"><path d="M30 90 C70 150 60 230 40 290"/><path d="M90 92 C120 160 112 236 96 286"/><path d="M140 108 C158 170 156 230 146 262"/></g>
+  <path d="M168 116 L186 240" stroke="#e8e4da" stroke-width="12"/>
+  <path d="M162 114 L180 242" stroke="#cfcabb" stroke-width="1.5"/>
+
+  <!-- 손목 -->
+  <path d="M180 140 L232 142 L232 232 L186 236 Z" fill="url(#skin)" stroke="#a87a5a" stroke-width="1.4"/>
+  <!-- 오색실(술 없음) -->
+  <g fill="none" stroke-width="3.6" stroke-linecap="round">
+    <path d="M196 142 Q190 188 198 236" stroke="#d32f2f"/>
+    <path d="M200 142 Q194 188 202 236" stroke="#f2c230"/>
+    <path d="M204 142 Q198 188 206 236" stroke="#2f5fd3"/>
+    <path d="M208 142 Q202 188 210 236" stroke="#f7f4ec"/>
+    <path d="M212 142 Q206 188 214 236" stroke="#2f9a4a"/>
+  </g>
+  <path d="M199 142 q5 -6 11 0" fill="none" stroke="#d32f2f" stroke-width="3"/>
+
+  <!-- 손가락(검지·가운데·약지·새끼) -->
+  <g stroke-linecap="round" fill="none">
+    <g stroke="#a87a5a" stroke-width="22"><path d="M300 164 L392 160"/><path d="M302 188 L404 188"/><path d="M300 212 L394 216"/><path d="M294 234 L366 242"/></g>
+    <g stroke="#e3b795" stroke-width="19"><path d="M300 164 L392 160"/><path d="M302 188 L404 188"/><path d="M300 212 L394 216"/><path d="M294 234 L366 242"/></g>
+  </g>
+  <g fill="#f6dccb" stroke="#c49a80" stroke-width="1">
+    <ellipse cx="389" cy="160" rx="7" ry="5.5"/><ellipse cx="401" cy="188" rx="7" ry="5.5"/><ellipse cx="391" cy="216" rx="7" ry="5.5"/><ellipse cx="363" cy="242" rx="6" ry="5"/>
+  </g>
+  <g stroke="#b88a6a" stroke-width="1.3" fill="none">
+    <path d="M340 156v10M346 182v11M340 207v11M330 230v10"/><path d="M370 154v9M380 182v10M372 210v10M350 236v9"/>
+  </g>
+  <!-- 손등 -->
+  <path d="M228 142 C252 136 284 148 306 156 C312 180 312 220 302 244 C280 248 252 244 228 232 Z" fill="url(#skin)" stroke="#a87a5a" stroke-width="1.6"/>
+  <path d="M262 166 q14 -4 30 2M262 206 q16 4 32 0" fill="none" stroke="#f6d8c0" stroke-width="2" opacity=".8"/>
+  <!-- 엄지(위쪽) -->
+  <path d="M244 146 C262 126 290 114 318 112" stroke="#a87a5a" stroke-width="23" stroke-linecap="round" fill="none"/>
+  <path d="M244 146 C262 126 290 114 318 112" stroke="#e6ba98" stroke-width="20" stroke-linecap="round" fill="none"/>
+  <ellipse cx="317" cy="112" rx="7" ry="6" transform="rotate(-8 317 112)" fill="#f6dccb" stroke="#c49a80" stroke-width="1"/>
+  <path d="M290 112 l3 11" stroke="#b88a6a" stroke-width="1.3"/>
+
+  <rect width="480" height="360" filter="url(#grain)"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>새벽에 적은 꿈 (2026.01.18)</title>
+  <!-- 다은 블로그 '꿈을 받아 적는다'. 창작 일러스트. 이불 위 공책, 연필 스케치: 물가의 큰 소나무, 뿌리 사이에서 빛나는 동그란 것.
+       글씨는 휘갈긴 줄로만(읽히지 않게) 그린다. -->
+  <defs>
+    <linearGradient id="quilt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b6478"/><stop offset="1" stop-color="#363c4c"/></linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ece6d6"/><stop offset=".48" stop-color="#f7f3e8"/><stop offset=".5" stop-color="#d8d0bc"/><stop offset=".52" stop-color="#f7f3e8"/><stop offset="1" stop-color="#ebe4d3"/></linearGradient>
+    <linearGradient id="dawn" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0ff" stop-opacity=".35"/><stop offset="1" stop-color="#cfe0ff" stop-opacity="0"/></linearGradient>
+    <pattern id="stitch" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M0 30 H60 M30 0 V60" stroke="#6e7890" stroke-width="2" stroke-dasharray="6 6"/></pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="pencil"><feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="1" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#quilt)"/>
+  <rect width="1200" height="800" fill="url(#stitch)" opacity=".5"/>
+  <ellipse cx="610" cy="430" rx="470" ry="330" fill="#14161d" opacity=".45" filter="url(#soft)"/>
+  <!-- 공책 -->
+  <g transform="rotate(-4 600 400)">
+    <rect x="150" y="110" width="900" height="590" rx="6" fill="url(#page)"/>
+    <g stroke="#c9d3df" stroke-width="2"><path d="M180 180 H570 M180 230 H570 M180 280 H570 M180 330 H570 M180 380 H570 M180 430 H570 M180 480 H570 M180 530 H570 M180 580 H570 M180 630 H570"/><path d="M630 180 H1020 M630 230 H1020 M630 280 H1020 M630 330 H1020 M630 380 H1020 M630 430 H1020 M630 480 H1020 M630 530 H1020 M630 580 H1020 M630 630 H1020"/></g>
+    <!-- 왼쪽: 휘갈긴 글 -->
+    <g fill="none" stroke="#4a4a52" stroke-width="3" stroke-linecap="round" filter="url(#pencil)" opacity=".8">
+      <path d="M190 168 c12 -10 18 6 30 -4 s20 8 32 -2 s18 4 30 -6 s22 10 36 0 s14 4 26 -4 M370 168 c10 -8 20 6 30 -2 s16 4 28 -4"/>
+      <path d="M190 218 c14 -8 20 8 34 -2 s16 6 30 -6 s24 10 36 -2 s20 6 30 -4 s12 6 26 -2 s16 4 30 -6"/>
+      <path d="M190 268 c10 -6 22 8 32 -2 s20 6 30 -6 s18 8 32 -2"/>
+      <path d="M190 368 c14 -10 18 6 32 -4 s22 10 34 -2 s16 4 30 -6 s18 8 34 0 s20 4 30 -6"/>
+      <path d="M190 418 c12 -8 22 6 34 -4 s18 8 30 -2 s20 6 32 -4 s16 6 26 -2"/>
+      <path d="M190 468 c14 -6 18 8 32 -2 s20 4 30 -6"/>
+    </g>
+    <!-- 오른쪽: 연필 스케치 -->
+    <g fill="none" stroke="#3e3e46" stroke-linecap="round" filter="url(#pencil)">
+      <path d="M640 560 C720 540 800 548 860 560 C920 572 980 566 1010 560" stroke-width="3"/>
+      <path d="M660 590 C740 580 820 584 900 594" stroke-width="2" opacity=".6"/>
+      <path d="M760 552 C760 480 744 420 768 360 C790 306 830 280 880 262" stroke-width="7"/>
+      <path d="M768 360 C740 340 708 336 676 342" stroke-width="4"/>
+      <path d="M880 262 C910 280 950 286 990 284" stroke-width="3"/>
+      <path d="M800 250 C840 230 900 228 960 240 M700 330 C720 316 750 312 780 318 M840 270 C880 250 930 252 980 262" stroke-width="3"/>
+      <path d="M690 324 c20 -12 40 -10 60 -4 M850 236 c30 -10 70 -8 100 2 M860 280 c30 -8 60 -6 90 2" stroke-width="2" opacity=".7"/>
+      <path d="M756 552 C730 572 700 580 670 600 M764 552 C790 578 820 586 852 604 M760 556 C762 580 756 604 762 630" stroke-width="4"/>
+    </g>
+    <!-- 뿌리 사이의 반짝임 -->
+    <g transform="translate(762 598)" filter="url(#pencil)">
+      <circle r="16" fill="none" stroke="#3e3e46" stroke-width="3"/>
+      <g stroke="#3e3e46" stroke-width="2.4" stroke-linecap="round"><path d="M0 -26 V-36 M0 26 V36 M-26 0 H-36 M26 0 H36 M-18 -18 l-8 -8 M18 18 l8 8 M18 -18 l8 -8 M-18 18 l-8 8"/></g>
+    </g>
+    <path d="M150 110 V700" stroke="#d2c9b4" stroke-width="2"/>
+  </g>
+  <!-- 연필 -->
+  <g transform="translate(980 690) rotate(-28)">
+    <rect x="-200" y="-10" width="220" height="20" fill="#e9b84a"/>
+    <rect x="-200" y="-10" width="22" height="20" fill="#d9d4c6"/><rect x="-216" y="-10" width="16" height="20" rx="3" fill="#d27a8a"/>
+    <path d="M20 -10 L52 0 L20 10 Z" fill="#e8d2ae"/><path d="M42 -3 L52 0 L42 3 Z" fill="#333"/>
+  </g>
+  <rect width="1200" height="800" fill="url(#dawn)"/>
+</svg>

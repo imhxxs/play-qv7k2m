@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="보랏빛 카드를 부채처럼 펼쳐 든 두 손(이미지 컷)">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#f7ecfd"/>
+      <stop offset=".55" stop-color="#cfa9e6"/>
+      <stop offset="1" stop-color="#6d3c96"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b2a86"/>
+      <stop offset="1" stop-color="#2e1048"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0b8"/>
+      <stop offset="1" stop-color="#c8952f"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1a3a"/>
+      <stop offset="1" stop-color="#140a1e"/>
+    </linearGradient>
+    <g id="c">
+      <rect x="-22" y="-74" width="44" height="74" rx="5" fill="url(#card)" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M0-52l3 8 8 0-6 5 2 8-7-5-7 5 2-8-6-5 8 0z" fill="url(#gold)"/>
+      <circle cx="0" cy="-18" r="7" fill="none" stroke="#f1cf6b" stroke-width="1.4"/>
+    </g>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g fill="#fff3c4">
+    <circle cx="34" cy="40" r="14" opacity=".28"/><circle cx="206" cy="58" r="10" opacity=".3"/>
+    <circle cx="190" cy="22" r="6" opacity=".35"/><circle cx="20" cy="120" r="8" opacity=".22"/>
+    <circle cx="222" cy="140" r="12" opacity=".2"/>
+  </g>
+  <!-- 탁자보 -->
+  <path d="M0 196h240v44H0z" fill="#3b1660"/>
+  <path d="M0 196h240" stroke="#f1cf6b" stroke-width="2" opacity=".6"/>
+  <!-- 펼친 카드 -->
+  <g transform="translate(120 176)">
+    <use href="#c" transform="rotate(-36)"/>
+    <use href="#c" transform="rotate(-18)"/>
+    <use href="#c" transform="rotate(0)"/>
+    <use href="#c" transform="rotate(18)"/>
+    <use href="#c" transform="rotate(36)"/>
+  </g>
+  <!-- 두 손과 소매 -->
+  <path d="M46 240l20-56c8-6 18-6 26 0l20 22-14 34z" fill="url(#sleeve)"/>
+  <path d="M194 240l-20-56c-8-6-18-6-26 0l-20 22 14 34z" fill="url(#sleeve)"/>
+  <path d="M90 186c6-4 16-2 22 4l8 10c2 4-2 8-6 6l-14-6c-6-2-12-8-10-14z" fill="#ecccb9"/>
+  <path d="M150 186c-6-4-16-2-22 4l-8 10c-2 4 2 8 6 6l14-6c6-2 12-8 10-14z" fill="#ecccb9"/>
+  <!-- 수정 구슬 -->
+  <circle cx="208" cy="206" r="14" fill="#e9dcf7" opacity=".8"/>
+  <circle cx="203" cy="201" r="4" fill="#fff" opacity=".8"/>
+</svg>

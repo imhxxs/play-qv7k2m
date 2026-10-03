@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="안개 낀 서월산">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d1d4"/><stop offset="1" stop-color="#eef0ee"/></linearGradient></defs>
+  <rect width="320" height="200" fill="url(#s)"/>
+  <path d="M0 96 L54 58 L96 82 L150 40 L204 80 L250 56 L320 88 V200 H0Z" fill="#7e8c86"/>
+  <rect x="0" y="92" width="320" height="18" fill="#f2f3f1" opacity=".7"/>
+  <path d="M0 126 L70 96 L130 118 L196 92 L262 116 L320 104 V200 H0Z" fill="#5f6f66"/>
+  <rect x="0" y="128" width="320" height="16" fill="#f2f3f1" opacity=".65"/>
+  <path d="M0 160 L80 136 L160 156 L240 132 L320 150 V200 H0Z" fill="#46564e"/>
+  <g fill="#b5643c" opacity=".7"><circle cx="60" cy="170" r="6"/><circle cx="74" cy="176" r="5"/><circle cx="200" cy="166" r="6"/><circle cx="214" cy="172" r="4"/></g>
+</svg>

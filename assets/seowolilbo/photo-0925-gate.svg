@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d554b"/><stop offset=".5" stop-color="#6e655a"/><stop offset="1" stop-color="#585046"/>
+    </linearGradient>
+    <pattern id="grain" width="12" height="60" patternUnits="userSpaceOnUse">
+      <path d="M3 0 C5 20 1 40 3 60 M9 0 C7 22 11 38 9 60" stroke="#4c453d" stroke-width="1" fill="none" opacity=".7"/>
+    </pattern>
+    <radialGradient id="vig" cx=".5" cy=".5" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="420" fill="#8c867b"/>
+  <!-- 처마 -->
+  <path d="M-20 70 C120 30 520 30 660 70 V0 H-20z" fill="#2b2926"/>
+  <g stroke="#3d3a35" stroke-width="3"><path d="M20 58 v16M60 50 v18M100 44 v20M140 40 v22M180 37 v22M220 35 v23M260 34 v23M300 33 v23M340 33 v23M380 34 v23M420 35 v23M460 37 v22M500 40 v22M540 44 v20M580 50 v18M620 58 v16"/></g>
+  <rect x="0" y="76" width="640" height="16" fill="#3a3632"/>
+  <!-- 꺼진 등 -->
+  <path d="M96 92 v18" stroke="#2a2826" stroke-width="2"/>
+  <rect x="80" y="110" width="32" height="44" rx="6" fill="#cfc9bb" stroke="#4a463f" stroke-width="2"/>
+  <path d="M80 122 h32M80 142 h32" stroke="#a49e91" stroke-width="1.5"/>
+  <!-- 문짝 -->
+  <rect x="150" y="92" width="170" height="328" fill="url(#wood)"/>
+  <rect x="150" y="92" width="170" height="328" fill="url(#grain)"/>
+  <rect x="322" y="92" width="170" height="328" fill="url(#wood)"/>
+  <rect x="322" y="92" width="170" height="328" fill="url(#grain)"/>
+  <path d="M320 92 v328" stroke="#2c2925" stroke-width="5"/>
+  <g stroke="#3e3933" stroke-width="5"><path d="M150 170 h170M150 330 h170M322 170 h170M322 330 h170"/></g>
+  <!-- 문고리 -->
+  <circle cx="300" cy="262" r="14" fill="none" stroke="#2a2724" stroke-width="5"/>
+  <circle cx="342" cy="262" r="14" fill="none" stroke="#2a2724" stroke-width="5"/>
+  <circle cx="300" cy="248" r="5" fill="#2a2724"/><circle cx="342" cy="248" r="5" fill="#2a2724"/>
+  <!-- 喪中 한지 -->
+  <g transform="rotate(-1.5 236 230)">
+    <rect x="196" y="184" width="84" height="112" fill="#f1ede2"/>
+    <rect x="196" y="184" width="84" height="112" fill="none" stroke="#d6d0c2" stroke-width="2"/>
+    <path d="M198 186 l10 6M276 186 l-8 6M198 294 l8-5M276 294 l-9-5" stroke="#b8b2a4" stroke-width="2"/>
+    <g font-family="'Nanum Myeongjo','Noto Serif KR',serif" font-weight="800" font-size="40" fill="#1b1a18" text-anchor="middle">
+      <text x="238" y="232">喪</text><text x="238" y="278">中</text>
+    </g>
+  </g>
+  <!-- 문 아래 신발 자국 없는 빈 섬돌 -->
+  <rect x="120" y="396" width="400" height="24" fill="#7b766c"/>
+  <rect x="0" y="92" width="150" height="328" fill="#77716a"/>
+  <rect x="492" y="92" width="148" height="328" fill="#77716a"/>
+  <g fill="#8a847a" opacity=".8"><rect x="10" y="120" width="60" height="30"/><rect x="76" y="160" width="60" height="30"/><rect x="510" y="140" width="60" height="30"/><rect x="570" y="200" width="60" height="30"/><rect x="20" y="260" width="60" height="30"/><rect x="520" y="300" width="60" height="30"/></g>
+  <rect width="640" height="420" fill="url(#vig)"/>
+</svg>

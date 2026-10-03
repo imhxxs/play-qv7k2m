@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>무료 신점 신청 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap">
+    <p class="sh-crumb">홈 › 무료 신점</p>
+    <h1 class="sh-h1">첫 신점 무료 신청<small>고민을 남기시면 1분 안에 선생님이 배정되어 메일로 풀이를 보내 드립니다</small></h1>
+
+    <div class="sh-split">
+      <div>
+        <div class="sh-warn" style="margin-bottom:14px">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5 22 20H2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M12 9.5v5M12 17.2v.1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <p><b>실제 개인정보를 적지 마세요.</b> 게임 속 이름과 아무 날짜를 적어도 괜찮습니다. 적은 내용은 이 브라우저에만 남고 어디로도 보내지 않습니다.</p>
+        </div>
+
+        <section class="sh-card" id="form-card" aria-labelledby="f-h">
+          <h2 class="sh-sec__h" id="f-h">신청서</h2>
+          <form class="sh-form" id="f-form" novalidate>
+            <div class="sh-field">
+              <label for="f-name">이름(닉네임)<span class="sh-req">*</span></label>
+              <input class="sh-input" id="f-name" name="person" type="text" autocomplete="off" maxlength="10" required>
+            </div>
+            <div class="sh-field">
+              <label for="f-birth">생년월일<span class="sh-req">*</span></label>
+              <input class="sh-input" id="f-birth" name="birth" type="text" inputmode="numeric" autocomplete="off" maxlength="20" placeholder="예) 1995.05.05" required aria-describedby="f-birth-hint">
+              <p class="sh-hint" id="f-birth-hint">지난 상담 다시 보기에서 이 이름과 생년월일로 신청 내역을 다시 볼 수 있어요.</p>
+            </div>
+            <div class="sh-field">
+              <label for="f-kind">상담 분야</label>
+              <select class="sh-select" id="f-kind" name="kind">
+                <option value="신점">신점(추천)</option>
+                <option value="가족">가족·형제</option>
+                <option value="재회">재회·연애</option>
+                <option value="궁합">궁합</option>
+                <option value="진로">진로·직장</option>
+                <option value="기타">기타</option>
+              </select>
+            </div>
+            <div class="sh-field">
+              <label for="f-concern">고민<span class="sh-req">*</span></label>
+              <textarea class="sh-textarea" id="f-concern" name="concern" maxlength="300" required></textarea>
+              <p class="sh-hint"><span id="f-count">0</span>/300자</p>
+            </div>
+            <div class="sh-field">
+              <span class="sh-label">담당 선생님</span>
+              <p class="sh-hint" style="margin:0">무료 신점은 고민에 꼭 맞는 선생님이 자동으로 배정됩니다.</p>
+            </div>
+            <label class="sh-check"><input type="checkbox" name="agree" id="f-agree"><span>개인정보 수집·이용에 동의합니다(필수) — 이름, 생년월일, 고민 내용 · 상담 답변과 지난 상담 다시 보기에 씁니다.</span></label>
+            <p class="sh-err" id="f-err" role="alert"></p>
+            <div class="sh-actions">
+              <button class="sh-btn sh-btn--gold" type="submit">무료 신점 신청하기</button>
+              <button class="sh-btn sh-btn--ghost" type="button" id="f-clear">내 입력 삭제</button>
+            </div>
+            <p class="sh-status" id="f-status" role="status"></p>
+          </form>
+        </section>
+
+        <div id="f-done" hidden></div>
+      </div>
+
+      <aside>
+        <section class="sh-card" aria-labelledby="step-h">
+          <h2 class="sh-sec__h" id="step-h">무료 신점은 이렇게</h2>
+          <ol class="sh-steps">
+            <li><b>신청서 작성</b>이름, 생년월일, 고민 한 줄이면 충분해요.</li>
+            <li><b>선생님 배정</b>1분 안에 담당 선생님이 정해집니다.</li>
+            <li><b>메일로 풀이 도착</b>남겨 주신 메일함으로 풀이를 보내 드려요.</li>
+            <li><b>더 깊은 상담</b>060 전화로 같은 선생님과 이어 가실 수 있어요(유료).</li>
+          </ol>
+        </section>
+        <section class="sh-card" aria-labelledby="rev2-h">
+          <h2 class="sh-sec__h" id="rev2-h">먼저 받아 본 분들</h2>
+          <ul class="sh-reviews">
+            <li class="sh-review"><span class="sh-stars" aria-label="별점 5점">★★★★★</span><p>끊어진 게 아니라 잠시 꼬인 거라는 말에 위로받았어요^^</p><footer><b>혜원 선생님</b> · 라온맘</footer></li>
+            <li class="sh-review"><span class="sh-stars" aria-label="별점 5점">★★★★★</span><p>찬바람 불면 소식 온다더니 진짜 왔어요!!</p><footer><b>혜원 선생님</b> · 가을하늘</footer></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+</main>
+<script type="module" src="fortune.js"></script>
+</body>
+</html>

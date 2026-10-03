@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="쪽 찐 머리에 비녀를 꽂은 뒷모습의 상담 선생님(이미지 컷)">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#f7ecfd"/>
+      <stop offset=".55" stop-color="#cfa9e6"/>
+      <stop offset="1" stop-color="#6d3c96"/>
+    </radialGradient>
+    <linearGradient id="jeo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fa58d"/>
+      <stop offset="1" stop-color="#2c6e5c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0b8"/>
+      <stop offset="1" stop-color="#c8952f"/>
+    </linearGradient>
+    <radialGradient id="hair" cx="40%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#3f2b44"/>
+      <stop offset="1" stop-color="#1b0f20"/>
+    </radialGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g fill="#fff3c4">
+    <circle cx="34" cy="40" r="14" opacity=".28"/><circle cx="206" cy="58" r="10" opacity=".3"/>
+    <circle cx="190" cy="22" r="6" opacity=".35"/><circle cx="20" cy="120" r="8" opacity=".22"/>
+    <circle cx="222" cy="140" r="12" opacity=".2"/>
+  </g>
+  <!-- 목덜미 -->
+  <path d="M104 128c4 14 4 26 0 38h32c-4-12-4-24 0-38z" fill="#e6c4b0"/>
+  <!-- 뒷머리 -->
+  <ellipse cx="120" cy="98" rx="44" ry="50" fill="url(#hair)"/>
+  <path d="M84 118c8 14 22 20 36 20s28-6 36-20" fill="#1b0f20"/>
+  <!-- 가르마와 결 -->
+  <path d="M120 50c-2 20-2 40 0 58" fill="none" stroke="#5a4260" stroke-width="2" opacity=".7"/>
+  <path d="M96 70c8 16 16 28 24 38M144 70c-8 16-16 28-24 38" fill="none" stroke="#4a3450" stroke-width="2" opacity=".55"/>
+  <!-- 쪽 -->
+  <ellipse cx="120" cy="140" rx="27" ry="18" fill="#2c1b31"/>
+  <path d="M96 138c12-8 36-8 48 0M100 146c10-6 30-6 40 0" fill="none" stroke="#5a4260" stroke-width="2"/>
+  <!-- 비녀 -->
+  <rect x="78" y="143" width="84" height="5" rx="2.5" fill="url(#gold)"/>
+  <circle cx="78" cy="145.5" r="6" fill="url(#gold)"/>
+  <path d="M158 140c6 0 10 6 6 10" fill="none" stroke="#f8dc86" stroke-width="2"/>
+  <!-- 저고리 뒷모습 -->
+  <path d="M24 240c6-44 34-70 70-78c8 6 18 8 26 8s18-2 26-8c36 8 64 34 70 78z" fill="url(#jeo)"/>
+  <path d="M94 162c8 6 18 8 26 8s18-2 26-8" fill="none" stroke="#fbf7ee" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 172v68" stroke="#235a4a" stroke-width="2" opacity=".6"/>
+</svg>

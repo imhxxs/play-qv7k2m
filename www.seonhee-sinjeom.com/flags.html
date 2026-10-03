@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>오방기 점 체험 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap">
+    <p class="sh-crumb">홈 › 오방기 점 체험</p>
+    <h1 class="sh-h1">오방기 점 체험<small>무료 · 하루 몇 번이든</small></h1>
+    <p class="sh-lead">오방기는 다섯 빛깔 깃발로 신령님의 뜻을 여쭙는 점입니다. 선희보살님이 직접 축원하신 깃발 다섯 자루가 빛깔이 보이지 않게 말려 있어요. 마음속으로 묻고 싶은 것을 떠올린 뒤, 끌리는 깃발 하나를 뽑으세요.</p>
+
+    <div id="promo-slot"></div>
+
+    <section class="sh-altar" aria-labelledby="altar-h">
+      <h2 class="sh-altar__h" id="altar-h">깃발을 하나 뽑으세요</h2>
+      <p class="sh-altar__p" id="altar-p">빛깔은 뽑은 뒤에야 보입니다.</p>
+      <ul class="sh-flags" id="flags"></ul>
+      <p class="sh-altar__hint" id="altar-hint">깃발을 누르면 펼쳐집니다</p>
+    </section>
+
+    <div id="result" aria-live="polite"></div>
+
+    <section class="sh-sec" id="table-sec" hidden>
+      <div class="sh-card sh-reveal">
+        <table class="sh-table sh-table--stack" id="flag-table">
+          <caption>선희당의 오방기 해설 — 다섯 빛깔의 뜻</caption>
+          <thead><tr><th scope="col">깃발</th><th scope="col">선희당의 해석</th><th scope="col">풀이</th></tr></thead>
+          <tbody></tbody>
+        </table>
+        <p class="sh-fine">※ 오방기 빛깔의 뜻은 지역과 집안마다 조금씩 다릅니다. 위 해설은 선희당의 해석입니다.</p>
+        <div class="sh-post__tools"><md-collect card="X-seonhee-flags-table"></md-collect></div>
+      </div>
+    </section>
+
+    <section class="sh-sec sh-card">
+      <h2 class="sh-sec__h">깃발이 마음에 걸리신다면</h2>
+      <p>오방기 점 체험은 그날의 기운을 가볍게 살펴보는 재미 체험입니다. 깊은 풀이는 선생님과 나눠 보세요.</p>
+      <div class="sh-actions"><a class="sh-btn sh-btn--gold" href="fortune.html">무료 신점 신청하기</a><a class="sh-btn sh-btn--ghost" href="saju.html">오늘의 사주 보기</a></div>
+    </section>
+  </div>
+</main>
+<script type="module" src="flags.js"></script>
+</body>
+</html>

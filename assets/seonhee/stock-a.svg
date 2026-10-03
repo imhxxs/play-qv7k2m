@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="부채로 얼굴을 가린 한복 차림의 상담 선생님(이미지 컷)">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#f7ecfd"/>
+      <stop offset=".55" stop-color="#cfa9e6"/>
+      <stop offset="1" stop-color="#6d3c96"/>
+    </radialGradient>
+    <linearGradient id="jeo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e4fb8"/>
+      <stop offset="1" stop-color="#5a2a82"/>
+    </linearGradient>
+    <linearGradient id="fan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2474f"/>
+      <stop offset="1" stop-color="#a5222c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0b8"/>
+      <stop offset="1" stop-color="#c8952f"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <!-- 스튜디오 보케(모든 이미지 컷 공통) -->
+  <g fill="#fff3c4">
+    <circle cx="34" cy="40" r="14" opacity=".28"/><circle cx="206" cy="58" r="10" opacity=".3"/>
+    <circle cx="190" cy="22" r="6" opacity=".35"/><circle cx="20" cy="120" r="8" opacity=".22"/>
+    <circle cx="222" cy="140" r="12" opacity=".2"/>
+  </g>
+  <!-- 머리(뒤로 흐르는 긴 머리) -->
+  <path d="M74 112c-6-46 18-74 46-74s52 28 46 74c4 26 2 52-6 70H80c-8-18-10-44-6-70z" fill="#241329"/>
+  <!-- 목 -->
+  <path d="M106 136h28v26h-28z" fill="#e9c9b6"/>
+  <!-- 저고리 -->
+  <path d="M28 240c4-46 30-70 64-80l28 22 28-22c34 10 60 34 64 80z" fill="url(#jeo)"/>
+  <!-- 동정·깃 -->
+  <path d="M92 160l28 40 28-40" fill="none" stroke="#fbf7ee" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M120 200l-14 40M120 200l16 40" stroke="#4a1f6c" stroke-width="2" opacity=".5"/>
+  <!-- 고름 -->
+  <path d="M124 206c10 6 20 18 22 34" fill="none" stroke="#d6336c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M120 206c-4 10-2 22 4 34" fill="none" stroke="#e8577f" stroke-width="5" stroke-linecap="round"/>
+  <!-- 얼굴을 가린 부채 -->
+  <g transform="translate(120 122)">
+    <path d="M-62 4A62 62 0 0 1 62 4L8 26H-8Z" fill="url(#fan)" stroke="url(#gold)" stroke-width="3"/>
+    <g stroke="#f6d88a" stroke-width="1.2" opacity=".7">
+      <path d="M0 24L0-56"/><path d="M0 24L-30-48"/><path d="M0 24L30-48"/><path d="M0 24L-50-28"/><path d="M0 24L50-28"/>
+    </g>
+    <circle cx="-22" cy="-22" r="10" fill="#f8dc86"/>
+    <path d="M10-26c6-8 18-8 22 0c8-2 12 6 6 10H6c-6-2-4-10 4-10z" fill="none" stroke="#f8dc86" stroke-width="2"/>
+  </g>
+  <!-- 부채를 쥔 손 -->
+  <path d="M112 150c-2-6 4-10 8-8l6 4c4 2 4 8 0 10l-8 4c-4 1-6-4-6-10z" fill="#ecccb9"/>
+  <!-- 비녀(초승달 장식) -->
+  <path d="M150 56c8 2 14 8 16 16c-6-4-12-6-18-4z" fill="url(#gold)"/>
+  <rect x="140" y="64" width="34" height="3" rx="1.5" transform="rotate(-18 157 65)" fill="url(#gold)"/>
+</svg>

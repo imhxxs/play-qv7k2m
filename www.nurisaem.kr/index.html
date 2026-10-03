@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#24408e">
+<title>누리샘</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&family=Noto+Serif+KR:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ns-wrap">
+  <nav class="ns-topnav" id="topnav" aria-label="누리샘 서비스"></nav>
+
+  <main class="ns-home" id="main">
+    <h1 class="ns-sr">누리샘 — 검색 · 메일 · 사전</h1>
+    <div id="logo"></div>
+    <div class="ns-home__search" id="searchbox"></div>
+    <section class="ns-trend" aria-labelledby="trend-t">
+      <h2 class="ns-trend__title" id="trend-t">지금 서월에서 많이 찾는 말</h2>
+      <ol class="ns-trend__list" id="trend"></ol>
+    </section>
+  </main>
+
+  <div class="ns-cards" id="cards">
+    <section class="ns-card" aria-labelledby="news-t">
+      <h2 id="news-t">누리샘 소식</h2>
+      <ul class="ns-news">
+        <li><a href="search.html?q=%EC%A0%80%EC%9E%A5%EB%90%9C%20%ED%8E%98%EC%9D%B4%EC%A7%80"><span class="ns-news__tag">안내</span><span>고쳐진 글도 옛 모습 그대로 — 검색 결과 옆 ‘저장된 페이지’</span></a></li>
+        <li><a href="dict.html"><span class="ns-news__tag">사전</span><span>누리샘 사전: 용어 풀이 · 한자 찾기 · 간지 ↔ 연도</span></a></li>
+        <li><a href="search.html?tab=image"><span class="ns-news__tag">이미지</span><span>수첩의 사진으로 비슷한 이미지 찾기 — ‘이 이미지로 검색’</span></a></li>
+        <li><a href="search.html?q=%EC%84%9C%EC%9B%94%EC%9D%BC%EB%B3%B4"><span class="ns-news__tag">제휴</span><span>서월일보 2000~2019 지면은 10월 3일 공개 예정입니다</span></a></li>
+      </ul>
+    </section>
+    <div id="weather-slot"></div>
+    <section class="ns-card" aria-labelledby="local-t">
+      <h2 id="local-t">서월 이웃 소식 <small>누리샘이 모은 글</small></h2>
+      <ul class="ns-news" id="local"></ul>
+    </section>
+  </div>
+</div>
+<div style="height:48px"></div>
+<div id="foot"></div>
+
+<script type="module" src="home.js"></script>
+</body>
+</html>

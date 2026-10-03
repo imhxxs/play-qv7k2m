@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>6년 치 책상 (2025.10.06)</title>
+  <!-- 다은 블로그 '회사를 그만뒀다'. 창작 일러스트. 사원증 카드에는 글자를 넣지 않는다. -->
+  <defs>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9c3a0"/><stop offset="1" stop-color="#b99a6e"/></linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c79a62"/><stop offset="1" stop-color="#a77a45"/></linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9a6e3c"/><stop offset="1" stop-color="#83592c"/></linearGradient>
+    <linearGradient id="inner" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f4c25"/><stop offset="1" stop-color="#8d6537"/></linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6de" stop-opacity=".55"/><stop offset="1" stop-color="#fff6de" stop-opacity="0"/></linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8603b"/><stop offset=".5" stop-color="#d27a52"/><stop offset="1" stop-color="#9c4c2c"/></linearGradient>
+    <linearGradient id="mug" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9e6dd"/><stop offset=".55" stop-color="#ffffff"/><stop offset="1" stop-color="#cfcabe"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="wood" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".002 .06" numOctaves="3" seed="7"/>
+      <feColorMatrix values="0 0 0 0 .45  0 0 0 0 .32  0 0 0 0 .18  0 0 0 .35 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#desk)"/>
+  <rect width="1200" height="800" fill="#000" filter="url(#wood)"/>
+  <!-- 창빛 -->
+  <path d="M0 0 H520 L860 800 H220 L0 330 Z" fill="url(#light)"/>
+  <path d="M250 0 H286 L640 800 H596 Z" fill="#8a6a44" opacity=".14"/>
+  <!-- 그림자 -->
+  <ellipse cx="660" cy="712" rx="360" ry="40" fill="#3b2a18" opacity=".45" filter="url(#soft)"/>
+
+  <!-- 상자 안쪽 벽 -->
+  <path d="M360 380 L820 380 L900 330 L440 330 Z" fill="url(#inner)"/>
+  <!-- 내용물 -->
+  <!-- 서류 -->
+  <g transform="rotate(-8 520 330)">
+    <rect x="450" y="250" width="170" height="210" fill="#f7f4ec"/><rect x="462" y="240" width="170" height="210" fill="#fbf9f4"/>
+    <g stroke="#c9c3b6" stroke-width="5"><path d="M482 276 h120 M482 300 h104 M482 324 h126 M482 348 h90"/></g>
+  </g>
+  <!-- 화분 -->
+  <g transform="translate(700 260)">
+    <g fill="#5e7f4a"><path d="M0 70 C-40 40 -70 -10 -60 -60 C-30 -30 -10 20 0 70 Z"/><path d="M6 70 C20 10 50 -30 90 -40 C80 10 40 50 6 70 Z" fill="#6d9154"/><path d="M2 70 C-6 20 -2 -40 20 -90 C34 -40 20 20 2 70 Z" fill="#7aa060"/><path d="M0 70 C-60 60 -100 40 -120 0 C-70 6 -30 30 0 70 Z" fill="#557545"/></g>
+    <path d="M-50 70 H54 L44 150 H-40 Z" fill="url(#pot)"/><rect x="-56" y="62" width="116" height="18" rx="3" fill="#c96e47"/>
+  </g>
+  <!-- 머그 -->
+  <g transform="translate(560 300)">
+    <rect x="-46" y="0" width="92" height="110" rx="10" fill="url(#mug)"/>
+    <path d="M46 24 C86 24 86 82 46 82" fill="none" stroke="#e2ded4" stroke-width="13"/>
+    <ellipse cx="0" cy="2" rx="46" ry="11" fill="#d8d3c8"/><ellipse cx="0" cy="3" rx="38" ry="7" fill="#5b4031"/>
+    <path d="M-30 56 h60" stroke="#9fb4c8" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- 상자 앞면·옆면 -->
+  <path d="M360 380 L820 380 L820 690 L360 690 Z" fill="url(#front)"/>
+  <path d="M820 380 L900 330 L900 630 L820 690 Z" fill="url(#side)"/>
+  <!-- 날개 -->
+  <path d="M360 380 L300 470 L760 470 L820 380 Z" fill="#d3a873" opacity=".0"/>
+  <path d="M360 380 L262 330 L344 246 L440 330 Z" fill="#c6955c"/>
+  <path d="M820 380 L960 404 L1000 350 L900 330 Z" fill="#b5844d"/>
+  <path d="M360 380 L820 380" stroke="#8b6232" stroke-width="3"/>
+  <!-- 테이프 -->
+  <rect x="560" y="380" width="60" height="310" fill="#e4c896" opacity=".55"/>
+  <!-- 목걸이 사원증(줄이 상자 밖으로 늘어졌다) -->
+  <path d="M520 382 C500 460 520 540 590 560 C640 574 680 530 660 470" fill="none" stroke="#3d6b8a" stroke-width="9" stroke-linecap="round"/>
+  <g transform="rotate(10 600 600)">
+    <rect x="560" y="540" width="104" height="142" rx="8" fill="#f4f6f7" stroke="#b9c2c8" stroke-width="3"/>
+    <rect x="580" y="562" width="64" height="70" rx="4" fill="#d9dee2"/>
+    <rect x="580" y="644" width="64" height="8" rx="4" fill="#c4ccd2"/><rect x="590" y="660" width="44" height="6" rx="3" fill="#d2d8dc"/>
+  </g>
+  <rect width="1200" height="800" fill="#ffe0b0" opacity=".06"/>
+</svg>

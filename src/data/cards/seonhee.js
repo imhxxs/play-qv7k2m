@@ -1,0 +1,133 @@
+// 선희당 담당 카드. 일반·필러 카드는 'X-seonhee-<name>' 형식.
+// desc에는 플레이어가 그 페이지에서 이미 본 내용만 쓴다.
+
+export default [
+  // ── 제1장 핵심 ─────────────────────────────────────────────
+  {
+    id: 'E10',
+    title: "산울림 댓글 — '신물은 진오귀 때 다 태워 보내드려야지요'",
+    site: 'seonhee',
+    kind: 'evidence',
+    key: true,
+    chapter: 1,
+    desc: "선희당 공지 '故 송만신 진오귀굿 및 신물 소각 10월 10일'(수정됨 09.23)에 산울림이 9월 23일 13:40에 단 댓글.",
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+  {
+    id: 'E59',
+    title: "선희보살 인사말 — '오른손엔 늘 어머니가 주신 금팔찌'",
+    site: 'seonhee',
+    kind: 'evidence',
+    key: true,
+    chapter: 1,
+    desc: "선희당 인사말의 사진. 연분홍 한복의 선희보살이 오방기 다섯 자루를 쥐고 있다. 캡션 '오른손엔 늘 어머니가 주신 금팔찌'.",
+    ref: { page: 'greeting' },
+  },
+
+  // ── 선택 퍼즐(O2, O7) ──────────────────────────────────────
+  {
+    id: 'E52',
+    title: '선희당 모집 공고의 대본 — 내가 받은 풀이와 같다',
+    site: 'seonhee',
+    kind: 'evidence',
+    key: false,
+    chapter: 1,
+    desc: "'함께할 선생님 모집'(운영 대행 (주)달무리컴퍼니): '사주·타로 상담 가능자, 신내림 여부 무관, 응대 대본 제공'. 대본 예시의 풀이가 무료 신점 답장·오늘의 사주와 토씨 하나 다르지 않다.",
+    ref: { page: 'recruit' },
+  },
+  {
+    id: 'E57',
+    title: "지난 상담 — 다은의 9월 16일 무료 신점과 '약은 먹어'",
+    site: 'seonhee',
+    kind: 'evidence',
+    key: false,
+    chapter: 2,
+    desc: "선희당 '지난 상담 다시 보기'(서다은 / 1999.03.14). 9/16 무료 신점 고민 '신어머니가 약 먹지 말래요. 괜찮을까요?'와 혜원 선생님의 대본 풀이, 9/17 메모 '선희: 다은아 약은 먹어. 언니가 어머니께 말씀드릴게.'",
+    ref: { page: 'saju', query: '#history' },
+  },
+
+  // ── 일반 카드 ──────────────────────────────────────────────
+  {
+    id: 'X-seonhee-jinogwi',
+    title: '선희당 공지 — 진오귀굿·신물 소각 10월 10일 (수정됨 09.23)',
+    site: 'seonhee',
+    kind: 'general',
+    chapter: 1,
+    desc: "선희보살이 9월 22일 14:20에 올린 공지. 지금은 '진오귀굿 2026년 10월 10일(토) 오전 10시 · 서월 월하당, 남기신 신물은 그날 태워 보내 드립니다'. 제목 옆에 '(수정됨 09.23)'.",
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+  {
+    id: 'X-seonhee-flags-table',
+    title: '선희당 오방기 해설표',
+    site: 'seonhee',
+    kind: 'general',
+    chapter: 1,
+    desc: '선희당의 해석: 홍=재수, 황=조상, 백=신명(천신·칠성), 청=근심·우환, 녹=상문. 색의 뜻은 지역과 집안마다 조금씩 다르다고 적혀 있다.',
+    ref: { page: 'flags' },
+  },
+  {
+    id: 'X-seonhee-saju',
+    title: '선희당 오늘의 사주 — 자동 풀이',
+    site: 'seonhee',
+    kind: 'general',
+    chapter: 1,
+    desc: "생년월일만 넣으면 자동으로 계산되는 '오늘의 사주' 총평: '손님의 기운을 보니 요즘 마음에 걸린 일이 하나 있어 밤잠이 얕으시겠습니다…'",
+    ref: { page: 'saju' },
+  },
+  {
+    id: 'X-seonhee-script-sample',
+    title: '선희당 모집 공고 — 응대 대본 예시',
+    site: 'seonhee',
+    kind: 'general',
+    chapter: 1,
+    desc: "푸터의 작은 링크 '함께할 선생님 모집'. '사주·타로 상담 가능자, 신내림 여부 무관, 응대 대본 제공'. 무료 신점 답장 대본 예시: '손님의 기운을 보니 요즘 마음에 걸린 일이 하나 있어…' 고민과 관계없이 그대로 쓰라고 적혀 있다.",
+    ref: { page: 'recruit' },
+  },
+  {
+    id: 'X-seonhee-stock',
+    title: '선희당 상담사 30인 — 돌려쓴 프로필 사진',
+    site: 'seonhee',
+    kind: 'filler',
+    chapter: 1,
+    desc: "상담사 여러 명의 프로필 사진이 똑같다(부채로 얼굴을 가린 사진, 뒷모습, 역광 실루엣, 카드 든 손). 목록 아래 작은 글씨: '일부 프로필 사진은 연출된 이미지입니다.'",
+    ref: { page: 'counselors' },
+  },
+
+  // ── 공지 댓글(필러) ────────────────────────────────────────
+  {
+    id: 'X-seonhee-c-seowoldaek',
+    title: "서월댁 댓글 — '송만신님 덕에 우리 손주 병원 일찍 갔었어요'",
+    site: 'seonhee',
+    kind: 'filler',
+    chapter: 1,
+    desc: '선희당 진오귀굿 공지에 9월 22일 15:02에 달린 댓글.',
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+  {
+    id: 'X-seonhee-c-49jae',
+    title: "단골손님 댓글 — '49재 날 꼭 가겠습니다'",
+    site: 'seonhee',
+    kind: 'filler',
+    chapter: 1,
+    desc: '선희당 진오귀굿 공지에 9월 22일 16:47에 달린 댓글. 공지가 수정(09.23)되기 전에 쓰였다.',
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+  {
+    id: 'X-seonhee-c-changed',
+    title: "연화엄마 댓글 — '49재 날 맞춰 휴가 냈는데 날짜가 바뀌었네요'",
+    site: 'seonhee',
+    kind: 'filler',
+    chapter: 1,
+    desc: '선희당 진오귀굿 공지에 9월 23일 15:26에 달린 댓글. "10월 10일에 갈게요."',
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+  {
+    id: 'X-seonhee-c-reply',
+    title: "선희보살 답글 — '상주(유족)분 뜻에 따라 정한 일정입니다'",
+    site: 'seonhee',
+    kind: 'filler',
+    chapter: 1,
+    desc: "'진오귀를 이렇게 빨리 하는 집도 있나요?'라는 댓글에 선희보살이 9월 24일 08:30에 단 답글.",
+    ref: { page: 'notice', query: 'id=jinogwi' },
+  },
+];

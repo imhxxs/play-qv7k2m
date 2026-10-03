@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>마당 감나무 — 까치밥 (2025.11.08)</title>
+  <!-- 창작 일러스트: 가을 하늘, 감나무 가지 끝의 감 몇 개, 까치 한 마리 -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a8ac4"/><stop offset="1" stop-color="#cfe2f0"/></linearGradient>
+    <radialGradient id="ps" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#ffb060"/><stop offset="1" stop-color="#d8561a"/></radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="29"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .55 0 0 0 .1 0"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".7"><ellipse cx="160" cy="120" rx="90" ry="22"/><ellipse cx="220" cy="104" rx="60" ry="18"/><ellipse cx="620" cy="200" rx="110" ry="20"/></g>
+  <g stroke="#3a2414" stroke-linecap="round" fill="none">
+    <path d="M0 520 C160 470 280 420 420 330 C520 268 600 230 720 180" stroke-width="22"/>
+    <path d="M300 410 C330 330 360 270 380 200" stroke-width="12"/>
+    <path d="M520 268 C560 300 600 320 660 330" stroke-width="10"/>
+    <path d="M380 200 C400 160 430 130 470 110" stroke-width="7"/>
+    <path d="M620 220 C640 180 650 150 646 110" stroke-width="7"/>
+    <path d="M200 470 C190 420 170 390 140 370" stroke-width="9"/>
+  </g>
+  <g fill="#7a5a2a" opacity=".85"><path d="M466 110 q20 -10 30 6 q-20 8 -30 -6z"/><path d="M646 110 q14 -16 30 -4 q-16 12 -30 4z"/><path d="M660 330 q16 -10 26 6 q-16 8 -26 -6z"/></g>
+  <g>
+    <circle cx="470" cy="134" r="20" fill="url(#ps)"/><path d="M462 116 h16" stroke="#3a5a2a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="650" cy="134" r="18" fill="url(#ps)"/><path d="M643 118 h14" stroke="#3a5a2a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="664" cy="354" r="20" fill="url(#ps)"/><path d="M656 336 h16" stroke="#3a5a2a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="140" cy="394" r="18" fill="url(#ps)"/><path d="M133 378 h14" stroke="#3a5a2a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- 까치 -->
+  <g transform="translate(560 228)">
+    <path d="M0 0 C-20 -6 -40 -2 -56 10 L-110 30 L-60 26 C-40 30 -10 28 10 14 Z" fill="#14161c"/>
+    <path d="M-12 4 C-26 2 -40 8 -48 16 C-34 22 -18 20 -6 12 Z" fill="#f2f2f2"/>
+    <circle cx="10" cy="-6" r="12" fill="#14161c"/><path d="M20 -8 L32 -4 L20 -2 Z" fill="#14161c"/>
+    <circle cx="13" cy="-8" r="1.8" fill="#fff"/>
+    <path d="M-20 26 L-24 40M-10 24 L-12 40" stroke="#14161c" stroke-width="3"/>
+    <path d="M-40 10 C-30 0 -18 -2 -8 4" stroke="#2a3a6a" stroke-width="4" fill="none"/>
+  </g>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <text x="772" y="584" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="20" font-weight="700" fill="#ff8a2a" opacity=".9">2025.11.08</text>
+</svg>

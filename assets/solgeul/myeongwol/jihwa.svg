@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>시렁 위의 첫 지화들 (2026.04.19)</title>
+  <!-- 다은 블로그 '지화'. 창작 일러스트. 신당 시렁 위에 올린 종이꽃. 분홍(한쪽으로 쏠린 꽃잎)이 다은이 접은 것. -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe5cf"/><stop offset="1" stop-color="#ddcfb0"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a5a3a"/><stop offset="1" stop-color="#4f3822"/></linearGradient>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".09" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+    <g id="flower">
+      <g>
+        <ellipse cx="0" cy="-34" rx="20" ry="32"/><ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(90)"/><ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(180)"/><ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(270)"/><ellipse cx="0" cy="-34" rx="20" ry="32" transform="rotate(315)"/>
+      </g>
+    </g>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall)"/>
+  <g stroke="#cdbd9a" stroke-width="2" opacity=".5"><path d="M0 120 H1200 M0 260 H1200"/></g>
+  <!-- 시렁 그림자와 받침 -->
+  <rect x="40" y="560" width="1120" height="40" fill="#2e2216" opacity=".35" filter="url(#soft)"/>
+  <path d="M120 540 L160 640 L190 640 L170 540 Z M1030 540 L1050 640 L1080 640 L1080 540 Z" fill="#4f3822"/>
+  <!-- 꽃들 -->
+  <g filter="url(#paper)">
+    <!-- 흰 꽃 -->
+    <g transform="translate(250 450) scale(1.5)" fill="#fbf8f0" stroke="#d8d0bf" stroke-width="2"><use href="#flower"/><g transform="scale(.62) rotate(22)"><use href="#flower"/></g><circle r="10" fill="#f0d36a" stroke="none"/></g>
+    <!-- 노랑 -->
+    <g transform="translate(420 470) scale(1.25)" fill="#f2d06b" stroke="#c9a53e" stroke-width="2"><use href="#flower"/><g transform="scale(.6) rotate(20)"><use href="#flower"/></g><circle r="9" fill="#d26a3a" stroke="none"/></g>
+    <!-- 붉은 -->
+    <g transform="translate(600 430) scale(1.7)" fill="#c94a4a" stroke="#962f2f" stroke-width="2"><use href="#flower"/><g transform="scale(.62) rotate(18)" fill="#e06a62"><use href="#flower"/></g><circle r="9" fill="#f3d27a" stroke="none"/></g>
+    <!-- 분홍: 다은 것(한쪽으로 쏠림) -->
+    <g transform="translate(800 470) scale(1.35) skewX(-14)" fill="#f2a9b8" stroke="#cf7f92" stroke-width="2"><use href="#flower"/><g transform="translate(-6 -4) scale(.6) rotate(30)"><use href="#flower"/></g><circle cx="-6" r="9" fill="#f6e0a0" stroke="none"/></g>
+    <!-- 연노랑 -->
+    <g transform="translate(980 455) scale(1.4)" fill="#f7e7b4" stroke="#d2bd80" stroke-width="2"><use href="#flower"/><g transform="scale(.6) rotate(12)"><use href="#flower"/></g><circle r="9" fill="#c94a4a" stroke="none"/></g>
+  </g>
+  <!-- 잎 -->
+  <g fill="#6f9a5a" opacity=".9"><path d="M330 520 C360 490 400 492 420 510 C390 530 360 530 330 520 Z"/><path d="M700 520 C730 492 770 494 790 512 C760 532 730 532 700 520 Z"/></g>
+  <!-- 시렁 -->
+  <rect x="60" y="520" width="1080" height="40" fill="url(#beam)"/>
+  <path d="M60 520 H1140" stroke="#9a7a52" stroke-width="3"/>
+  <g fill="#ffe8c0" opacity=".08"><rect width="1200" height="800"/></g>
+</svg>

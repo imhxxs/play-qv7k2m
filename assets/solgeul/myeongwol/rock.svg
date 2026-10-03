@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>기도터 위의 바위 (2026.09.22)</title>
+  <!-- 다은 블로그 '입산'. 창작 일러스트. 윗면에 구멍이 정확히 일곱 개(북두칠성처럼 놓임). 앞에 청수 한 사발. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9cfc6"/><stop offset=".55" stop-color="#a9b2a2"/><stop offset="1" stop-color="#6f7867"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d5a44"/><stop offset="1" stop-color="#3a3527"/>
+    </linearGradient>
+    <radialGradient id="stone" cx="40%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#b9b6aa"/><stop offset=".5" stop-color="#8e8b80"/><stop offset="1" stop-color="#55534b"/>
+    </radialGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8c5b8"/><stop offset="1" stop-color="#9b988c"/>
+    </linearGradient>
+    <radialGradient id="hole" cx="50%" cy="38%" r="60%">
+      <stop offset="0" stop-color="#1c1b17"/><stop offset=".7" stop-color="#2d2b25"/><stop offset="1" stop-color="#6e6b61"/>
+    </radialGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbfaf5"/><stop offset="1" stop-color="#d8d6cc"/></linearGradient>
+    <filter id="mist" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <filter id="tex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="4" seed="5"/>
+      <feColorMatrix values="0 0 0 0 .2  0 0 0 0 .2  0 0 0 0 .17  0 0 0 .55 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <filter id="moss" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".06" numOctaves="3" seed="9" result="n"/>
+      <feColorMatrix in="n" values="0 0 0 0 .28  0 0 0 0 .4  0 0 0 0 .18  0 0 0 2.4 -1.2"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- 먼 숲 -->
+  <g fill="#7c8574" opacity=".7" filter="url(#mist)">
+    <path d="M0 360 C120 300 200 330 300 290 C420 250 520 300 640 270 C760 240 880 300 1000 260 C1100 230 1160 260 1200 250 V520 H0 Z"/>
+  </g>
+  <g stroke="#5e6656" stroke-width="10" opacity=".5" filter="url(#soft)">
+    <path d="M90 120 V520"/><path d="M190 60 V540"/><path d="M1010 90 V540"/><path d="M1120 40 V540"/><path d="M930 170 V520"/>
+  </g>
+  <rect y="500" width="1200" height="300" fill="url(#ground)"/>
+  <g fill="#8d6a3a" opacity=".6">
+    <ellipse cx="160" cy="700" rx="22" ry="8" transform="rotate(20 160 700)"/><ellipse cx="1040" cy="660" rx="18" ry="7" transform="rotate(-30 1040 660)"/>
+    <ellipse cx="920" cy="740" rx="20" ry="8"/><ellipse cx="300" cy="760" rx="16" ry="6" fill="#a8452c"/><ellipse cx="860" cy="610" rx="14" ry="5" fill="#b8792e"/>
+  </g>
+
+  <!-- 바위 -->
+  <ellipse cx="610" cy="640" rx="440" ry="60" fill="#1f1c15" opacity=".45" filter="url(#mist)"/>
+  <g>
+    <path d="M196 628 C176 560 196 470 252 418 C300 372 350 350 420 328 C500 304 600 292 700 296 C800 300 880 318 944 362 C1004 404 1040 470 1030 540 C1022 588 1002 618 980 634 C840 668 380 676 196 628 Z" fill="url(#stone)"/>
+    <path d="M196 628 C176 560 196 470 252 418 C300 372 350 350 420 328 C500 304 600 292 700 296 C800 300 880 318 944 362 C1004 404 1040 470 1030 540 C1022 588 1002 618 980 634 C840 668 380 676 196 628 Z" fill="#000" filter="url(#tex)" opacity=".5"/>
+    <!-- 윗면에 비치는 흐린 하늘빛(경계선 없이) -->
+    <path d="M300 404 C380 344 520 318 690 320 C840 322 930 352 972 410 C900 452 760 470 620 468 C480 466 360 446 300 404 Z" fill="url(#top)" opacity=".75" filter="url(#soft)"/>
+    <!-- 옆면 음영 -->
+    <path d="M200 600 C260 640 420 660 600 662 C780 664 920 652 984 628 C1000 612 1018 590 1024 560 C940 600 760 616 600 614 C430 612 280 590 200 560 Z" fill="#3e3c35" opacity=".35"/>
+    <!-- 이끼 -->
+    <path d="M196 628 C176 560 196 470 252 418 C268 470 252 560 300 646 Z" fill="#fff" filter="url(#moss)" opacity=".95"/>
+    <path d="M880 610 C930 572 1010 560 1000 624 C966 646 906 646 880 610 Z" fill="#fff" filter="url(#moss)"/>
+    <path d="M420 330 C470 316 520 310 560 308 C520 330 470 340 420 344 Z" fill="#fff" filter="url(#moss)" opacity=".7"/>
+    <!-- 갈라진 금 -->
+    <path d="M520 480 C540 530 518 580 556 648 M840 476 C818 526 856 570 834 640 M300 470 C320 500 306 540 330 580" fill="none" stroke="#45433c" stroke-width="3" opacity=".55"/>
+  </g>
+  <!-- 구멍 일곱(북두칠성처럼 놓였다) -->
+  <g>
+    <g transform="translate(392 396)"><ellipse rx="32" ry="16" fill="#6d6a60" opacity=".55"/><ellipse rx="27" ry="12" fill="url(#hole)"/><path d="M-27 1 A27 12 0 0 0 27 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(470 416)"><ellipse rx="30" ry="15" fill="#6d6a60" opacity=".55"/><ellipse rx="25" ry="11" fill="url(#hole)"/><path d="M-25 1 A25 11 0 0 0 25 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(560 408)"><ellipse rx="31" ry="15.5" fill="#6d6a60" opacity=".55"/><ellipse rx="26" ry="11.5" fill="url(#hole)"/><path d="M-26 1 A26 11.5 0 0 0 26 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(642 382)"><ellipse rx="33" ry="16" fill="#6d6a60" opacity=".55"/><ellipse rx="28" ry="12" fill="url(#hole)"/><path d="M-28 1 A28 12 0 0 0 28 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(742 388)"><ellipse rx="32" ry="15.5" fill="#6d6a60" opacity=".55"/><ellipse rx="27" ry="11.5" fill="url(#hole)"/><path d="M-27 1 A27 11.5 0 0 0 27 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(764 440)"><ellipse rx="31" ry="15" fill="#6d6a60" opacity=".55"/><ellipse rx="26" ry="11" fill="url(#hole)"/><path d="M-26 1 A26 11 0 0 0 26 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+    <g transform="translate(660 436)"><ellipse rx="30" ry="14.5" fill="#6d6a60" opacity=".55"/><ellipse rx="25" ry="10.5" fill="url(#hole)"/><path d="M-25 1 A25 10.5 0 0 0 25 1" fill="none" stroke="#e2dfd4" stroke-width="2.5" opacity=".6"/></g>
+  </g>
+  <!-- 청수 한 사발 -->
+  <g transform="translate(610 690)">
+    <ellipse cx="6" cy="34" rx="70" ry="12" fill="#1a1712" opacity=".5" filter="url(#soft)"/>
+    <path d="M-62 -6 C-58 30 -34 40 0 40 C34 40 58 30 62 -6 Z" fill="url(#bowl)"/>
+    <ellipse cy="-6" rx="62" ry="14" fill="#efeee8"/>
+    <ellipse cy="-5" rx="54" ry="10" fill="#b8c4c4"/>
+    <ellipse cx="-14" cy="-8" rx="18" ry="3" fill="#fff" opacity=".7"/>
+    <path d="M-20 36 h40" stroke="#c9c6bb" stroke-width="2"/>
+  </g>
+  <rect width="1200" height="800" fill="#d8e0d0" opacity=".08"/>
+</svg>

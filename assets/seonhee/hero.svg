@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="보랏빛 밤하늘에 뜬 보름달과 금빛 구름, 부채꼴로 펼친 오방기 다섯 자루">
+  <defs>
+    <radialGradient id="sky" cx="72%" cy="28%" r="85%">
+      <stop offset="0" stop-color="#9a52c4"/>
+      <stop offset=".5" stop-color="#55207f"/>
+      <stop offset="1" stop-color="#230a3b"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="42%" cy="38%" r="62%">
+      <stop offset="0" stop-color="#fffbe6"/>
+      <stop offset=".55" stop-color="#f8dc86"/>
+      <stop offset="1" stop-color="#d6a23a"/>
+    </radialGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffe7a0" stop-opacity=".62"/>
+      <stop offset=".5" stop-color="#ffd27a" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff2bf"/>
+      <stop offset=".5" stop-color="#f1cf6b"/>
+      <stop offset="1" stop-color="#b98629"/>
+    </linearGradient>
+    <linearGradient id="pole" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a5a33"/>
+      <stop offset=".5" stop-color="#c58f55"/>
+      <stop offset="1" stop-color="#6e4424"/>
+    </linearGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a0f45" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a0630" stop-opacity=".85"/>
+    </linearGradient>
+    <path id="spark" d="M0-10 C1.4-2 2-1.4 10 0 C2 1.4 1.4 2 0 10 C-1.4 2 -2 1.4 -10 0 C-2-1.4 -1.4-2 0-10Z"/>
+    <path id="cloud" d="M0 0c6-14 26-16 34-4c8-12 30-10 32 6c14-2 22 12 12 20H-6C-18 20-14 2 0 0z"/>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#sky)"/>
+
+  <!-- 별 -->
+  <g fill="#fff4cf">
+    <circle cx="40" cy="40" r="1.2" opacity=".8"/><circle cx="120" cy="22" r="1" opacity=".6"/><circle cx="210" cy="60" r="1.4" opacity=".7"/>
+    <circle cx="300" cy="28" r="1" opacity=".5"/><circle cx="350" cy="80" r="1.2" opacity=".6"/><circle cx="600" cy="40" r="1.3" opacity=".8"/>
+    <circle cx="610" cy="190" r="1" opacity=".6"/><circle cx="90" cy="150" r="1" opacity=".5"/><circle cx="250" cy="130" r="1.1" opacity=".6"/>
+    <circle cx="560" cy="250" r="1.2" opacity=".5"/><circle cx="160" cy="95" r="1" opacity=".7"/><circle cx="380" cy="160" r="1" opacity=".5"/>
+  </g>
+
+  <!-- 보름달 -->
+  <circle cx="468" cy="118" r="150" fill="url(#glow)"/>
+  <circle cx="468" cy="118" r="72" fill="url(#moon)"/>
+  <g fill="#d7a845" opacity=".22">
+    <circle cx="446" cy="98" r="11"/><circle cx="492" cy="136" r="15"/><circle cx="470" cy="160" r="7"/><circle cx="500" cy="92" r="6"/>
+  </g>
+  <circle cx="468" cy="118" r="80" fill="none" stroke="#ffe7a0" stroke-opacity=".35" stroke-width="1.5"/>
+
+  <!-- 금빛 구름 문양 -->
+  <g fill="#3c1361" fill-opacity=".55" stroke="url(#gold)" stroke-width="2.2" stroke-linejoin="round">
+    <use href="#cloud" transform="translate(372 170) scale(1.25)"/>
+    <use href="#cloud" transform="translate(520 196) scale(.95)"/>
+    <use href="#cloud" transform="translate(70 214) scale(1.1)"/>
+    <use href="#cloud" transform="translate(220 92) scale(.7)"/>
+  </g>
+  <g fill="none" stroke="#f1cf6b" stroke-opacity=".55" stroke-width="1.6" stroke-linecap="round">
+    <path d="M384 196c8 6 18 6 26-1"/><path d="M532 216c6 5 14 5 20-1"/><path d="M84 238c8 5 17 5 24-1"/>
+  </g>
+
+  <!-- 오방기 다섯 자루(부채꼴) -->
+  <g transform="translate(500 380) scale(.9)">
+    <g transform="rotate(-38)">
+      <rect x="-2.5" y="-250" width="5" height="250" rx="2.5" fill="url(#pole)"/>
+      <path d="M2-246 C30-252 54-238 84-246 L84-180 C54-172 30-186 2-180Z" fill="#c8323a"/>
+      <circle cx="0" cy="-252" r="5" fill="url(#gold)"/>
+    </g>
+    <g transform="rotate(-22)">
+      <rect x="-2.5" y="-262" width="5" height="262" rx="2.5" fill="url(#pole)"/>
+      <path d="M2-258 C30-264 54-250 84-258 L84-192 C54-184 30-198 2-192Z" fill="#e8b923"/>
+      <circle cx="0" cy="-264" r="5" fill="url(#gold)"/>
+    </g>
+    <g transform="rotate(-6)">
+      <rect x="-2.5" y="-270" width="5" height="270" rx="2.5" fill="url(#pole)"/>
+      <path d="M2-266 C30-272 54-258 84-266 L84-200 C54-192 30-206 2-200Z" fill="#f6f1e4"/>
+      <circle cx="0" cy="-272" r="5" fill="url(#gold)"/>
+    </g>
+    <g transform="rotate(10)">
+      <rect x="-2.5" y="-262" width="5" height="262" rx="2.5" fill="url(#pole)"/>
+      <path d="M2-258 C30-264 54-250 84-258 L84-192 C54-184 30-198 2-192Z" fill="#2f5fb3"/>
+      <circle cx="0" cy="-264" r="5" fill="url(#gold)"/>
+    </g>
+    <g transform="rotate(26)">
+      <rect x="-2.5" y="-248" width="5" height="248" rx="2.5" fill="url(#pole)"/>
+      <path d="M2-244 C30-250 54-236 84-244 L84-178 C54-170 30-184 2-178Z" fill="#2f8f4e"/>
+      <circle cx="0" cy="-250" r="5" fill="url(#gold)"/>
+    </g>
+  </g>
+
+  <!-- 반짝이 -->
+  <g fill="url(#gold)">
+    <use href="#spark" transform="translate(372 64) scale(1.2)"/>
+    <use href="#spark" transform="translate(586 112) scale(.8)"/>
+    <use href="#spark" transform="translate(410 250) scale(.9)"/>
+    <use href="#spark" transform="translate(300 210) scale(.6)"/>
+    <use href="#spark" transform="translate(560 30) scale(.55)"/>
+    <use href="#spark" transform="translate(28 90) scale(.6)"/>
+  </g>
+
+  <rect y="220" width="640" height="140" fill="url(#haze)"/>
+</svg>

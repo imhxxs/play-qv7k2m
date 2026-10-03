@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>장구 40년, 최경필 선생님 (2025.10.18)</title>
+  <!-- 창작 일러스트. 얼굴은 화면 밖. 회색 누빔 생활한복. 오른쪽 앞: 궁채를 쥔 왼손 —
+       궁채 자루 위에 올린 검지는 끝마디가 없다(둥근 끝, 손톱 없음). 왼손목: 술 달린 오색실.
+       왼쪽: 열채를 쥔 오른손(검지 손톱이 보인다, 손목에 실 없음). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2618"/><stop offset=".7" stop-color="#5a3a22"/><stop offset="1" stop-color="#2a1a0e"/></linearGradient>
+    <linearGradient id="gray" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a3a5a4"/><stop offset=".5" stop-color="#8e908f"/><stop offset="1" stop-color="#6f7170"/></linearGradient>
+    <linearGradient id="grayArm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7d7f7e"/><stop offset=".5" stop-color="#9c9e9d"/><stop offset="1" stop-color="#77797a"/></linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a3a20"/><stop offset=".45" stop-color="#7a2a14"/><stop offset="1" stop-color="#4a160a"/></linearGradient>
+    <radialGradient id="skinG" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#e6b892"/><stop offset=".7" stop-color="#d09c74"/><stop offset="1" stop-color="#b07e58"/></radialGradient>
+    <radialGradient id="ball" cx="35%" cy="35%" r="70%"><stop offset="0" stop-color="#f0d29a"/><stop offset="1" stop-color="#a87a3e"/></radialGradient>
+    <radialGradient id="vig" cx="62%" cy="58%" r="78%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+    <radialGradient id="warm" cx="80%" cy="65%" r="55%"><stop offset="0" stop-color="#ffd890" stop-opacity=".22"/><stop offset="1" stop-color="#ffd890" stop-opacity="0"/></radialGradient>
+    <pattern id="nubim" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M5.5 0V11" stroke="#6a6c6b" stroke-width="1.3"/><path d="M5.5 0V11" stroke="#b0b2b1" stroke-width=".5" transform="translate(1.4 0)"/></pattern>
+    <pattern id="nubimArm" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-62)"><path d="M5 0V10" stroke="#5f6160" stroke-width="1.3"/><path d="M6.3 0V10" stroke="#b5b7b6" stroke-width=".5"/></pattern>
+    <pattern id="nubimArmR" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(32)"><path d="M5 0V10" stroke="#5f6160" stroke-width="1.3"/></pattern>
+    <filter id="dof"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="bokeh"><feGaussianBlur stdDeviation="9"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".95" numOctaves="2" seed="11"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .45 0 0 0 0 .38 0 0 0 .14 0"/></filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- 뒤쪽 흐린 지화·촛불 -->
+  <g filter="url(#bokeh)" opacity=".75">
+    <circle cx="60" cy="90" r="34" fill="#e66b8d"/><circle cx="120" cy="40" r="26" fill="#f3d27a"/><circle cx="40" cy="190" r="28" fill="#f6f1e2"/>
+    <circle cx="740" cy="70" r="30" fill="#e66b8d"/><circle cx="690" cy="20" r="22" fill="#d32f2f"/><circle cx="770" cy="160" r="20" fill="#ffd36a"/>
+  </g>
+  <!-- 마루 -->
+  <path d="M0 470 H800 V600 H0 Z" fill="#6a4020"/>
+  <g stroke="#4a2a12" stroke-width="2"><path d="M0 500H800M0 538H800M0 576H800"/><path d="M120 470v30M360 500v38M610 470v30M220 538v38M520 538v38"/></g>
+
+  <!-- 몸통(흐리게) -->
+  <g filter="url(#dof)">
+    <path d="M236 0 H584 L600 70 L612 360 H216 L226 70 Z" fill="url(#gray)"/>
+    <path d="M236 0 H584 L600 70 L612 360 H216 L226 70 Z" fill="url(#nubim)" opacity=".8"/>
+    <path d="M360 0 L410 120 L462 0" fill="none" stroke="#5a5c5b" stroke-width="14"/>
+    <path d="M360 0 L410 120 L462 0" fill="none" stroke="#c9cbca" stroke-width="2"/>
+    <circle cx="410" cy="160" r="6" fill="#4a4c4b"/><circle cx="410" cy="206" r="6" fill="#4a4c4b"/>
+    <!-- 무릎·바지 -->
+    <path d="M150 360 Q410 320 670 360 L690 470 Q410 500 130 470 Z" fill="#4c4e50"/>
+    <!-- 오른팔(왼쪽 화면) -->
+    <path d="M236 30 L170 120 L132 230 L196 266 L232 160 L262 90 Z" fill="url(#grayArm)"/>
+    <path d="M236 30 L170 120 L132 230 L196 266 L232 160 L262 90 Z" fill="url(#nubimArmR)" opacity=".7"/>
+    <!-- 왼팔 윗부분(오른쪽 화면) -->
+    <path d="M584 20 L640 30 L800 140 L800 250 L700 170 L600 110 Z" fill="url(#grayArm)"/>
+    <path d="M584 20 L640 30 L800 140 L800 250 L700 170 L600 110 Z" fill="url(#nubimArm)" opacity=".6"/>
+  </g>
+
+  <!-- 장구 -->
+  <g>
+    <path d="M178 338 C262 344 324 398 352 410 L352 452 C324 462 262 516 178 522 Z" fill="url(#body)"/>
+    <path d="M566 338 C482 344 420 398 392 410 L392 452 C420 462 482 516 566 522 Z" fill="url(#body)"/>
+    <rect x="350" y="408" width="44" height="46" fill="#3a1208"/>
+    <path d="M180 352 C262 360 322 404 352 416" fill="none" stroke="#e0a060" stroke-width="2" opacity=".5"/>
+    <path d="M564 352 C482 360 422 404 392 416" fill="none" stroke="#e0a060" stroke-width="2" opacity=".5"/>
+    <!-- 조임줄 -->
+    <polyline points="186,346 556,362 186,382 556,398 186,418 556,434 186,454 556,470 186,490 556,506" fill="none" stroke="#c0282d" stroke-width="3.2" stroke-linejoin="round"/>
+    <polyline points="186,346 556,362 186,382 556,398 186,418 556,434 186,454 556,470 186,490 556,506" fill="none" stroke="#ff8a7a" stroke-width="1" opacity=".5"/>
+    <g fill="#5a3418" stroke="#2a1608"><rect x="512" y="352" width="12" height="16" rx="2"/><rect x="512" y="388" width="12" height="16" rx="2"/><rect x="512" y="424" width="12" height="16" rx="2"/><rect x="512" y="460" width="12" height="16" rx="2"/><rect x="512" y="496" width="12" height="16" rx="2"/></g>
+    <!-- 채편(왼쪽)·북편(오른쪽) -->
+    <ellipse cx="168" cy="430" rx="24" ry="98" fill="#efe6d0"/>
+    <ellipse cx="168" cy="430" rx="24" ry="98" fill="none" stroke="#2a1608" stroke-width="7"/>
+    <ellipse cx="168" cy="430" rx="14" ry="78" fill="none" stroke="#d8c8a8" stroke-width="1.5"/>
+    <ellipse cx="576" cy="430" rx="26" ry="100" fill="#e9dcc0"/>
+    <ellipse cx="576" cy="430" rx="26" ry="100" fill="none" stroke="#2a1608" stroke-width="7"/>
+    <ellipse cx="576" cy="430" rx="16" ry="80" fill="none" stroke="#cdbb98" stroke-width="1.5"/>
+  </g>
+
+  <!-- 오른손 + 열채(왼쪽 화면) -->
+  <g>
+    <path d="M226 302 L160 400" stroke="#c9a060" stroke-width="5" stroke-linecap="round"/>
+    <path d="M226 302 L160 400" stroke="#f0d8a0" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M150 238 L206 262 L214 290 L182 296 Z" fill="#c8a07a" stroke="#8a5a3a" stroke-width="1.5"/>
+    <path d="M178 260 C196 256 230 270 236 292 C240 312 226 326 206 324 C188 322 172 302 172 284 Z" fill="url(#skinG)" stroke="#8a5a3a" stroke-width="1.6"/>
+    <!-- 검지(온전한 손가락, 손톱) -->
+    <path d="M214 304 L188 340" stroke="#8a5a3a" stroke-width="15" stroke-linecap="round"/>
+    <path d="M214 304 L188 340" stroke="#d6a27a" stroke-width="12" stroke-linecap="round"/>
+    <ellipse cx="189" cy="337" rx="4.6" ry="3.4" transform="rotate(-54 189 337)" fill="#f2cdb6" stroke="#b07e64" stroke-width="1"/>
+    <path d="M204 318 l5 3" stroke="#a0704e" stroke-width="1.2"/>
+    <path d="M226 292 c6 6 6 14 2 20" fill="none" stroke="#a0704e" stroke-width="1.2"/>
+  </g>
+
+  <!-- 왼손 + 궁채(오른쪽 화면, 앞쪽 — 선명하게) -->
+  <g>
+    <!-- 궁채 자루와 머리 -->
+    <path d="M612 430 L770 418" stroke="#7a5428" stroke-width="9" stroke-linecap="round"/>
+    <path d="M612 430 L770 418" stroke="#d2a868" stroke-width="6" stroke-linecap="round"/>
+    <path d="M614 428 L768 416" stroke="#f3dcae" stroke-width="1.4"/>
+    <circle cx="604" cy="432" r="15" fill="url(#ball)" stroke="#6a4420" stroke-width="1.5"/>
+    <path d="M596 426 q6-4 12 0" fill="none" stroke="#fff3d6" stroke-width="2" opacity=".7"/>
+
+    <!-- 소매(회색 누빔) -->
+    <path d="M746 352 L800 236 L800 372 L780 446 Z" fill="url(#grayArm)"/>
+    <path d="M746 352 L800 236 L800 372 L780 446 Z" fill="url(#nubimArm)" opacity=".85"/>
+    <path d="M746 352 L780 446" stroke="#5a5c5b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M751 350 L785 444" stroke="#b9bbba" stroke-width="1.2"/>
+
+    <!-- 손목 -->
+    <path d="M722 372 L748 356 L782 442 L736 452 Z" fill="#cf9b73" stroke="#8a5a3a" stroke-width="1.4"/>
+    <!-- 오색실(빨강·노랑·파랑·하양·초록) -->
+    <g fill="none" stroke-width="3.4" stroke-linecap="round">
+      <path d="M741 360 Q756 400 772 444" stroke="#d32f2f"/>
+      <path d="M737.6 361.6 Q752.6 401.6 768.6 445.6" stroke="#f2c230"/>
+      <path d="M734.2 363.2 Q749.2 403.2 765.2 447.2" stroke="#2f5fd3"/>
+      <path d="M730.8 364.8 Q745.8 404.8 761.8 448.8" stroke="#f7f4ec"/>
+      <path d="M727.4 366.4 Q742.4 406.4 758.4 450.4" stroke="#2f9a4a"/>
+    </g>
+    <!-- 매듭과 술 -->
+    <circle cx="766" cy="451" r="5" fill="#d32f2f" stroke="#7a1a1a" stroke-width="1"/>
+    <rect x="762" y="456" width="9" height="6" rx="2" fill="#f2c230"/>
+    <g stroke-width="2" stroke-linecap="round">
+      <path d="M763 462 L758 498" stroke="#d32f2f"/><path d="M765 462 L763 500" stroke="#2f5fd3"/><path d="M767 462 L768 501" stroke="#f7f4ec"/>
+      <path d="M769 462 L773 499" stroke="#2f9a4a"/><path d="M771 462 L778 496" stroke="#f2c230"/>
+    </g>
+
+    <!-- 말아 쥔 가운뎃손가락·약손가락·새끼손가락(자루 아래 마디) -->
+    <g stroke="#8a5a3a" stroke-width="1.5">
+      <path d="M672 424 C670 446 690 456 702 446 L702 430 Z" fill="#c99470"/>
+      <path d="M698 428 C698 450 716 458 726 448 L724 430 Z" fill="#c4906a"/>
+      <path d="M720 428 C722 448 738 452 744 442 L740 428 Z" fill="#bf8b66"/>
+    </g>
+    <path d="M686 446 q5 2 9-1M710 450 q5 2 9-1M730 446 q4 2 7-1" fill="none" stroke="#9a6a4a" stroke-width="1.2"/>
+
+    <!-- 손등(엄지 쪽이 왼쪽) -->
+    <path d="M668 394 C676 378 708 372 730 378 C744 386 748 404 746 422 C744 432 730 436 712 434 L676 432 C664 428 662 408 668 394 Z" fill="url(#skinG)" stroke="#8a5a3a" stroke-width="1.6"/>
+    <path d="M688 386 q8-3 14 0M708 382 q8-2 13 2" fill="none" stroke="#f0c8a4" stroke-width="2" opacity=".8"/>
+    <path d="M700 398 q10 10 26 6" fill="none" stroke="#a87650" stroke-width="1.2" opacity=".7"/>
+
+    <!-- 엄지: 자루 앞으로 감아 쥠(손톱 보임) -->
+    <path d="M690 412 C680 420 668 426 656 430" stroke="#8a5a3a" stroke-width="17" stroke-linecap="round" fill="none"/>
+    <path d="M690 412 C680 420 668 426 656 430" stroke="#d6a27a" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <ellipse cx="655" cy="429" rx="5" ry="4" transform="rotate(-20 655 429)" fill="#f2cdb6" stroke="#b07e64" stroke-width="1"/>
+    <path d="M672 423 l3 5" stroke="#a0704e" stroke-width="1.2"/>
+
+    <!-- 검지: 자루 위에 얹었다. 끝마디가 없다(둥글게 아문 끝, 손톱 없음) — 엄지 끝과 길이가 비슷하다 -->
+    <path d="M677 396 L660 405 L654 408" stroke="#8a5a3a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M677 396 L660 405 L654 408" stroke="#d8a47c" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M664 397 l3.5 11" stroke="#9a6a48" stroke-width="1.4"/>
+    <path d="M650.5 402.5 c-2.6 2.4-2.6 7.4 0 10" fill="none" stroke="#efc4a6" stroke-width="2.4"/>
+    <path d="M655 403.5 c1.4 1.8 1.4 5 0 7" fill="none" stroke="#b9876a" stroke-width="1.1"/>
+  </g>
+
+  <rect width="800" height="600" fill="url(#warm)"/>
+  <rect width="800" height="600" fill="url(#vig)"/>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <text x="772" y="584" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="20" font-weight="700" fill="#ff8a2a" opacity=".9">2025.10.18</text>
+</svg>

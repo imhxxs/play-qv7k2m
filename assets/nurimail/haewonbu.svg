@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500" width="300" height="500">
+  <!-- 월하당 해원부(창작). 괴황지 바탕 + 경면주사 붉은 획.
+       숨은 층: 바탕과 거의 같은 색(파랑 채널만 0.5를 사이에 두고 갈린다)으로 그린 획.
+       '대비 최대 + 색 반전'을 걸면 드러난다(선택 퍼즐 O1). 색을 바꾸면 판독이 깨지니 주의. -->
+  <title>해원부</title>
+  <rect width="300" height="500" fill="#e8d077"/>
+  <!-- 종이 결: 바탕보다 어두운 얼룩만 쓴다(밝은 얼룩은 대비를 올렸을 때 잡음이 된다) -->
+  <g fill="#8a6a2a">
+    <circle cx="46" cy="88" r="22" opacity=".06"/><circle cx="238" cy="160" r="30" opacity=".05"/>
+    <circle cx="70" cy="330" r="34" opacity=".05"/><circle cx="250" cy="420" r="24" opacity=".07"/>
+    <circle cx="160" cy="470" r="18" opacity=".06"/><circle cx="120" cy="40" r="14" opacity=".05"/>
+  </g>
+  <path d="M0 250 H300" stroke="#a88a40" stroke-width="1" opacity=".22"/>
+  <path d="M150 0 V500" stroke="#a88a40" stroke-width=".8" opacity=".14"/>
+
+  <!-- 숨은 층(然伊) -->
+  <g fill="none" stroke="#e8d080" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(100 168)">
+      <path d="M24 6 L10 34"/><path d="M18 14 H42 L30 40 L8 58"/><path d="M20 26 L30 32"/>
+      <path d="M50 24 H92"/><path d="M72 6 V24 L52 58"/><path d="M72 26 L94 56"/><path d="M84 8 L90 14"/>
+      <path d="M14 78 L8 90"/><path d="M36 80 L38 90"/><path d="M58 80 L62 90"/><path d="M82 78 L90 90"/>
+    </g>
+    <g transform="translate(100 282)">
+      <path d="M30 6 L10 40"/><path d="M20 26 V94"/>
+      <path d="M40 22 H84 V58"/><path d="M44 40 H84"/><path d="M40 58 H84"/><path d="M62 8 V58 L36 96"/>
+    </g>
+  </g>
+
+  <!-- 붉은 획(경면주사) -->
+  <g fill="none" stroke="#b8322a" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="14" y="14" width="272" height="472" stroke-width="5"/>
+    <rect x="24" y="24" width="252" height="452" stroke-width="1.6"/>
+    <!-- 해와 달 -->
+    <circle cx="150" cy="70" r="24" stroke-width="5"/>
+    <circle cx="150" cy="70" r="5" fill="#b8322a" stroke="none"/>
+    <path d="M92 58 h18 v26 h-18z M92 71 h18" stroke-width="3.5"/>
+    <path d="M198 56 a14 14 0 1 0 12 26 a11 11 0 1 1 -12 -26z" stroke-width="3.5"/>
+    <!-- 가운데 등뼈와 가로획 -->
+    <path d="M150 100 V418" stroke-width="3"/>
+    <path d="M118 112 H182 M110 128 H190" stroke-width="5"/>
+    <path d="M126 150 q24 -12 48 0 q-24 12 -48 0z" stroke-width="3"/>
+    <path d="M112 392 H188 M122 406 H178" stroke-width="5"/>
+    <!-- 왼쪽 기둥: 겹친 'ㄹ' 꺾임 -->
+    <path d="M44 150 H82 V170 H48 V190 H84 M44 214 H82 V234 H48 V254 H84 M44 278 H82 V298 H48 V318 H84 M44 342 H82 V362 H48 V382 H84" stroke-width="4.5"/>
+    <!-- 오른쪽 기둥: 소용돌이와 입 구(口) -->
+    <path d="M240 160 m-18 0 a18 18 0 1 1 18 18 a12 12 0 1 1 -12 -12 a6 6 0 1 1 6 6" stroke-width="3.5"/>
+    <rect x="222" y="210" width="36" height="30" stroke-width="4"/>
+    <rect x="222" y="252" width="36" height="30" stroke-width="4"/>
+    <rect x="222" y="294" width="36" height="30" stroke-width="4"/>
+    <path d="M240 340 m-18 0 a18 18 0 1 1 18 18 a12 12 0 1 1 -12 -12 a6 6 0 1 1 6 6" stroke-width="3.5"/>
+    <!-- 획 속을 지나는 가는 실획 -->
+    <path d="M104 176 C130 196 170 186 196 206 M104 296 C128 316 172 304 196 330" stroke-width="1.6"/>
+  </g>
+  <!-- 아래 인장 -->
+  <rect x="115" y="420" width="70" height="52" fill="#b8322a"/>
+  <text x="150" y="455" fill="#e8d077" font-size="22" text-anchor="middle" font-family="'Nanum Myeongjo','Noto Serif KR','AppleMyungjo','Batang','Songti SC',serif" font-weight="700">月下</text>
+  <text x="150" y="104" fill="#b8322a" font-size="12" text-anchor="middle" font-family="'Nanum Myeongjo','Noto Serif KR','Batang',serif" letter-spacing="6">解冤符</text>
+</svg>

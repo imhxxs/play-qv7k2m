@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 520" width="300" height="520">
+  <title>해원부</title>
+  <!-- 월하당 해원부(解冤符, 창작). 괴황지 바탕 + 경면주사 붉은 획.
+       숨은 층(然伊): 바탕과 R·G가 같고 B만 10 낮은 색(#e6cf81 / 바탕 #e6cf88)으로 쓴 획.
+       대비를 최대로(약 1000%) 올리면 B 채널 차이가 벌어지고, 색 반전을 걸면 검푸른 바탕 위에 밝은 파란 글씨로 드러난다.
+       ※ 바탕·얼룩·숨은 획의 파랑 값(0x88 / 0x81)을 바꾸면 판독이 깨진다. 얼룩은 B가 바탕과 같은 색만 쓴다. -->
+  <defs>
+    <!-- 파랑만 ±2쯤 흔드는 종이 결(R·G는 바탕과 같다). 기본 화면에서 숨은 획의 경계를 흐린다 -->
+    <filter id="bgrain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="9"/>
+      <feColorMatrix values="0 0 0 0 .9020  0 0 0 0 .8118  .05 0 0 0 .5083  0 0 0 0 1"/>
+    </filter>
+  </defs>
+  <rect width="300" height="520" fill="#e6cf88"/>
+  <rect width="300" height="520" filter="url(#bgrain)"/>
+
+  <!-- 종이 얼룩·결(파랑 값 0x88 유지) -->
+  <g fill="#8a6a88">
+    <circle cx="52" cy="96" r="30" opacity=".06"/><circle cx="246" cy="170" r="36" opacity=".05"/>
+    <circle cx="70" cy="356" r="40" opacity=".05"/><circle cx="242" cy="438" r="28" opacity=".07"/>
+    <circle cx="160" cy="486" r="22" opacity=".06"/><circle cx="130" cy="40" r="18" opacity=".05"/>
+    <circle cx="212" cy="300" r="24" opacity=".04"/>
+  </g>
+  <g fill="none" stroke="#c9a688" stroke-width=".8" opacity=".5">
+    <path d="M20 60 C80 64 120 58 180 66"/><path d="M110 140 C160 146 220 138 280 146"/><path d="M14 230 C60 226 120 236 170 230"/>
+    <path d="M150 312 C200 318 240 310 290 316"/><path d="M30 420 C90 424 150 416 210 424"/><path d="M60 470 C120 466 200 476 270 470"/>
+  </g>
+  <path d="M0 260 H300" stroke="#bf9f88" stroke-width="1" opacity=".35"/>
+
+  <!-- 숨은 층: 然(위)·伊(아래). 100칸 글자를 1.08배로 -->
+  <g fill="none" stroke="#e6cf81" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(96 146) scale(1.08)">
+      <path d="M28 4 L12 30"/><path d="M20 14 H44 Q38 34 12 56"/><path d="M22 26 L32 34"/>
+      <path d="M52 22 H94"/><path d="M73 4 V22 Q66 44 52 58"/><path d="M74 26 Q84 44 96 56"/><path d="M86 8 L92 14"/>
+      <path d="M14 76 L7 90"/><path d="M36 78 L39 90"/><path d="M60 78 L64 90"/><path d="M84 76 L93 90"/>
+    </g>
+    <g transform="translate(96 266) scale(1.08)">
+      <path d="M32 4 L10 40"/><path d="M22 24 V96"/>
+      <path d="M42 20 H86 V58"/><path d="M46 39 H86"/><path d="M40 58 H86"/><path d="M64 4 V58 Q56 84 36 98"/>
+    </g>
+  </g>
+
+  <!-- 경면주사 붉은 획 -->
+  <g fill="none" stroke="#b5281f" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12" y="12" width="276" height="496" stroke-width="5"/>
+    <rect x="22" y="22" width="256" height="476" stroke-width="1.6"/>
+    <!-- 해와 달 -->
+    <circle cx="112" cy="62" r="16" stroke-width="4"/>
+    <circle cx="112" cy="62" r="4" fill="#b5281f" stroke="none"/>
+    <path d="M196 46 a17 17 0 1 0 14 30 a13 13 0 1 1 -14 -30z" stroke-width="3.6"/>
+    <!-- 머리 획 -->
+    <path d="M86 98 H214" stroke-width="6"/>
+    <path d="M98 112 H202" stroke-width="3.4"/>
+    <path d="M120 86 l6 6 M150 82 v8 M180 86 l-6 6" stroke-width="3.4"/>
+    <!-- 가운데 등뼈: 굽이치며 내려간다 -->
+    <path d="M150 116 C140 140 160 160 150 184 C140 208 162 228 150 252 C138 276 162 298 150 322 C140 346 160 368 150 392 C142 410 156 420 150 430" stroke-width="3.2"/>
+    <circle cx="150" cy="184" r="7" stroke-width="2.4"/><circle cx="150" cy="322" r="7" stroke-width="2.4"/>
+    <!-- 왼쪽 기둥: 꺾인 획 -->
+    <path d="M40 140 H76 V160 H44 V180 H78 M40 204 H76 V224 H44 V244 H78 M40 268 H76 V288 H44 V308 H78 M40 332 H76 V352 H44 V372 H78" stroke-width="4.2"/>
+    <!-- 오른쪽 기둥: 소용돌이와 입 구(口) -->
+    <path d="M242 156 m-16 0 a16 16 0 1 1 16 16 a10 10 0 1 1 -10 -10 a5 5 0 1 1 5 5" stroke-width="3.4"/>
+    <rect x="226" y="200" width="32" height="28" stroke-width="3.8"/>
+    <rect x="226" y="240" width="32" height="28" stroke-width="3.8"/>
+    <rect x="226" y="280" width="32" height="28" stroke-width="3.8"/>
+    <path d="M242 344 m-16 0 a16 16 0 1 1 16 16 a10 10 0 1 1 -10 -10 a5 5 0 1 1 5 5" stroke-width="3.4"/>
+    <!-- 숨은 글씨 위를 지나는 가는 실획 -->
+    <path d="M100 168 C124 190 176 178 202 200 M100 290 C126 312 174 300 202 326 M98 236 C130 230 172 244 204 236" stroke-width="1.6"/>
+    <!-- 아래 획 -->
+    <path d="M92 398 H208" stroke-width="5.6"/>
+    <path d="M104 412 H196" stroke-width="3"/>
+    <path d="M118 424 L102 440 M182 424 L198 440" stroke-width="3"/>
+  </g>
+  <!-- 인장(글자 대신 빈 획) -->
+  <rect x="116" y="446" width="68" height="50" fill="#b5281f"/>
+  <g fill="none" stroke="#e6cf88" stroke-width="3.2" stroke-linecap="round">
+    <path d="M132 456 a10 10 0 1 0 8 18 a8 8 0 1 1 -8 -18z"/>
+    <path d="M154 456 V486 M154 456 H172 V486 M154 466 H172 M154 476 H172"/>
+  </g>
+</svg>

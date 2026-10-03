@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>찾은 방울 (2026.09.05)</title>
+  <!-- 다은 블로그 '신을 받았다'. 창작 일러스트. 나무 손잡이에 놋방울 일곱, 오색 천. 뒤로 고리짝의 엮은 결. -->
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3f28"/><stop offset="1" stop-color="#3a2818"/></linearGradient>
+    <radialGradient id="bell" cx="36%" cy="30%" r="75%"><stop offset="0" stop-color="#fff2bf"/><stop offset=".35" stop-color="#e2b75f"/><stop offset=".8" stop-color="#9a6d2a"/><stop offset="1" stop-color="#5e4116"/></radialGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5e3d22"/><stop offset=".5" stop-color="#8d5f37"/><stop offset="1" stop-color="#4f321b"/></linearGradient>
+    <pattern id="weave" width="40" height="24" patternUnits="userSpaceOnUse">
+      <rect width="40" height="24" fill="#8a6a40"/><path d="M0 6 H40 M0 18 H40" stroke="#6e5230" stroke-width="5"/><path d="M10 0 V12 M30 12 V24" stroke="#a5835a" stroke-width="6"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="dof"><feGaussianBlur stdDeviation="3"/></filter>
+    <g id="b">
+      <circle r="34" fill="url(#bell)"/>
+      <path d="M-24 6 Q0 16 24 6" fill="none" stroke="#3a260c" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="0" cy="12" r="4" fill="#3a260c"/>
+      <circle cx="-10" cy="-12" r="7" fill="#fff8d8" opacity=".7"/>
+    </g>
+  </defs>
+  <rect width="1200" height="800" fill="url(#floor)"/>
+  <!-- 고리짝(흐리게) -->
+  <g filter="url(#dof)" opacity=".85"><rect x="0" y="0" width="1200" height="330" fill="url(#weave)"/><rect x="0" y="300" width="1200" height="40" fill="#4a3420"/></g>
+  <rect x="0" y="0" width="1200" height="340" fill="#1d140b" opacity=".35"/>
+  <!-- 그림자 -->
+  <ellipse cx="640" cy="640" rx="380" ry="60" fill="#140d06" opacity=".55" filter="url(#soft)"/>
+  <!-- 오색 천: 손잡이 머리에서 바닥으로 늘어진다 -->
+  <g>
+    <path d="M590 396 C640 470 700 560 820 640 L836 622 C724 548 664 462 606 388 Z" fill="#b8383b"/>
+    <path d="M594 400 C660 480 740 580 880 650 L890 628 C760 562 680 470 610 392 Z" fill="#d9a826"/>
+    <path d="M598 404 C640 500 700 600 800 690 L818 676 C720 590 662 494 614 398 Z" fill="#f4f0e6"/>
+    <path d="M600 408 C680 500 780 600 930 668 L938 646 C798 584 700 488 616 402 Z" fill="#34589c"/>
+    <path d="M596 410 C620 520 670 620 740 712 L760 702 C692 612 642 514 612 404 Z" fill="#3c7f52"/>
+  </g>
+  <!-- 손잡이 -->
+  <g stroke-linecap="round">
+    <path d="M468 712 L590 420" stroke="#5a3a20" stroke-width="40"/>
+    <path d="M468 712 L590 420" stroke="#8d5f37" stroke-width="22"/>
+    <path d="M474 690 L586 424" stroke="#b07c4a" stroke-width="5" opacity=".6"/>
+    <path d="M584 436 L604 388" stroke="#7a5a2a" stroke-width="34"/>
+  </g>
+  <!-- 방울 일곱 -->
+  <g>
+    <path d="M610 360 L700 250 M610 360 L760 330 M610 360 L620 230 M610 360 L540 260 M610 360 L770 420 M610 360 L680 440 M610 360 L520 340" stroke="#8a6a2a" stroke-width="6"/>
+    <use href="#b" x="700" y="250"/><use href="#b" x="760" y="330"/><use href="#b" x="620" y="230"/><use href="#b" x="540" y="260"/>
+    <use href="#b" x="770" y="420"/><use href="#b" x="680" y="440"/><use href="#b" x="520" y="340"/>
+  </g>
+  <rect width="1200" height="800" fill="#ffcf8a" opacity=".06"/>
+</svg>

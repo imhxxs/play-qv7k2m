@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>산울림의 약초산행 스킨 미리보기 (2025.12.09)</title>
+  <!-- 다은 블로그 '선생님 블로그 꾸며 드림'. 창작 화면. 탭 제목 '어디 가십니까', 맨 위 물가의 큰 소나무 사진,
+       큰 글씨 본문(회색 줄), 옆에 매듭 일곱 개의 흰 천('비밀 칸'). 비밀 칸의 이름·내용은 보이지 않는다. -->
+  <defs>
+    <linearGradient id="photoSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9dfd6"/><stop offset="1" stop-color="#aab6ac"/></linearGradient>
+    <linearGradient id="photoWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb0aa"/><stop offset="1" stop-color="#6f817b"/></linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f1e8"/><stop offset=".5" stop-color="#fffdf6"/><stop offset="1" stop-color="#e8e3d6"/></linearGradient>
+    <filter id="needle"><feTurbulence type="fractalNoise" baseFrequency=".12" numOctaves="2" seed="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="8"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="#d6d3cc"/>
+  <!-- 브라우저 틀 -->
+  <rect x="40" y="30" width="1120" height="740" rx="12" fill="#ecebe7"/>
+  <path d="M40 42 a12 12 0 0 1 12 -12 H1148 a12 12 0 0 1 12 12 V96 H40 Z" fill="#dcdad4"/>
+  <circle cx="72" cy="54" r="7" fill="#e06b5f"/><circle cx="96" cy="54" r="7" fill="#e3b54d"/><circle cx="120" cy="54" r="7" fill="#7cbf62"/>
+  <!-- 탭 둘: 미리보기 탭은 '어디 가십니까', 지금 보는 탭은 작업 중인 편집기 -->
+  <path d="M150 96 V74 a8 8 0 0 1 8 -8 H390 a8 8 0 0 1 8 8 V96 Z" fill="#c9c6bf"/>
+  <text x="172" y="88" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" fill="#3a3732">어디 가십니까</text>
+  <path d="M404 96 V74 a8 8 0 0 1 8 -8 H640 a8 8 0 0 1 8 8 V96 Z" fill="#ecebe7"/>
+  <text x="426" y="88" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="15" fill="#3a3732">스킨 편집 — 솔글</text>
+  <rect x="40" y="96" width="1120" height="40" fill="#f6f5f2"/>
+  <rect x="70" y="104" width="760" height="24" rx="12" fill="#e4e2dc"/>
+  <!-- 스킨 화면 -->
+  <rect x="60" y="146" width="1080" height="608" fill="#f1ede2"/>
+  <rect x="60" y="146" width="1080" height="84" fill="#2f4a33"/>
+  <text x="100" y="203" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="40" font-weight="700" fill="#efe6cf">산울림의 약초산행</text>
+  <rect x="900" y="176" width="90" height="26" rx="13" fill="#4f6a46"/><rect x="1004" y="176" width="100" height="26" rx="13" fill="#4f6a46"/>
+  <!-- 큰 소나무 사진 -->
+  <g>
+    <rect x="100" y="256" width="700" height="300" fill="url(#photoSky)"/>
+    <rect x="100" y="430" width="700" height="126" fill="url(#photoWater)"/>
+    <path d="M100 470 C200 450 280 460 340 490 C380 510 400 540 420 556 H100 Z" fill="#5d4c38"/>
+    <path d="M230 520 C232 470 214 420 236 380 C258 340 290 320 330 300" fill="none" stroke="#5b3a26" stroke-width="22" stroke-linecap="round"/>
+    <path d="M236 380 C206 360 176 356 140 362" fill="none" stroke="#5b3a26" stroke-width="9" stroke-linecap="round"/>
+    <g filter="url(#needle)"><ellipse cx="330" cy="298" rx="110" ry="22" fill="#2f4a33"/><ellipse cx="140" cy="360" rx="60" ry="15" fill="#33503a"/><ellipse cx="300" cy="404" rx="56" ry="13" fill="#3a5a40"/></g>
+    <rect x="100" y="256" width="700" height="300" fill="none" stroke="#c9c2b0" stroke-width="2"/>
+  </g>
+  <!-- 큰 글씨 본문 -->
+  <g fill="#7c7465"><rect x="100" y="584" width="620" height="20" rx="4"/><rect x="100" y="620" width="560" height="20" rx="4"/><rect x="100" y="656" width="660" height="20" rx="4"/><rect x="100" y="692" width="420" height="20" rx="4"/></g>
+  <!-- 비밀 칸: 흰 무명천과 매듭 일곱 -->
+  <g>
+    <rect x="850" y="256" width="250" height="34" fill="#4a3826"/>
+    <text x="975" y="279" text-anchor="middle" font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif" font-size="17" fill="#efe6cf">비밀 칸</text>
+    <path d="M940 300 C930 380 960 440 944 520 C930 600 958 660 946 730 H1006 C1018 660 990 600 1004 520 C1020 440 990 380 1000 300 Z" fill="url(#cloth)" stroke="#d6cfbe" stroke-width="2"/>
+    <g fill="#e9e3d3" stroke="#bfb6a0" stroke-width="2">
+      <ellipse cx="972" cy="330" rx="24" ry="13"/><ellipse cx="968" cy="384" rx="24" ry="13"/><ellipse cx="976" cy="438" rx="24" ry="13"/>
+      <ellipse cx="970" cy="492" rx="24" ry="13"/><ellipse cx="974" cy="546" rx="24" ry="13"/><ellipse cx="968" cy="600" rx="24" ry="13"/><ellipse cx="976" cy="654" rx="24" ry="13"/>
+    </g>
+  </g>
+  <!-- 마우스 커서 -->
+  <path d="M760 470 L760 506 L770 496 L778 514 L786 510 L778 492 L792 492 Z" fill="#111" stroke="#fff" stroke-width="2"/>
+</svg>

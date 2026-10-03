@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180" role="img" aria-label="첫 신점 무료 배너">
+  <defs><linearGradient id="p" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b1660"/><stop offset=".6" stop-color="#6c2f9c"/><stop offset="1" stop-color="#b9539a"/></linearGradient>
+  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2b8"/><stop offset="1" stop-color="#d9a640"/></linearGradient></defs>
+  <rect width="320" height="180" fill="url(#p)"/>
+  <g fill="#f8e3a0" opacity=".8"><circle cx="30" cy="30" r="1.6"/><circle cx="290" cy="24" r="2"/><circle cx="260" cy="150" r="1.4"/><circle cx="52" cy="146" r="1.8"/><circle cx="160" cy="18" r="1.2"/></g>
+  <path d="M276 52 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" fill="#ffe9a6"/>
+  <text x="30" y="70" font-family="sans-serif" font-size="15" fill="#f6e7ff">선희보살과 선생님 30인</text>
+  <text x="30" y="118" font-family="sans-serif" font-weight="700" font-size="40" fill="url(#g)">첫 신점 무료</text>
+  <rect x="30" y="134" width="132" height="28" rx="14" fill="#f1cf6b"/>
+  <text x="96" y="153" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="13" fill="#3b1660">지금 신청하기</text>
+</svg>

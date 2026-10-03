@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>함께할 선생님 모집 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap sh-job">
+    <p class="sh-crumb">홈 › 함께할 선생님 모집</p>
+
+    <header class="sh-job__hero">
+      <p class="sh-badge sh-badge--hot" style="margin-bottom:8px">상시 모집</p>
+      <h1>선희당과 함께할 선생님을 모십니다</h1>
+      <p>재택 · 시간 자유 · 교육 제공. 처음이셔도 응대 대본으로 바로 시작하실 수 있습니다.</p>
+    </header>
+
+    <section class="sh-card sh-sec" aria-labelledby="cond-h">
+      <h2 class="sh-sec__h" id="cond-h">모집 요강</h2>
+      <dl>
+        <dt>모집 분야</dt><dd>060 전화 상담 선생님 00명 · 무료 신점 답장 선생님 00명</dd>
+        <dt>지원 자격</dt><dd><b>사주·타로 상담 가능자, 신내림 여부 무관, 응대 대본 제공</b><br><span class="sh-hint">경력이 없어도 지원하실 수 있습니다.</span></dd>
+        <dt>근무 형태</dt><dd>재택 근무 · 원하는 시간에 접속 · 휴대폰 하나면 충분</dd>
+        <dt>수익</dt><dd>통화 시간에 따른 수익 배분 · 매월 10일 정산</dd>
+        <dt>지원해 드려요</dt><dd>프로필 사진(이미지 컷) 제공 · 선생님 이름·경력 소개 문구 운영팀 작성 · 응대 대본과 교육 자료 제공</dd>
+        <dt>지원 방법</dt><dd><a href="qna.html">1:1 문의</a>에 제목 ‘선생님 지원’으로 남겨 주세요. 담당자가 메일로 연락드립니다.</dd>
+      </dl>
+    </section>
+
+    <section class="sh-card sh-sec" aria-labelledby="script-h">
+      <h2 class="sh-sec__h" id="script-h">응대 대본 예시 — 무료 신점 답장</h2>
+      <p class="sh-hint" style="margin-bottom:10px">무료 신점을 신청한 손님께는 아래 대본으로 답장을 보냅니다. 선생님 이름만 바꿔 넣으시면 됩니다.</p>
+      <div class="sh-script" id="script-box" data-view="X-seonhee-script-sample">
+        <span class="sh-script__label">대본 예시</span>
+        <p><span class="sh-fillin">○○○</span>님, 무료 신점 신청이 접수되어 <span class="sh-fillin">○○</span> 선생님이 배정되었습니다.</p>
+        <p><b>(풀이)</b> <span id="script-text"></span></p>
+        <p style="text-align:right">— <span class="sh-fillin">○○</span> 드림</p>
+        <p class="sh-script__note">※ 손님이 남긴 고민과 관계없이 풀이는 위 문장을 그대로 씁니다. 문장 순서를 바꾸거나 빼지 마세요.</p>
+      </div>
+      <div class="sh-post__tools" id="script-tools"><md-collect card="X-seonhee-script-sample"></md-collect></div>
+    </section>
+
+    <section class="sh-card sh-sec" aria-labelledby="faq2-h">
+      <h2 class="sh-sec__h" id="faq2-h">지원 전에 확인해 주세요</h2>
+      <ul>
+        <li>선희당 홈페이지와 060 전화 상담은 (주)달무리컴퍼니가 운영을 대행합니다. 본 모집도 (주)달무리컴퍼니가 진행합니다.</li>
+        <li>선희보살님 직접 상담(예약제)과는 별도로 운영됩니다.</li>
+        <li>통화 시작 전 요금 안내는 시스템이 자동으로 내보냅니다.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<script type="module">
+  import { start, scriptText, checkO2 } from './site.js';
+  import { FORTUNE_SCRIPT } from '../src/data/mail/templates.js';
+
+  const game = start({ page: 'recruit', title: '함께할 선생님 모집 | 선희당' });
+  // 무료 신점 답장의 풀이 문장과 토씨 하나 다르지 않다(원본: src/data/mail/templates.js FORTUNE_SCRIPT)
+  document.getElementById('script-text').textContent = scriptText(FORTUNE_SCRIPT);
+
+  // 받은 풀이(무료 신점 답장 · 오늘의 사주 · 지난 상담)와 이 대본을 둘 다 봤다면 → E52(O2)
+  const tools = document.getElementById('script-tools');
+  const showE52 = () => {
+    if (!game.viewed('E52') || tools.querySelector('md-collect[card="E52"]')) return;
+    const b = document.createElement('md-collect');
+    b.setAttribute('card', 'E52');
+    b.setAttribute('label', '받은 풀이와 같다 — 담기');
+    tools.append(b);
+  };
+  game.on('view', () => { checkO2(game); showE52(); });
+  showE52();
+</script>
+</body>
+</html>

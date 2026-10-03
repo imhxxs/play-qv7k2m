@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f3eee4">
+<title>명월선녀의 신병일기 · 솔글</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="../_engine/solgeul.css">
+<link rel="stylesheet" href="skin.css">
+</head>
+<body>
+<!-- 솔글 블로그 · @myeongwol · 스킨: 직접 만듦 -->
+<div id="sg-root" class="sg" data-blog="myeongwol">
+  <noscript><p style="padding:24px">이 블로그는 자바스크립트가 켜져 있어야 보입니다.</p></noscript>
+</div>
+<script type="module">
+  import { startBlog } from '../_engine/solgeul.js';
+  import { renderObangLock } from './lock.js';
+  import blog from './posts.js';
+  startBlog({ blog, page: 'index', widgets: { obang: renderObangLock } });
+</script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <title>장군님 상과 명두 (2026.09.06)</title>
+  <!-- 월하당 신당 북쪽 벽(창작 일러스트). 현판 月下堂 / 왼쪽 무신도(최영 장군, 추상) / 무신도 오른쪽 벽의 명두 /
+       아래 장군님 상과 상차림. 명두: 지름 36cm ≈ 160px, 상 위 40cm ≈ 178px, 가운데 지름 40%에 日月·북두칠성, 바깥 띠는 민무늬 -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d8c49c"/><stop offset=".6" stop-color="#e6d6b2"/><stop offset="1" stop-color="#cdb68c"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="50%" cy="78%" r="75%">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity=".28"/><stop offset=".6" stop-color="#ffb24a" stop-opacity=".06"/><stop offset="1" stop-color="#2a1608" stop-opacity=".55"/>
+    </radialGradient>
+    <radialGradient id="brass" cx="38%" cy="32%" r="78%">
+      <stop offset="0" stop-color="#fff4c8"/><stop offset=".22" stop-color="#f0d185"/><stop offset=".55" stop-color="#c6984a"/><stop offset=".85" stop-color="#9a6f2e"/><stop offset="1" stop-color="#6e4a1a"/>
+    </radialGradient>
+    <radialGradient id="core" cx="45%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#e2bf70"/><stop offset="1" stop-color="#b48a3e"/>
+    </radialGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a2c18"/><stop offset="1" stop-color="#2c180c"/></linearGradient>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="0" y1="20" x2="0" y2="68"><stop offset="0" stop-color="#ffe6a0"/><stop offset="1" stop-color="#c9962b"/></linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f1e2"/><stop offset="1" stop-color="#e5dcc6"/></linearGradient>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9d6a8"/><stop offset=".5" stop-color="#f3e5c0"/><stop offset="1" stop-color="#e3cf9e"/></linearGradient>
+    <radialGradient id="flame" cx="50%" cy="60%" r="50%"><stop offset="0" stop-color="#fff6c8"/><stop offset=".5" stop-color="#ffc24a"/><stop offset="1" stop-color="#ff7a00" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="blur1"><feGaussianBlur stdDeviation="1.2"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/>
+      <feColorMatrix values="0 0 0 0 .5  0 0 0 0 .42  0 0 0 0 .3  0 0 0 .16 0"/>
+    </filter>
+    <pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 3h6M3 0v6" stroke="#d8ccb0" stroke-width=".6"/></pattern>
+  </defs>
+
+  <!-- 벽과 기둥 -->
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <rect width="800" height="600" filter="url(#grain)"/>
+  <rect x="0" y="0" width="24" height="600" fill="#5a3418"/><rect x="776" y="0" width="24" height="600" fill="#5a3418"/>
+  <rect x="0" y="0" width="800" height="9" fill="#4a2a12"/>
+
+  <!-- 현판 月下堂 -->
+  <path d="M318 9 L330 18 M482 9 L470 18" stroke="#8a1a1a" stroke-width="2"/>
+  <rect x="296" y="16" width="208" height="56" rx="3" fill="url(#board)" stroke="#7a4a24" stroke-width="3"/>
+  <rect x="304" y="22" width="192" height="44" fill="none" stroke="#a87a3a" stroke-width="1" opacity=".7"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 月 -->
+    <g transform="translate(322 24)">
+      <path d="M10 4 V30 Q10 38 3 41"/><path d="M10 4 H32 V36 Q32 41 26 39"/><path d="M11 16 H31"/><path d="M11 26 H31"/>
+    </g>
+    <!-- 下 -->
+    <g transform="translate(378 24)">
+      <path d="M3 6 H41"/><path d="M22 6 V41"/><path d="M25 18 L34 26"/>
+    </g>
+    <!-- 堂 -->
+    <g transform="translate(432 22)" stroke-width="4.4">
+      <path d="M22 2 V9"/><path d="M12 4 L15 9"/><path d="M33 4 L30 9"/>
+      <path d="M5 12 V17"/><path d="M5 12 H40 V17"/>
+      <path d="M14 17 H31 V24 H14 Z"/>
+      <path d="M10 32 H35"/><path d="M22.5 26 V42"/><path d="M5 43 H40"/>
+    </g>
+  </g>
+
+  <!-- 못과 명두 끈 -->
+  <circle cx="452" cy="77" r="3" fill="#3a2a1a"/>
+  <path d="M452 78 C448 80 448 84 452 86 C456 84 456 80 452 78" fill="none" stroke="#b3242a" stroke-width="2"/>
+
+  <!-- 무신도(최영 장군님, 창작·추상) -->
+  <g>
+    <rect x="186" y="76" width="180" height="9" rx="4" fill="#3a2414"/>
+    <circle cx="186" cy="80.5" r="6" fill="#6b4423"/><circle cx="366" cy="80.5" r="6" fill="#6b4423"/>
+    <rect x="196" y="85" width="160" height="322" fill="#2c5552"/>
+    <path d="M196 95h160M196 397h160" stroke="#c9a24a" stroke-width="1.2" opacity=".7"/>
+    <rect x="208" y="100" width="136" height="290" fill="url(#silk)"/>
+    <!-- 구름 -->
+    <g fill="none" stroke="#9ab3c4" stroke-width="2" opacity=".7">
+      <path d="M216 120c6-8 16-4 16 2 6-6 14 0 10 6"/><path d="M302 112c6-8 16-4 16 2 6-6 14 0 10 6"/><path d="M220 360c8-6 18-2 16 4 8-4 14 2 8 8"/>
+    </g>
+    <circle cx="276" cy="150" r="30" fill="#f3d27a" opacity=".55"/>
+    <!-- 붉은 제목 칸(글자는 알아볼 수 없게) -->
+    <rect x="214" y="108" width="13" height="56" fill="#b3242a"/>
+    <path d="M217 114h7M217 124h7M217 134h7M217 144h7M217 154h7" stroke="#f3d27a" stroke-width="1.4"/>
+    <!-- 갑옷·철릭 -->
+    <path d="M240 186 Q276 176 312 186 L330 372 Q276 384 222 372 Z" fill="#b3242a"/>
+    <path d="M240 186 Q276 176 312 186 L318 230 Q276 222 234 230 Z" fill="#2a4a8a"/>
+    <g fill="none" stroke="#f3d27a" stroke-width="1" opacity=".55">
+      <path d="M238 250q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0"/><path d="M234 270q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0"/>
+      <path d="M232 290q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0"/><path d="M230 310q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0q8 6 16 0"/>
+    </g>
+    <rect x="236" y="240" width="80" height="8" fill="#e0b040"/>
+    <path d="M222 372 Q276 384 330 372 L334 386 Q276 396 218 386 Z" fill="#1f3a6a"/>
+    <!-- 투구와 붉은 술 -->
+    <path d="M276 108 C268 116 266 120 268 124 M276 108 C284 116 286 120 284 124" fill="none" stroke="#c0392b" stroke-width="5" stroke-linecap="round"/>
+    <path d="M252 140 Q276 112 300 140 Z" fill="#2b2b3a"/>
+    <ellipse cx="276" cy="141" rx="30" ry="5" fill="#1d1d28"/>
+    <!-- 얼굴은 그리지 않는다 -->
+    <ellipse cx="276" cy="160" rx="13" ry="16" fill="#efd2aa"/>
+    <path d="M266 170 Q276 214 286 170 Q276 180 266 170 Z" fill="#2a2420"/>
+    <!-- 칼 -->
+    <path d="M276 206 V362" stroke="#d9dde2" stroke-width="3.2"/>
+    <path d="M276 206 V362" stroke="#8a929a" stroke-width="1"/>
+    <rect x="266" y="200" width="20" height="5" rx="2" fill="#e0b040"/>
+    <ellipse cx="268" cy="214" rx="6" ry="5" fill="#efd2aa"/><ellipse cx="284" cy="214" rx="6" ry="5" fill="#efd2aa"/>
+    <rect x="186" y="404" width="180" height="9" rx="4" fill="#3a2414"/>
+    <circle cx="186" cy="408.5" r="6" fill="#6b4423"/><circle cx="366" cy="408.5" r="6" fill="#6b4423"/>
+  </g>
+
+  <!-- 명두(둥근 볼록 놋거울). 상 왼쪽 끝 쪽으로 15°쯤 기울어 가로가 살짝 좁다 -->
+  <g transform="translate(452 162)">
+    <ellipse cx="3" cy="5" rx="80" ry="83" fill="#2a1608" opacity=".35" filter="url(#soft)"/>
+    <ellipse rx="77" ry="80" fill="url(#brass)"/>
+    <ellipse rx="77" ry="80" fill="none" stroke="#5e3e14" stroke-width="5"/>
+    <ellipse rx="72.5" ry="75.5" fill="none" stroke="#f8e3a6" stroke-width="1.2" opacity=".55"/>
+    <!-- 민무늬 바깥 띠의 반짝임 -->
+    <path d="M-56 -36 A68 70 0 0 1 -6 -70" fill="none" stroke="#fffbe6" stroke-width="9" stroke-linecap="round" opacity=".55" filter="url(#blur1)"/>
+    <path d="M44 52 A62 64 0 0 1 8 70" fill="none" stroke="#fff3c8" stroke-width="5" stroke-linecap="round" opacity=".35" filter="url(#blur1)"/>
+    <path d="M60 -30 A70 72 0 0 1 64 22" fill="none" stroke="#7a5420" stroke-width="6" stroke-linecap="round" opacity=".25" filter="url(#blur1)"/>
+    <!-- 가운데 새김(지름의 40%) -->
+    <ellipse rx="30.5" ry="32" fill="url(#core)"/>
+    <ellipse rx="30.5" ry="32" fill="none" stroke="#5a3a12" stroke-width="1.6"/>
+    <ellipse rx="28" ry="29.5" fill="none" stroke="#f6dfa0" stroke-width=".8" opacity=".8"/>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="#f6dfa0" stroke-width="1.6" transform="translate(.8 .8)" opacity=".7">
+        <path d="M-19 -19 H-9 V-4 H-19 Z M-19 -11.5 H-9"/>
+        <path d="M2 -19 V-7 Q2 -3 -1 -2 M2 -19 H12 V-5 Q12 -2 9 -3 M2 -14 H12 M2 -9.5 H12"/>
+      </g>
+      <g stroke="#4a2c0c" stroke-width="1.7">
+        <!-- 日 -->
+        <path d="M-19 -19 H-9 V-4 H-19 Z M-19 -11.5 H-9"/>
+        <!-- 月 -->
+        <path d="M2 -19 V-7 Q2 -3 -1 -2 M2 -19 H12 V-5 Q12 -2 9 -3 M2 -14 H12 M2 -9.5 H12"/>
+      </g>
+      <!-- 북두칠성 -->
+      <path d="M-20 6 L-20 17 L-8 19 L-7 8 Z M-7 8 L3 7 L12 10 L21 16" stroke="#4a2c0c" stroke-width=".9"/>
+    </g>
+    <g fill="#3a2008">
+      <circle cx="-20" cy="6" r="2.1"/><circle cx="-20" cy="17" r="2.1"/><circle cx="-8" cy="19" r="2.1"/><circle cx="-7" cy="8" r="2.1"/>
+      <circle cx="3" cy="7" r="2.1"/><circle cx="12" cy="10" r="2.1"/><circle cx="21" cy="16" r="2.1"/>
+    </g>
+    <circle cx="0" cy="-80" r="4" fill="#8a6a2a" stroke="#5e3e14" stroke-width="1.5"/>
+  </g>
+
+  <!-- 장군님 상 -->
+  <path d="M150 420 H650 L668 452 H132 Z" fill="url(#cloth)"/>
+  <path d="M150 420 H650 L668 452 H132 Z" fill="url(#weave)" opacity=".5"/>
+  <path d="M132 452 H668 V586 H132 Z" fill="url(#cloth)"/>
+  <path d="M132 452 H668 V586 H132 Z" fill="url(#weave)" opacity=".5"/>
+  <g stroke="#d6cbb2" stroke-width="2" fill="none" opacity=".8">
+    <path d="M200 456 C204 500 198 540 202 584"/><path d="M330 456 C334 510 328 550 332 584"/><path d="M470 456 C466 510 472 552 468 584"/><path d="M600 456 C604 500 598 546 602 584"/>
+  </g>
+  <rect x="132" y="566" width="536" height="14" fill="#b3242a"/>
+  <path d="M136 573 H664" stroke="#e0b040" stroke-width="2" stroke-dasharray="10 6"/>
+  <rect x="132" y="586" width="536" height="14" fill="#3a2010"/>
+
+  <!-- 상차림 -->
+  <!-- 놋잔(상 왼쪽 끝) -->
+  <g transform="translate(172 0)">
+    <ellipse cx="0" cy="447" rx="17" ry="4.5" fill="#a87a2e"/>
+    <path d="M-11 428 L-8 444 H8 L11 428 Z" fill="#d9b05a"/>
+    <ellipse cx="0" cy="428" rx="11" ry="3" fill="#7a5420"/>
+    <ellipse cx="0" cy="428.6" rx="8.5" ry="2" fill="#9a6a2a"/>
+    <path d="M-7 431 L-5 442" stroke="#fff3c8" stroke-width="1.5" opacity=".7"/>
+  </g>
+  <!-- 촛대 -->
+  <g>
+    <circle cx="232" cy="318" r="24" fill="url(#flame)" opacity=".8"/>
+    <path d="M232 306c4 6 6 10 6 13a6 6 0 0 1-12 0c0-3 2-7 6-13z" fill="#ffd36a"/>
+    <rect x="224" y="326" width="16" height="44" fill="#f8f2e2"/>
+    <path d="M230 370 H234 V440 H230 Z" fill="#c9962b"/><ellipse cx="232" cy="370" rx="12" ry="3" fill="#d9b45a"/><ellipse cx="232" cy="442" rx="18" ry="5" fill="#b8862a"/>
+    <circle cx="610" cy="318" r="24" fill="url(#flame)" opacity=".8"/>
+    <path d="M610 306c4 6 6 10 6 13a6 6 0 0 1-12 0c0-3 2-7 6-13z" fill="#ffd36a"/>
+    <rect x="602" y="326" width="16" height="44" fill="#f8f2e2"/>
+    <path d="M608 370 H612 V440 H608 Z" fill="#c9962b"/><ellipse cx="610" cy="370" rx="12" ry="3" fill="#d9b45a"/><ellipse cx="610" cy="442" rx="18" ry="5" fill="#b8862a"/>
+  </g>
+  <!-- 사과·배·감·떡 -->
+  <g>
+    <ellipse cx="300" cy="444" rx="34" ry="7" fill="#8a6a3a"/>
+    <circle cx="284" cy="430" r="12" fill="#b71c1c"/><circle cx="308" cy="430" r="12" fill="#c62828"/><circle cx="296" cy="412" r="12" fill="#d32f2f"/>
+    <path d="M292 404 q4-3 6 0" stroke="#fff" stroke-width="2" opacity=".5" fill="none"/>
+    <ellipse cx="362" cy="444" rx="28" ry="6" fill="#8a6a3a"/>
+    <path d="M352 438c-10-2-10-20 0-24 2-8 10-8 12 0 10 4 10 22 0 24z" fill="#d8b25a"/>
+    <path d="M370 438c-8-2-8-16 0-19 2-6 8-6 10 0 8 3 8 17 0 19z" fill="#cfa24a"/>
+    <ellipse cx="400" cy="444" rx="22" ry="6" fill="#a87a2e"/>
+    <path d="M382 430 Q400 448 418 430 Z" fill="#d9b05a"/><ellipse cx="400" cy="430" rx="18" ry="4" fill="#bfe0f0" opacity=".9"/>
+    <ellipse cx="458" cy="444" rx="30" ry="7" fill="#8a6a3a"/>
+    <circle cx="444" cy="432" r="11" fill="#ef7a1a"/><circle cx="468" cy="432" r="11" fill="#f08a2a"/><circle cx="456" cy="415" r="11" fill="#e8741a"/>
+    <path d="M452 406h8M456 404v4" stroke="#3a5a2a" stroke-width="2.5"/>
+    <ellipse cx="530" cy="444" rx="30" ry="6" fill="#8a6a3a"/>
+    <rect x="506" y="430" width="48" height="11" fill="#fbf6ea"/><rect x="508" y="419" width="44" height="11" fill="#f2b8c6"/><rect x="510" y="408" width="40" height="11" fill="#fbf6ea"/><rect x="512" y="397" width="36" height="11" fill="#c8e2b0"/>
+  </g>
+
+  <!-- 양옆 지화 -->
+  <g>
+    <path d="M60 586 L72 470 H104 L116 586 Z" fill="#7a3a1e"/>
+    <g fill="#e66b8d"><circle cx="70" cy="250" r="14"/><circle cx="104" cy="300" r="13"/><circle cx="62" cy="360" r="14"/></g>
+    <g fill="#f3d27a"><circle cx="98" cy="226" r="12"/><circle cx="76" cy="320" r="12"/><circle cx="110" cy="396" r="12"/></g>
+    <g fill="#f6f1e2"><circle cx="86" cy="276" r="13"/><circle cx="96" cy="350" r="12"/><circle cx="68" cy="420" r="12"/></g>
+    <g fill="#d32f2f"><circle cx="112" cy="260" r="10"/><circle cx="54" cy="300" r="10"/><circle cx="88" cy="444" r="11"/></g>
+    <path d="M88 470 V230" stroke="#3a6a2a" stroke-width="2"/>
+    <path d="M684 586 L696 470 H728 L740 586 Z" fill="#7a3a1e"/>
+    <g fill="#e66b8d"><circle cx="702" cy="252" r="14"/><circle cx="736" cy="308" r="13"/><circle cx="694" cy="368" r="14"/></g>
+    <g fill="#f3d27a"><circle cx="730" cy="228" r="12"/><circle cx="708" cy="326" r="12"/><circle cx="742" cy="398" r="12"/></g>
+    <g fill="#f6f1e2"><circle cx="718" cy="280" r="13"/><circle cx="728" cy="354" r="12"/><circle cx="700" cy="422" r="12"/></g>
+    <g fill="#d32f2f"><circle cx="744" cy="264" r="10"/><circle cx="686" cy="304" r="10"/><circle cx="720" cy="446" r="11"/></g>
+    <path d="M712 470 V232" stroke="#3a6a2a" stroke-width="2"/>
+  </g>
+
+  <!-- 빛과 사진 느낌 -->
+  <rect width="800" height="600" fill="url(#warm)"/>
+  <text x="768" y="582" text-anchor="end" font-family="'Courier New',Courier,monospace" font-size="20" font-weight="700" fill="#ff8a2a" opacity=".9">2026.09.06</text>
+</svg>

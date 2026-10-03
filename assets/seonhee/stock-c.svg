@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="금빛 역광 속 두루마기 차림 도령의 실루엣(이미지 컷)">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="34%" r="78%">
+      <stop offset="0" stop-color="#f7ecfd"/>
+      <stop offset=".55" stop-color="#cfa9e6"/>
+      <stop offset="1" stop-color="#6d3c96"/>
+    </radialGradient>
+    <radialGradient id="back" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff2c2"/>
+      <stop offset=".6" stop-color="#f3cf72" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#f3cf72" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2050"/>
+      <stop offset="1" stop-color="#1c0d2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g fill="#fff3c4">
+    <circle cx="34" cy="40" r="14" opacity=".28"/><circle cx="206" cy="58" r="10" opacity=".3"/>
+    <circle cx="190" cy="22" r="6" opacity=".35"/><circle cx="20" cy="120" r="8" opacity=".22"/>
+    <circle cx="222" cy="140" r="12" opacity=".2"/>
+  </g>
+  <circle cx="120" cy="100" r="84" fill="url(#back)"/>
+  <!-- 실루엣 -->
+  <path d="M120 44c20 0 34 16 34 38c0 24-14 44-34 44s-34-20-34-44c0-22 14-38 34-38z" fill="url(#sil)"/>
+  <path d="M88 70c4-22 18-32 32-32s30 10 34 30c-10-8-22-12-34-12s-24 4-32 14z" fill="#160a22"/>
+  <path d="M106 120h28v26h-28z" fill="url(#sil)"/>
+  <path d="M22 240c6-50 36-80 74-90l24 26 24-26c38 10 68 40 74 90z" fill="url(#sil)"/>
+  <path d="M96 150l24 34 24-34" fill="none" stroke="#efe6f7" stroke-width="5" stroke-linejoin="round" opacity=".85"/>
+  <path d="M120 184v56" stroke="#0f0618" stroke-width="2"/>
+  <!-- 가장자리 빛 -->
+  <path d="M154 82c0 24-14 44-34 44" fill="none" stroke="#ffe7a0" stroke-width="2" opacity=".7"/>
+  <path d="M198 240c-6-42-30-70-58-84" fill="none" stroke="#ffe7a0" stroke-width="2" opacity=".5"/>
+</svg>

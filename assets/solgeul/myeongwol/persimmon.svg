@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>감 따는 날 (2025.11.16)</title>
+  <!-- 다은 블로그 '감 따는 날'. 창작 일러스트. 월하당 마당 감나무, 장대, 기와지붕 처마, 꼭대기에 남긴 까치밥. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7fa9c9"/><stop offset=".7" stop-color="#bcd3df"/><stop offset="1" stop-color="#e6ece8"/></linearGradient>
+    <radialGradient id="kam" cx="38%" cy="34%" r="70%"><stop offset="0" stop-color="#ffc072"/><stop offset=".55" stop-color="#ef8a2c"/><stop offset="1" stop-color="#c25a14"/></radialGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4e5157"/><stop offset="1" stop-color="#2c2e33"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".45" filter="url(#soft)"><ellipse cx="260" cy="160" rx="160" ry="22"/><ellipse cx="900" cy="110" rx="220" ry="18"/></g>
+  <!-- 가지 -->
+  <g fill="none" stroke="#3b2a1e" stroke-linecap="round">
+    <path d="M1200 520 C1050 470 940 420 860 330 C800 260 760 190 700 120" stroke-width="30"/>
+    <path d="M940 420 C900 470 820 500 700 520" stroke-width="16"/>
+    <path d="M860 330 C780 320 690 280 600 220 C540 180 470 160 380 150" stroke-width="14"/>
+    <path d="M760 190 C720 140 690 90 690 30" stroke-width="10"/>
+    <path d="M600 220 C560 260 500 280 430 290" stroke-width="8"/>
+    <path d="M700 120 C640 100 600 60 580 10" stroke-width="7"/>
+    <path d="M820 500 C780 560 700 590 640 600" stroke-width="7"/>
+    <path d="M480 160 C450 120 440 80 450 40" stroke-width="5"/>
+    <path d="M1060 470 C1040 400 1050 330 1090 270" stroke-width="10"/>
+  </g>
+  <!-- 남은 잎 -->
+  <g opacity=".9">
+    <ellipse cx="620" cy="200" rx="22" ry="10" fill="#c79a3a" transform="rotate(-30 620 200)"/>
+    <ellipse cx="900" cy="300" rx="20" ry="9" fill="#a6702a" transform="rotate(40 900 300)"/>
+    <ellipse cx="460" cy="285" rx="18" ry="8" fill="#b9472c" transform="rotate(10 460 285)"/>
+    <ellipse cx="1080" cy="300" rx="22" ry="9" fill="#c28a36" transform="rotate(-50 1080 300)"/>
+    <ellipse cx="700" cy="560" rx="20" ry="8" fill="#9c5a26" transform="rotate(20 700 560)"/>
+  </g>
+  <!-- 감 -->
+  <g>
+    <g transform="translate(690 40)"><circle r="26" fill="url(#kam)"/><path d="M-10 -24 l10 6 l10 -6 l-4 10 h-12 z" fill="#4a3a1e"/></g>
+    <g transform="translate(582 18)"><circle r="22" fill="url(#kam)"/><path d="M-8 -20 l8 5 l8 -5 l-3 8 h-10 z" fill="#4a3a1e"/></g>
+    <g transform="translate(452 50)"><circle r="24" fill="url(#kam)"/><path d="M-9 -22 l9 5 l9 -5 l-3 9 h-12 z" fill="#4a3a1e"/></g>
+    <g transform="translate(386 168)"><circle r="27" fill="url(#kam)"/><path d="M-10 -25 l10 6 l10 -6 l-4 10 h-12 z" fill="#4a3a1e"/></g>
+    <g transform="translate(1090 286)"><circle r="25" fill="url(#kam)"/></g>
+  </g>
+  <!-- 장대 -->
+  <path d="M120 800 L640 230" stroke="#b9a072" stroke-width="12" stroke-linecap="round"/>
+  <path d="M640 230 L662 196 M640 230 L672 216" stroke="#a88f62" stroke-width="7" stroke-linecap="round"/>
+  <path d="M120 800 L640 230" stroke="#8c7449" stroke-width="3" opacity=".6"/>
+  <!-- 처마와 기와 -->
+  <path d="M0 640 C300 610 700 610 1200 650 V800 H0 Z" fill="url(#roof)"/>
+  <g fill="#3a3c41">
+    <path d="M0 646 C300 616 700 616 1200 656 L1200 690 C700 650 300 650 0 680 Z"/>
+  </g>
+  <g fill="#5b5e64">
+    <path d="M10 680 a22 14 0 0 1 44 0 z M70 676 a22 14 0 0 1 44 0 z M130 672 a22 14 0 0 1 44 0 z M190 669 a22 14 0 0 1 44 0 z M250 667 a22 14 0 0 1 44 0 z M310 665 a22 14 0 0 1 44 0 z M370 664 a22 14 0 0 1 44 0 z M430 663 a22 14 0 0 1 44 0 z M490 663 a22 14 0 0 1 44 0 z M550 663 a22 14 0 0 1 44 0 z M610 664 a22 14 0 0 1 44 0 z M670 665 a22 14 0 0 1 44 0 z M730 667 a22 14 0 0 1 44 0 z M790 669 a22 14 0 0 1 44 0 z M850 672 a22 14 0 0 1 44 0 z M910 675 a22 14 0 0 1 44 0 z M970 678 a22 14 0 0 1 44 0 z M1030 682 a22 14 0 0 1 44 0 z M1090 686 a22 14 0 0 1 44 0 z M1150 690 a22 14 0 0 1 44 0 z"/>
+  </g>
+  <!-- 처마 밑 곶감 줄 -->
+  <g>
+    <path d="M820 700 V800 M880 702 V800 M940 704 V800" stroke="#7a5a35" stroke-width="2"/>
+    <g fill="#d9772a"><ellipse cx="820" cy="730" rx="14" ry="16"/><ellipse cx="820" cy="768" rx="14" ry="16"/><ellipse cx="880" cy="736" rx="14" ry="16"/><ellipse cx="880" cy="774" rx="14" ry="16"/><ellipse cx="940" cy="742" rx="14" ry="16"/><ellipse cx="940" cy="780" rx="14" ry="16"/></g>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1b100c">
+<title>상담 문의 — 월하당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Gothic:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="wolhadang.css">
+</head>
+<body class="wh">
+<!-- 月下堂 홈페이지 · 2025.10 막내 명월 제작 -->
+<div id="wh-band" class="wh-band"></div>
+<table class="wh-frame" role="presentation">
+<colgroup><col class="wh-col-side"><col></colgroup>
+<tbody>
+<tr><td class="wh-head" id="wh-head" colspan="2"></td></tr>
+<tr>
+<td class="wh-side" id="wh-side"></td>
+<td class="wh-main" id="wh-main">
+<main>
+  <h1 class="wh-title">상담 문의 <small>월하당 › 상담 문의</small></h1>
+  <!-- 자동응답 문구 = 어머니 공수 녹음 받아 적은 것 -->
+  <div class="wh-msg" role="note" style="margin:0 0 12px">월하당은 상중입니다. 상담과 굿 예약은 49재(11월 6일) 뒤에 다시 받습니다.<br>
+  문의를 남기시면 <b>만신님 말씀(공수)</b>이 자동응답으로 메일에 갑니다.</div>
+
+  <form class="wh-form" id="contact-form" novalidate>
+    <table role="presentation">
+      <tbody>
+        <tr>
+          <th scope="row"><label for="c-name">이름</label></th>
+          <td><input type="text" id="c-name" name="name" maxlength="12" autocomplete="off" required>
+            <span class="help">게임 속 이름이 미리 들어가 있어요. 공수는 이 이름을 부릅니다.</span></td>
+        </tr>
+        <tr>
+          <th scope="row"><label for="c-contact">연락처(메일)</label></th>
+          <td><input type="email" id="c-contact" name="contact" maxlength="60" autocomplete="off" inputmode="email">
+            <span class="warn">실제 개인정보를 적지 마세요.</span>
+            <span class="help">게임 속 메일 주소입니다. 답장은 언제나 누리메일로 갑니다.</span></td>
+        </tr>
+        <tr>
+          <th scope="row"><label for="c-msg">문의 내용</label></th>
+          <td><textarea id="c-msg" name="message" maxlength="600" placeholder="궁금하신 것을 적어 주세요."></textarea>
+            <span class="help">적은 내용은 이 브라우저에만 남고 어디로도 보내지지 않습니다.</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="wh-form__btns">
+      <button type="submit" class="wh-btn" id="c-send">문의 보내기</button>
+      <button type="button" class="wh-btn wh-btn--plain" id="c-clear">내 입력 삭제</button>
+    </div>
+  </form>
+  <div id="contact-msg" aria-live="polite"></div>
+
+  <h2 class="wh-sub">문의 접수 내역</h2>
+  <table class="wh-tbl" id="contact-log" aria-label="문의 접수 내역">
+    <thead><tr><th scope="col">번호</th><th scope="col">보낸 사람</th><th scope="col">상태</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</main>
+</td>
+</tr>
+<tr><td class="wh-foot" id="wh-foot" colspan="2"></td></tr>
+</tbody>
+</table>
+<script type="module" src="contact.js"></script>
+</body>
+</html>

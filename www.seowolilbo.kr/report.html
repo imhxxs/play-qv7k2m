@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f4efe1">
+<title>사건 제보하기 — 서월일보</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@400;600;900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sw">
+<div id="sw-head"></div>
+<main class="sw-main" id="main">
+  <div class="sw-wrap">
+    <section class="sw-report" aria-labelledby="h-report">
+      <p class="sw-crumb"><a href="index.html">홈</a> › 사건 제보</p>
+      <h1 class="sw-sec__h sw-sec__h--big" id="h-report">사건 제보하기</h1>
+      <p class="sw-report__lead">서월에서 일어난 일, 그냥 넘기기 어려운 일이 있으신가요? 서월일보 사회부가 듣겠습니다.</p>
+
+      <div class="sw-report__main">
+        <div class="sw-report__card">
+          <p class="sw-report__k">메일로 제보하기</p>
+          <p class="sw-report__addr" id="jebo-addr"></p>
+          <p>제보는 <b>jebo@seowolilbo.kr</b>로 보내 주세요. 사회부 기자가 직접 읽고 답장을 드립니다.</p>
+          <p class="sw-report__open" id="jebo-open"></p>
+          <p class="sw-report__game">게임 속 주소입니다. 실제 메일 앱으로 보내지 마세요. 누리메일(게임 안 메일)에서 보내면 됩니다.</p>
+        </div>
+        <div class="sw-report__form" aria-label="온라인 제보 양식">
+          <p class="sw-report__k">온라인 제보 양식</p>
+          <p class="sw-report__closed"><span class="sw-badge">준비 중</span> 온라인 제보 양식은 지금 고치는 중입니다. 그동안은 메일로 제보해 주세요.</p>
+          <div class="sw-report__ghost" aria-hidden="true">
+            <span>제보 대상</span><i></i><span>무슨 일인가요</span><i class="tall"></i><span>근거 자료 첨부</span><i></i>
+          </div>
+        </div>
+      </div>
+
+      <section class="sw-report__how" aria-labelledby="h-how">
+        <h2 class="sw-box__h" id="h-how">이렇게 보내 주시면 좋습니다</h2>
+        <ol>
+          <li><b>언제, 어디서</b> 일어난 일인지 적어 주세요.</li>
+          <li><b>누가</b> 관련되어 있는지, 직접 보신 것인지 들으신 것인지 구분해 주세요.</li>
+          <li>사진·문서·메일 같은 <b>근거 자료</b>가 있으면 함께 붙여 주세요.</li>
+          <li>답장을 받으실 연락처(메일 주소)를 남겨 주세요.</li>
+        </ol>
+      </section>
+
+      <section class="sw-report__rule" id="rule" aria-labelledby="h-rule">
+        <h2 class="sw-box__h" id="h-rule">제보자 보호 원칙</h2>
+        <ul>
+          <li>제보자의 이름과 연락처는 기사에 싣지 않으며, 본인의 동의 없이 누구에게도 알리지 않습니다.</li>
+          <li>확인되지 않은 소문만으로 기사를 쓰지 않습니다. 제보 내용은 기자가 따로 확인합니다.</li>
+          <li>급한 사고나 범죄 피해가 진행 중이라면 먼저 112·119에 신고해 주세요.</li>
+        </ul>
+      </section>
+
+      <p class="sw-report__desk">서월일보 사회부 · 서월군 서월읍 장터길 12 · 대표전화 0XX-XXX-XXXX</p>
+    </section>
+  </div>
+</main>
+<div id="sw-foot"></div>
+<script type="module">
+  import { start, jeboLink, JEBO_ADDR } from './ilbo.js';
+  const game = start({ page: 'report', title: '사건 제보하기 — 서월일보', section: '사건 제보' });
+  document.getElementById('jebo-addr').innerHTML = jeboLink();
+  const open = document.getElementById('jebo-open');
+  open.innerHTML = '<a class="sw-btn" data-site="nurimail" data-page="index" data-query="#compose?to=' + encodeURIComponent(JEBO_ADDR) + '">누리메일로 제보 메일 쓰기</a>';
+  game.hydrate(open);
+  game.hydrate(document.getElementById('jebo-addr'));
+  game.flag('addr:' + JEBO_ADDR);
+</script>
+</body>
+</html>

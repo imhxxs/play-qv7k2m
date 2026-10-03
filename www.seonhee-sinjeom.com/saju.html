@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>오늘의 사주 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap">
+    <p class="sh-crumb">홈 › 오늘의 사주</p>
+    <h1 class="sh-h1">오늘의 사주<small id="today-label">생년월일만 넣으면 끝!</small></h1>
+
+    <div class="sh-split">
+      <div>
+        <section class="sh-card" aria-labelledby="saju-h">
+          <h2 class="sh-sec__h" id="saju-h">생년월일 입력</h2>
+          <form class="sh-form" id="saju-form" novalidate>
+            <div class="sh-field">
+              <label for="s-birth">생년월일<span class="sh-req">*</span></label>
+              <input class="sh-input" id="s-birth" name="birth" type="text" inputmode="numeric" autocomplete="off" placeholder="예) 1995.05.05" maxlength="20" aria-describedby="s-birth-hint s-err">
+              <p class="sh-hint" id="s-birth-hint">실제 생일이 아니어도 괜찮아요. 아무 날짜나 넣어 보세요.</p>
+            </div>
+            <div class="sh-field">
+              <span class="sh-label" id="s-cal-l">양력 · 음력</span>
+              <div class="sh-radios" role="radiogroup" aria-labelledby="s-cal-l">
+                <label class="sh-radio"><input type="radio" name="cal" value="solar" checked><span>양력</span></label>
+                <label class="sh-radio"><input type="radio" name="cal" value="lunar"><span>음력</span></label>
+              </div>
+              <p class="sh-hint" id="s-lunar-note" hidden>음력 생일은 <a data-site="nurisaem" data-page="dict" data-query="q=만세력">누리샘 사전의 음력 변환</a>으로 양력 날짜를 확인해 넣으시면 더 정확해요.</p>
+            </div>
+            <div class="sh-field">
+              <label for="s-hour">태어난 시</label>
+              <select class="sh-select" id="s-hour" name="hour">
+                <option value="">모름</option>
+                <option value="0">자시(子) 23:30~01:29</option>
+                <option value="1">축시(丑) 01:30~03:29</option>
+                <option value="2">인시(寅) 03:30~05:29</option>
+                <option value="3">묘시(卯) 05:30~07:29</option>
+                <option value="4">진시(辰) 07:30~09:29</option>
+                <option value="5">사시(巳) 09:30~11:29</option>
+                <option value="6">오시(午) 11:30~13:29</option>
+                <option value="7">미시(未) 13:30~15:29</option>
+                <option value="8">신시(申) 15:30~17:29</option>
+                <option value="9">유시(酉) 17:30~19:29</option>
+                <option value="10">술시(戌) 19:30~21:29</option>
+                <option value="11">해시(亥) 21:30~23:29</option>
+              </select>
+            </div>
+            <p class="sh-err" id="s-err" role="alert"></p>
+            <button class="sh-btn sh-btn--gold sh-btn--block" type="submit">오늘의 사주 보기</button>
+          </form>
+        </section>
+
+        <div id="saju-result" aria-live="polite"></div>
+      </div>
+
+      <aside>
+        <section class="sh-card" id="history" aria-labelledby="hist-h" tabindex="-1">
+          <h2 class="sh-sec__h" id="hist-h">지난 상담 다시 보기</h2>
+          <p class="sh-hint" style="margin-bottom:10px">무료 신점을 신청하실 때 적은 이름과 생년월일을 그대로 넣으면 지난 상담과 선생님 풀이를 다시 볼 수 있어요.</p>
+          <form class="sh-form" id="hist-form" novalidate>
+            <div class="sh-field">
+              <label for="h-name">이름</label>
+              <input class="sh-input" id="h-name" name="person" type="text" autocomplete="off" maxlength="20" placeholder="신청할 때 적은 이름">
+            </div>
+            <div class="sh-field">
+              <label for="h-birth">생년월일</label>
+              <input class="sh-input" id="h-birth" name="birth" type="text" inputmode="numeric" autocomplete="off" maxlength="20" placeholder="예) 1995.05.05">
+            </div>
+            <p class="sh-err" id="h-err" role="alert"></p>
+            <button class="sh-btn sh-btn--block" type="submit">조회하기</button>
+          </form>
+        </section>
+        <div id="hist-result" aria-live="polite" style="margin-top:12px"></div>
+      </aside>
+    </div>
+  </div>
+</main>
+<script type="module" src="saju.js"></script>
+</body>
+</html>

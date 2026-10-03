@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 380" width="240" height="380">
+  <!-- 서월휴게소 영수증(창작, E46 첨부). 감열지가 조금 바랬다. 상호·번호는 가상. -->
+  <title>서월휴게소 영수증</title>
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf5"/><stop offset=".6" stop-color="#f1efe6"/><stop offset="1" stop-color="#e6e2d4"/>
+    </linearGradient>
+  </defs>
+  <path d="M8 6 H232 V362 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 l-8 -8 l-8 8 V6z" fill="url(#fade)" stroke="#d8d3c3"/>
+  <g font-family="'D2Coding','Nanum Gothic Coding','Noto Sans Mono CJK KR','Malgun Gothic','Apple SD Gothic Neo',monospace" fill="#3a3a3a" font-size="11">
+    <text x="120" y="32" text-anchor="middle" font-size="15" font-weight="700">서월휴게소</text>
+    <text x="120" y="48" text-anchor="middle" fill="#5a5a5a">서월산 방향 · 사업자 XXX-XX-XXXXX</text>
+    <text x="20" y="70">--------------------------------</text>
+    <text x="20" y="86">일시  2026-09-19 23:18:42</text>
+    <text x="20" y="102">POS 03          영수증 #0418</text>
+    <text x="20" y="118">--------------------------------</text>
+    <text x="20" y="136">아메리카노(L)    1     4,800</text>
+    <text x="20" y="152">생수 500ml       1     1,000</text>
+    <text x="20" y="168">--------------------------------</text>
+    <text x="20" y="186" font-weight="700">합계                   5,800</text>
+    <text x="20" y="202">카드 결제              5,800</text>
+    <text x="20" y="218" fill="#6a6a6a">카드 ****-****-****-1104 일시불</text>
+    <text x="20" y="234" fill="#6a6a6a">승인번호 XXXXXXXX</text>
+    <text x="20" y="252">--------------------------------</text>
+    <text x="120" y="276" text-anchor="middle" fill="#5a5a5a">감사합니다. 안전 운전 하세요.</text>
+    <g fill="#3a3a3a" opacity=".85">
+      <rect x="40" y="296" width="2" height="34"/><rect x="45" y="296" width="1" height="34"/><rect x="49" y="296" width="3" height="34"/>
+      <rect x="55" y="296" width="1" height="34"/><rect x="59" y="296" width="2" height="34"/><rect x="64" y="296" width="3" height="34"/>
+      <rect x="70" y="296" width="1" height="34"/><rect x="74" y="296" width="2" height="34"/><rect x="79" y="296" width="1" height="34"/>
+      <rect x="83" y="296" width="3" height="34"/><rect x="89" y="296" width="2" height="34"/><rect x="94" y="296" width="1" height="34"/>
+      <rect x="98" y="296" width="3" height="34"/><rect x="104" y="296" width="1" height="34"/><rect x="108" y="296" width="2" height="34"/>
+      <rect x="113" y="296" width="3" height="34"/><rect x="119" y="296" width="1" height="34"/><rect x="123" y="296" width="2" height="34"/>
+      <rect x="128" y="296" width="1" height="34"/><rect x="132" y="296" width="3" height="34"/><rect x="138" y="296" width="2" height="34"/>
+      <rect x="143" y="296" width="1" height="34"/><rect x="147" y="296" width="3" height="34"/><rect x="153" y="296" width="1" height="34"/>
+      <rect x="157" y="296" width="2" height="34"/><rect x="162" y="296" width="3" height="34"/><rect x="168" y="296" width="1" height="34"/>
+      <rect x="172" y="296" width="2" height="34"/><rect x="177" y="296" width="1" height="34"/><rect x="181" y="296" width="3" height="34"/>
+      <rect x="187" y="296" width="2" height="34"/><rect x="192" y="296" width="1" height="34"/><rect x="196" y="296" width="3" height="34"/>
+    </g>
+    <text x="120" y="346" text-anchor="middle" font-size="9" fill="#777">0418-0919-2318-03</text>
+  </g>
+  <!-- 바랜 자국 -->
+  <rect x="8" y="180" width="224" height="40" fill="#fff" opacity=".18"/>
+</svg>

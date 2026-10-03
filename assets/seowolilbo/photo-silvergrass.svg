@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9cccc"/><stop offset="1" stop-color="#eeece4"/></linearGradient>
+    <g id="g"><path d="M0 0 C6 -30 18 -54 34 -70" stroke="#e8e3d4" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M0 0 C2 -20 4 -36 2 -50" stroke="#a69f8d" stroke-width="2" fill="none"/></g>
+  </defs>
+  <rect width="640" height="420" fill="url(#s)"/>
+  <path d="M0 210 C120 150 260 120 380 140 C480 156 560 130 640 120 V420 H0z" fill="#8f8b80"/>
+  <path d="M0 260 C140 230 280 220 420 236 C520 248 590 236 640 230 V420 H0z" fill="#a39e90"/>
+  <g transform="translate(0 300)">
+    <use href="#g" x="10"/><use href="#g" x="40" y="10"/><use href="#g" x="70"/><use href="#g" x="100" y="14"/><use href="#g" x="130" y="4"/>
+    <use href="#g" x="160" y="12"/><use href="#g" x="190"/><use href="#g" x="220" y="10"/><use href="#g" x="250" y="2"/><use href="#g" x="280" y="14"/>
+    <use href="#g" x="310"/><use href="#g" x="340" y="8"/><use href="#g" x="370" y="2"/><use href="#g" x="400" y="12"/><use href="#g" x="430"/>
+    <use href="#g" x="460" y="10"/><use href="#g" x="490" y="4"/><use href="#g" x="520" y="12"/><use href="#g" x="550"/><use href="#g" x="580" y="8"/><use href="#g" x="610" y="2"/>
+  </g>
+  <g transform="translate(0 370) scale(1.4)">
+    <use href="#g" x="0"/><use href="#g" x="30" y="6"/><use href="#g" x="60"/><use href="#g" x="90" y="8"/><use href="#g" x="120"/><use href="#g" x="150" y="6"/>
+    <use href="#g" x="180"/><use href="#g" x="210" y="8"/><use href="#g" x="240"/><use href="#g" x="270" y="6"/><use href="#g" x="300"/><use href="#g" x="330" y="8"/><use href="#g" x="360"/><use href="#g" x="390" y="6"/><use href="#g" x="420"/><use href="#g" x="450" y="6"/>
+  </g>
+  <g fill="#4a463f"><rect x="402" y="196" width="5" height="16" rx="2"/><circle cx="404.5" cy="193" r="3"/><rect x="414" y="198" width="5" height="15" rx="2"/><circle cx="416.5" cy="195" r="3"/><rect x="430" y="200" width="4" height="13" rx="2"/><circle cx="432" cy="197.5" r="2.6"/></g>
+</svg>

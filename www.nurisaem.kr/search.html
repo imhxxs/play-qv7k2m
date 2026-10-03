@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#24408e">
+<title>누리샘 검색</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&family=Noto+Serif+KR:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="ns-head">
+  <div class="ns-wrap">
+    <div class="ns-head__row">
+      <span id="logo"></span>
+      <div id="searchbox" class="ns-head__search"></div>
+      <nav class="ns-head__links" id="links" aria-label="누리샘 서비스"></nav>
+    </div>
+    <nav aria-label="검색 결과 종류"><ul class="ns-tabs" id="tabs"></ul></nav>
+  </div>
+</header>
+
+<div class="ns-wrap">
+  <div class="ns-results">
+    <main class="ns-results__main" id="main"></main>
+    <aside class="ns-results__side" id="side" aria-label="함께 보기"></aside>
+  </div>
+</div>
+
+<div class="ns-viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="viewer-t">
+  <div class="ns-viewer__box">
+    <div class="ns-viewer__top"><h2 id="viewer-t"></h2><button class="ns-viewer__close" type="button" aria-label="닫기">×</button></div>
+    <img id="viewer-img" alt="">
+    <p class="ns-viewer__meta" id="viewer-meta"></p>
+    <div class="ns-r__actions" id="viewer-acts"></div>
+    <p class="ns-viewer__msg" id="viewer-msg" role="status"></p>
+  </div>
+</div>
+
+<div id="foot"></div>
+<script type="module" src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dfeef8"/><stop offset="1" stop-color="#b9d6ea"/></linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#15171c"/><stop offset=".5" stop-color="#262a32"/><stop offset="1" stop-color="#15171c"/></linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2b48f"/><stop offset="1" stop-color="#cf9c77"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".5" stop-color="#9aa3ad"/><stop offset="1" stop-color="#e2e6ea"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="480" height="560" fill="url(#bg)"/>
+  <!-- 뒤편 조감도 모형(흐림) -->
+  <g filter="url(#soft)" opacity=".8">
+    <rect x="20" y="300" width="440" height="120" rx="8" fill="#9ccbe6"/>
+    <path d="M40 360 C120 320 200 330 260 340 C320 320 400 330 440 350 V400 H40z" fill="#a8d98f"/>
+    <g fill="#fff"><rect x="70" y="350" width="26" height="20"/><rect x="110" y="344" width="26" height="20"/><rect x="300" y="346" width="26" height="20"/><rect x="350" y="352" width="26" height="20"/></g>
+    <rect x="360" y="40" width="90" height="140" fill="#ffffff" opacity=".7"/>
+  </g>
+  <!-- 목과 셔츠 깃(얼굴은 사진 위로 잘림) -->
+  <path d="M206 0 h68 v40 c0 18-14 30-34 30s-34-12-34-30z" fill="url(#skin)"/>
+  <path d="M206 0 h68 v10 c-10 6-58 6-68 0z" fill="#b98663" opacity=".6"/>
+  <!-- 정장 몸통 -->
+  <path d="M80 560 L96 160 C110 104 160 74 200 64 L240 112 L280 64 C320 74 370 104 384 160 L400 560z" fill="url(#suit)"/>
+  <!-- 흰 셔츠·넥타이 -->
+  <path d="M200 64 L240 112 L280 64 L268 58 L240 84 L212 58z" fill="#f4f6f8"/>
+  <path d="M212 58 L240 84 L222 120z M268 58 L240 84 L258 120z" fill="#ffffff"/>
+  <path d="M232 92 h16 l6 12 l-6 130 h-16 l-6-130z" fill="#1f3a63"/>
+  <path d="M232 92 h16 l4 10 h-24z" fill="#284a7c"/>
+  <g stroke="#2d528a" stroke-width="2" opacity=".6"><path d="M232 130 l20 -10M230 160 l22 -10M230 190 l22 -10"/></g>
+  <!-- 깃 -->
+  <path d="M200 64 L222 120 L190 200 L170 120z" fill="#0f1115" opacity=".7"/>
+  <path d="M280 64 L258 120 L290 200 L310 120z" fill="#0f1115" opacity=".7"/>
+  <!-- 가슴 포켓 행커치프 -->
+  <path d="M300 170 h40 l-4 8 h-32z" fill="#f4f6f8"/>
+  <!-- 두 팔 -->
+  <path d="M96 170 C80 260 100 360 150 420 L190 400 C160 350 150 280 160 200z" fill="#1b1e24"/>
+  <path d="M384 170 C400 260 380 360 330 420 L290 400 C320 350 330 280 320 200z" fill="#1b1e24"/>
+  <!-- 셔츠 소맷부리 -->
+  <path d="M150 420 L190 400 L198 416 L160 438z" fill="#f4f6f8"/>
+  <path d="M330 420 L290 400 L282 416 L320 438z" fill="#f4f6f8"/>
+  <!-- 손: 왼손(화면 오른쪽)이 위로 포개짐 -->
+  <path d="M160 436 C180 420 220 418 246 428 C262 436 262 452 248 458 C220 466 186 462 168 454z" fill="url(#skin)"/>
+  <path d="M320 436 C300 420 262 416 236 424 C214 432 212 452 228 460 C254 470 292 466 312 456z" fill="url(#skin)"/>
+  <g stroke="#b5815e" stroke-width="2" fill="none" opacity=".7"><path d="M240 432 c-6 8-6 18 2 24M252 430 c-6 8-6 18 2 24M264 430 c-6 8-6 18 2 26"/></g>
+  <!-- 왼손목 시계(은색) -->
+  <g transform="translate(300 424) rotate(-18)">
+    <rect x="-8" y="-20" width="16" height="40" rx="4" fill="url(#steel)"/>
+    <circle r="13" fill="url(#steel)" stroke="#7d8790" stroke-width="2"/>
+    <circle r="9.5" fill="#20262e"/>
+    <path d="M0 0 L0 -7 M0 0 L5 2" stroke="#e8edf2" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <!-- 단추 -->
+  <g fill="#0b0c10"><circle cx="240" cy="300" r="6"/><circle cx="240" cy="360" r="6"/></g>
+  <rect width="480" height="560" fill="#ffffff" opacity=".04"/>
+</svg>

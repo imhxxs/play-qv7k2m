@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="320" height="240" role="img" aria-label="웃는 하얀 강아지">
+  <rect width="320" height="240" fill="#f6efe1"/>
+  <ellipse cx="160" cy="226" rx="120" ry="18" fill="#e5dac4"/>
+  <path d="M96 96 Q78 60 102 52 Q122 62 120 96Z" fill="#3a2e28"/>
+  <path d="M224 96 Q242 60 218 52 Q198 62 200 96Z" fill="#3a2e28"/>
+  <ellipse cx="160" cy="124" rx="70" ry="64" fill="#fffdf8" stroke="#e4d9c6" stroke-width="2"/>
+  <ellipse cx="130" cy="92" rx="10" ry="8" fill="#2a2420"/>
+  <ellipse cx="196" cy="132" rx="7" ry="6" fill="#2a2420"/>
+  <circle cx="136" cy="116" r="7" fill="#2a2420"/><circle cx="184" cy="116" r="7" fill="#2a2420"/>
+  <circle cx="138" cy="114" r="2" fill="#fff"/><circle cx="186" cy="114" r="2" fill="#fff"/>
+  <ellipse cx="160" cy="138" rx="10" ry="7" fill="#2a2420"/>
+  <path d="M146 150 Q160 160 174 150" stroke="#2a2420" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M154 154 Q160 176 166 154Z" fill="#f08a8a"/>
+  <path d="M110 190 q50 22 100 0" fill="#c94a3a"/>
+  <circle cx="160" cy="200" r="6" fill="#f1cf6b"/>
+</svg>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>상담사 30인 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap">
+    <p class="sh-crumb">홈 › 상담사 30인</p>
+    <h1 class="sh-h1">선희당 상담사 30인<small>신점 · 사주 · 타로 · 궁합 · 재회 — 24시간 전화 상담</small></h1>
+    <p class="sh-lead">원하시는 선생님을 골라 <b>060-XXXX-XXXX</b>로 전화하신 뒤 내선 번호를 눌러 주세요. 처음이시라면 <a href="fortune.html">무료 신점</a>부터 받아 보세요^^</p>
+
+    <section class="sh-boss" aria-label="대표 선생님">
+      <img src="../assets/seonhee/greeting.svg" alt="오방기를 든 선희보살" width="96" height="117">
+      <div>
+        <h2>선희보살 <span class="sh-badge sh-badge--best">대표</span> <span class="sh-badge sh-badge--mourn">상중 · 쉼</span></h2>
+        <p>월하당 큰신딸(2001년 신내림). 직접 상담은 매주 화·목 예약제이며, 지금은 진오귀굿을 마칠 때까지 쉬고 있습니다.</p>
+        <a class="sh-btn sh-btn--ghost sh-btn--sm" href="greeting.html">인사말 보기</a>
+      </div>
+    </section>
+
+    <ul class="sh-filter" id="filter" aria-label="분야로 거르기">
+      <li><button type="button" data-f="all" aria-pressed="true">전체 30</button></li>
+      <li><button type="button" data-f="신점" aria-pressed="false">신점</button></li>
+      <li><button type="button" data-f="사주" aria-pressed="false">사주</button></li>
+      <li><button type="button" data-f="타로" aria-pressed="false">타로</button></li>
+      <li><button type="button" data-f="재회" aria-pressed="false">재회·연애</button></li>
+      <li><button type="button" data-f="free" aria-pressed="false">지금 상담 가능</button></li>
+    </ul>
+    <p class="sh-status" id="filter-status" role="status"></p>
+
+    <div class="sh-grid" id="grid" data-view="X-seonhee-stock"></div>
+
+    <p class="sh-fine">※ 일부 프로필 사진은 연출된 이미지입니다. ※ 선생님 경력은 선희당 자체 기준으로 표기합니다. ※ 상담 내용은 참고용이며 결과를 보장하지 않습니다.</p>
+  </div>
+</main>
+<script type="module">
+  import { start } from './site.js';
+  import { COUNSELORS } from './data.js';
+  import { teacherCardHtml, wireCalls } from './teachers.js';
+
+  start({ page: 'counselors', title: '상담사 30인 | 선희당' });
+
+  const grid = document.getElementById('grid');
+  grid.innerHTML = COUNSELORS.map(teacherCardHtml).join('');
+  wireCalls(grid);
+
+  const status = document.getElementById('filter-status');
+  document.getElementById('filter').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-f]');
+    if (!b) return;
+    const f = b.dataset.f;
+    for (const x of document.querySelectorAll('#filter button')) x.setAttribute('aria-pressed', String(x === b));
+    let n = 0;
+    for (const card of grid.children) {
+      const tags = card.dataset.tags.split(' ');
+      const ok = f === 'all' || (f === 'free' ? card.dataset.status === 'free' : f === '재회' ? tags.includes('재회') || tags.includes('연애') : tags.includes(f));
+      card.hidden = !ok;
+      if (ok) n++;
+    }
+    status.textContent = f === 'all' ? '' : `${b.textContent} 선생님 ${n}분`;
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <defs>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c3c7c4"/><stop offset="1" stop-color="#8e9592"/></linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="#d5d6d0"/>
+  <path d="M0 150 C100 120 220 128 320 118 C420 108 540 126 640 118 V200 H0z" fill="#9a9d96"/>
+  <rect y="190" width="640" height="230" fill="url(#w)"/>
+  <g stroke="#e3e6e2" stroke-width="2" opacity=".6"><path d="M40 230 h120M260 250 h160M480 226 h110M80 290 h90M380 300 h140"/></g>
+  <!-- 데크 -->
+  <path d="M0 420 L0 360 C120 330 240 300 330 262 C390 236 460 214 520 200 L540 206 C480 222 410 246 350 272 C260 312 140 352 40 420z" fill="#a08c72"/>
+  <g stroke="#7a6a55" stroke-width="2"><path d="M30 398 l20 -10M80 376 l20 -9M130 356 l18 -8M180 336 l17 -8M230 316 l16 -7M276 296 l15 -7M320 276 l14 -6M362 258 l13 -6M402 242 l12 -5M440 228 l11 -5M476 216 l10 -4"/></g>
+  <path d="M0 352 C120 322 240 292 330 254 C390 228 460 206 520 192" stroke="#4f463a" stroke-width="4" fill="none"/>
+  <g stroke="#4f463a" stroke-width="3"><path d="M40 344 v18M110 326 v18M180 308 v17M250 286 v16M320 258 v14M390 232 v12M460 210 v10"/></g>
+  <!-- 큰 소나무 -->
+  <path d="M560 200 C556 160 566 120 552 80 C548 64 556 40 566 28" stroke="#3a3530" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M556 120 C530 110 510 112 490 104 M560 86 C590 74 610 76 630 66 M552 60 C530 48 510 50 494 40" stroke="#3a3530" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g fill="#4f554c"><ellipse cx="490" cy="98" rx="40" ry="14"/><ellipse cx="620" cy="62" rx="36" ry="13"/><ellipse cx="500" cy="36" rx="36" ry="12"/><ellipse cx="570" cy="24" rx="40" ry="14"/><ellipse cx="540" cy="110" rx="26" ry="10"/></g>
+  <ellipse cx="560" cy="206" rx="40" ry="7" fill="#5f5a52"/>
+</svg>

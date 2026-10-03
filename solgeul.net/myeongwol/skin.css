@@ -1,0 +1,129 @@
+/* 명월선녀의 신병일기 — 다은이 직접 만든 스킨.
+   웹디자이너다운 미니멀: 미색 바탕, 얇은 세리프, 필름 톤 사진. 장식은 달 하나와 가는 선뿐. */
+
+body { --sg-page-bg: #f3eee4; }
+.sg[data-blog="myeongwol"] {
+  --sg-bg: #f3eee4;
+  --sg-paper: #f9f6ef;
+  --sg-ink: #2d2924;
+  --sg-ink-2: #5b5349;
+  --sg-mute: #8f8577;
+  --sg-line: #ddd3c2;
+  --sg-accent: #9a5a3c;
+  --sg-font-title: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", "Batang", serif;
+  --sg-font-body: "Noto Serif KR", "Nanum Myeongjo", "AppleMyungjo", "Batang", serif;
+  --sg-title-weight: 300;
+  --sg-body-size: 17px;
+  background-color: var(--sg-bg);
+  /* 한지 같은 아주 옅은 결 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .36 0 0 0 0 .24 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+  font-weight: 300;
+}
+.sg[data-blog="myeongwol"] .sg-post__body { font-weight: 300; letter-spacing: -.003em; }
+.sg[data-blog="myeongwol"] .sg-post__body > p:first-child::first-letter { font-weight: 400; }
+.sg[data-blog="myeongwol"] .sg-head__title { letter-spacing: -.02em; }
+.sg[data-blog="myeongwol"] .sg-head__sub { font-style: normal; color: var(--sg-mute); }
+.sg[data-blog="myeongwol"] .sg-item__title { font-size: 21px; }
+
+/* 마지막 글: 아무도 쓰지 않은 댓글창에 커서만 깜빡인다 */
+.sg-comments--waiting .sg-cbox textarea { background: transparent; border-color: color-mix(in srgb, var(--sg-line) 70%, var(--sg-ink)); }
+.sg-comments--waiting .sg-cform__who { color: var(--sg-mute); }
+
+/* ── 비밀글 잠금: 오방기 ───────────────────────────────────────
+   다은이 만든 위젯. 깃발 넷을 칸에 채우고 '깃발을 꽂는다'를 눌러야 판정한다. */
+.sg-secret__note { text-align: center; font-family: var(--sg-font-ui); font-size: 14px; color: var(--sg-mute); margin: 0 0 18px; }
+.ob {
+  --ob-hong: #b8383b; --ob-hwang: #d9a826; --ob-baek: #f7f3ea; --ob-cheong: #34589c; --ob-nok: #3c7f52;
+  position: relative; margin: 0 auto; max-width: 560px;
+  padding: 28px 18px 24px; text-align: center;
+  background: var(--sg-paper); border: 1px solid var(--sg-line);
+  font-family: var(--sg-font-ui);
+}
+@media (min-width: 520px) { .ob { padding: 34px 32px 28px; } }
+.ob__hint { margin: 0 0 4px; font-family: var(--sg-font-title); font-weight: 300; font-size: 19px; line-height: 1.6; color: var(--sg-ink); }
+.ob__hintlabel { display: block; margin-bottom: 6px; font-family: var(--sg-font-ui); font-size: 12px; letter-spacing: .14em; color: var(--sg-mute); }
+.ob__hintbox { padding: 10px 8px 14px; border-radius: 2px; transition: box-shadow .4s; }
+.ob.is-tired .ob__hintbox { box-shadow: 0 0 0 1px var(--sg-accent), 0 0 0 6px color-mix(in srgb, var(--sg-accent) 14%, transparent); animation: ob-glow 2.4s ease-in-out infinite; }
+@keyframes ob-glow { 50% { box-shadow: 0 0 0 1px var(--sg-accent), 0 0 0 10px color-mix(in srgb, var(--sg-accent) 6%, transparent); } }
+.ob__nudge { margin: 6px 0 0; font-size: 13px; color: var(--sg-accent); }
+.ob__nudge[hidden] { display: none; }
+
+.ob__slots { display: flex; justify-content: center; gap: 10px; margin: 22px 0 6px; padding: 0; list-style: none; }
+.ob__slot {
+  position: relative; width: 62px; height: 96px; padding: 0;
+  display: grid; place-items: end center;
+  border: 1px dashed color-mix(in srgb, var(--sg-line) 60%, var(--sg-ink)); border-radius: 2px;
+  background: color-mix(in srgb, var(--sg-bg) 60%, var(--sg-paper)); cursor: pointer;
+}
+.ob__slot[aria-disabled="true"] { cursor: default; }
+.ob__slot.is-filled { border-style: solid; border-color: var(--sg-line); background: var(--sg-paper); }
+.ob__slotnum { position: absolute; top: 6px; left: 0; right: 0; font-size: 11px; letter-spacing: .1em; color: var(--sg-mute); }
+.ob__slot.is-filled .ob__slotnum { opacity: 0; }
+.ob__slot .ob__flag { width: 46px; height: 74px; margin-bottom: 6px; }
+.ob__slot .ob__lbl { position: absolute; bottom: -22px; left: 0; right: 0; font-size: 12px; color: var(--sg-ink-2); }
+.ob__slotwrap { display: flex; flex-direction: column; align-items: center; gap: 0; padding-bottom: 20px; }
+
+.ob__flags { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; }
+.ob__btn {
+  width: 56px; min-height: 92px; padding: 6px 0 4px;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px;
+  border: 1px solid var(--sg-line); border-radius: 2px; background: transparent; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (max-width: 400px) {
+  .ob { padding-left: 12px; padding-right: 12px; }
+  .ob__flags { gap: 6px; }
+  .ob__btn { width: 50px; }
+  .ob__slots { gap: 8px; }
+  .ob__slot { width: 58px; }
+}
+.ob__btn:hover:not(:disabled) { background: color-mix(in srgb, var(--sg-bg) 50%, var(--sg-paper)); }
+.ob__btn:disabled { opacity: .4; cursor: not-allowed; }
+.ob__btn .ob__flag { width: 40px; height: 62px; }
+.ob__btn .ob__lbl { font-size: 13px; color: var(--sg-ink); }
+.ob__lbl.is-hanja { font-family: var(--sg-font-title); font-size: 16px; }
+.ob__flag { display: block; overflow: visible; }
+.ob__flag .cloth { transform-origin: 6px 4px; }
+@media (prefers-reduced-motion: no-preference) {
+  html:not(.md-reduce-motion) .ob__btn .ob__flag .cloth { animation: ob-sway 4.8s ease-in-out infinite; }
+  html:not(.md-reduce-motion) .ob__btn:nth-child(2) .ob__flag .cloth { animation-delay: -.9s; }
+  html:not(.md-reduce-motion) .ob__btn:nth-child(3) .ob__flag .cloth { animation-delay: -2.1s; }
+  html:not(.md-reduce-motion) .ob__btn:nth-child(4) .ob__flag .cloth { animation-delay: -3.3s; }
+  html:not(.md-reduce-motion) .ob__btn:nth-child(5) .ob__flag .cloth { animation-delay: -1.6s; }
+}
+@keyframes ob-sway { 0%, 100% { transform: skewY(0deg) scaleX(1); } 50% { transform: skewY(2.4deg) scaleX(.96); } }
+
+.ob__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 22px 0 0; }
+.ob__plant { min-width: 160px; }
+.ob__opts { display: flex; justify-content: center; margin-top: 12px; }
+.ob__toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 10px; font-size: 13px; color: var(--sg-ink-2); cursor: pointer; }
+.ob__toggle input { width: 20px; height: 20px; margin: 0; accent-color: var(--sg-ink); }
+.ob__msg { min-height: 1.6em; margin: 16px 0 0; font-size: 15px; color: var(--sg-ink); font-family: var(--sg-font-title); font-weight: 400; }
+.ob__msg.is-warn { color: var(--sg-accent); }
+.ob__bell { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; margin-right: 6px; color: var(--sg-accent); }
+
+/* 틀렸을 때: 깃발이 흔들리고(방울 소리와 짝) 칸이 비워진다 */
+.ob.is-shake .ob__slot .ob__flag { animation: ob-shake .62s cubic-bezier(.36,.07,.19,.97) both; transform-origin: 6px 70px; }
+.ob__btn.is-shake .ob__flag { animation: ob-shake .62s cubic-bezier(.36,.07,.19,.97) both; transform-origin: 6px 60px; }
+.ob.is-shake .ob__bell, .ob__msg .ob__bell { animation: ob-ring .62s ease-in-out; transform-origin: 50% 10%; }
+@keyframes ob-shake { 10%, 90% { transform: rotate(-3deg); } 20%, 80% { transform: rotate(5deg); } 30%, 50%, 70% { transform: rotate(-8deg); } 40%, 60% { transform: rotate(8deg); } }
+@keyframes ob-ring { 20% { transform: rotate(16deg); } 40% { transform: rotate(-14deg); } 60% { transform: rotate(9deg); } 80% { transform: rotate(-5deg); } }
+html.md-reduce-motion .ob.is-shake .ob__slot .ob__flag,
+html.md-reduce-motion .ob__btn.is-shake .ob__flag,
+html.md-reduce-motion .ob .ob__bell { animation: none; }
+html.md-reduce-motion .ob.is-shake .ob__slot { outline: 2px solid var(--sg-accent); outline-offset: 2px; }
+
+/* 쿨다운: 방울이 멎을 때까지 */
+.ob__rest { margin: 16px 0 0; font-size: 14px; color: var(--sg-ink-2); }
+.ob__rest[hidden] { display: none; }
+.ob__rest b { font-variant-numeric: tabular-nums; color: var(--sg-accent); font-weight: 500; }
+.ob__hintbtn { margin-top: 10px; }
+.ob.is-tired .ob__hintbtn { border-color: var(--sg-accent); color: var(--sg-accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--sg-accent) 16%, transparent); }
+
+/* 열린 뒤 */
+.ob-open { margin: 0 auto; max-width: 560px; text-align: center; padding: 34px 22px; border: 1px solid var(--sg-line); background: var(--sg-paper); font-family: var(--sg-font-ui); }
+.ob-open__flags { display: flex; justify-content: center; gap: 8px; margin-bottom: 18px; }
+.ob-open__flags .ob__flag { width: 34px; height: 54px; }
+.ob-open__t { margin: 0 0 8px; font-family: var(--sg-font-title); font-weight: 300; font-size: 20px; color: var(--sg-ink); }
+.ob-open__d { margin: 0; font-size: 14px; color: var(--sg-ink-2); line-height: 1.7; }
+.ob-open__soon { display: inline-block; margin-top: 16px; padding: 6px 14px; border: 1px solid var(--sg-line); border-radius: 999px; font-size: 12px; letter-spacing: .08em; color: var(--sg-mute); }

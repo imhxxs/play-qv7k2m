@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#24408e">
+<title>누리샘 사전</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&family=Noto+Serif+KR:wght@400;700&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="ns-head">
+  <div class="ns-wrap">
+    <div class="ns-head__row">
+      <span id="logo"></span>
+      <div id="searchbox" class="ns-head__search"></div>
+      <nav class="ns-head__links" id="links" aria-label="누리샘 서비스"></nav>
+    </div>
+  </div>
+</header>
+<div class="ns-wrap">
+  <div class="ns-dictpage">
+    <main id="main">
+      <h1 id="dict-h">누리샘 사전</h1>
+      <p class="ns-dictpage__lead">무속·명리 용어 풀이, 한자 음훈 찾기, 연도와 간지 바꾸기.</p>
+      <form class="ns-dictform" id="dict-form" role="search" action="dict.html" method="get" autocomplete="off">
+        <label class="ns-sr" for="dict-q">사전에서 찾기(낱말 또는 한자)</label>
+        <input class="ns-field" id="dict-q" name="q" type="search" enterkeyhint="search" placeholder="낱말이나 한자를 넣어 보세요. 예: 명두, 七星">
+        <button class="ns-btn ns-btn--primary" type="submit">사전 찾기</button>
+      </form>
+      <div id="out" aria-live="polite"></div>
+    </main>
+    <aside id="side" aria-label="사전 도구" style="display:flex;flex-direction:column;gap:16px;min-width:0"></aside>
+  </div>
+</div>
+<div id="foot"></div>
+<script type="module" src="dict-page.js"></script>
+</body>
+</html>

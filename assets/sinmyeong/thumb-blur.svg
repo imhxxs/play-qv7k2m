@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <filter id="b1" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="5.5"/></filter>
+    <filter id="b3" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="6.4"/></filter>
+    <filter id="b2" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2.4"/></filter>
+    <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="7"/><feColorMatrix values="0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .22 0"/></filter>
+    <radialGradient id="glow" cx=".62" cy=".55" r=".5"><stop offset="0" stop-color="#7a2a14"/><stop offset=".6" stop-color="#2a0f08"/><stop offset="1" stop-color="#050505"/></radialGradient>
+    <radialGradient id="vig" cx=".5" cy=".5" r=".7"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".8"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="#060606"/>
+  <g filter="url(#b2)">
+    <rect width="640" height="360" fill="url(#glow)"/>
+    <!-- 신당 처마와 문틀(어두운 실내) -->
+    <path d="M300 60 C380 40 520 40 600 62 L610 74 C520 56 380 56 292 74z" fill="#1a0f0a"/>
+    <rect x="360" y="90" width="190" height="210" fill="#120a07" stroke="#3a1c10" stroke-width="6"/>
+    <rect x="378" y="108" width="154" height="174" fill="#5a2a12" opacity=".55"/>
+    <g fill="#e8b44a" opacity=".55"><circle cx="400" cy="128" r="6"/><circle cx="510" cy="128" r="6"/></g>
+    <path d="M410 300 L455 170 L500 300z" fill="#1d0d07" opacity=".85"/>
+    <!-- 지화 덩어리 -->
+    <g fill="#c94a6a" opacity=".55"><circle cx="560" cy="110" r="16"/><circle cx="586" cy="124" r="13"/><circle cx="572" cy="140" r="12"/></g>
+  </g>
+  <!-- 붉은 동그라미와 화살표 -->
+  <g filter="url(#b2)">
+    <ellipse cx="455" cy="200" rx="70" ry="62" fill="none" stroke="#ff2a2a" stroke-width="9"/>
+    <path d="M300 300 L382 236" stroke="#ff2a2a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M362 226 L392 228 L384 256z" fill="#ff2a2a"/>
+  </g>
+  <!-- 형광 노랑 큰 자막(흐림, 읽을 수 없음) -->
+  <g filter="url(#b1)">
+    <rect x="22" y="30" width="168" height="44" rx="4" fill="#e3261c"/>
+    <text x="34" y="64" font-family="'Noto Sans KR',sans-serif" font-weight="900" font-size="30" fill="#fff">[실제상황]</text>
+  </g>
+  <g filter="url(#b3)" font-family="'Noto Sans KR','Apple SD Gothic Neo',sans-serif" font-weight="900" fill="#f4ff1a" stroke="#000" stroke-width="10" paint-order="stroke" stroke-linejoin="round">
+    <text x="24" y="160" font-size="74">작두 위</text>
+    <text x="24" y="248" font-size="74">만신의</text>
+    <text x="24" y="328" font-size="62">마지막…</text>
+  </g>
+  <!-- 재생 막대 -->
+  <rect x="0" y="348" width="640" height="12" fill="#000" opacity=".6"/>
+  <rect x="0" y="352" width="260" height="4" fill="#ff2a2a" opacity=".8"/>
+  <rect x="566" y="318" width="62" height="24" rx="3" fill="#000" opacity=".75"/>
+  <g filter="url(#b2)"><rect x="574" y="324" width="46" height="12" fill="#ddd" opacity=".8"/></g>
+  <rect width="640" height="360" filter="url(#noise)"/>
+  <rect width="640" height="360" fill="url(#vig)"/>
+</svg>

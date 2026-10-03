@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>말아 쥔 깃발 다섯 (2026.09.05)</title>
+  <!-- 다은 블로그 '신을 받았다'. 창작 일러스트. 흰 무명천 위에 대에 단단히 감긴 오방기 다섯. 놓인 순서는 뽑은 순서와 무관하다. -->
+  <defs>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f2e8"/><stop offset="1" stop-color="#e2dccd"/></linearGradient>
+    <linearGradient id="stick" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4b583"/><stop offset="1" stop-color="#a5845a"/></linearGradient>
+    <linearGradient id="rollG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="fold" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".004 .012" numOctaves="2" seed="5"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .3 0 0 0 .5 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#cloth)"/>
+  <rect width="1200" height="800" fill="#000" filter="url(#fold)" opacity=".5"/>
+  <!-- 깃발: 막대 + 말린 천 + 묶은 실 -->
+  <g transform="rotate(-18 600 400)">
+    <g transform="translate(0 220)">
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="#2a2016" opacity=".25" filter="url(#soft)" transform="translate(10 18)"/>
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="url(#stick)"/>
+      <rect x="560" y="-26" width="420" height="52" rx="22" fill="#3c7f52"/><rect x="560" y="-26" width="420" height="52" rx="22" fill="url(#rollG)"/>
+      <path d="M700 -26 V26 M820 -26 V26" stroke="#e9e1cc" stroke-width="4"/>
+    </g>
+    <g transform="translate(0 310)">
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="#2a2016" opacity=".25" filter="url(#soft)" transform="translate(10 18)"/>
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="url(#stick)"/>
+      <rect x="560" y="-26" width="420" height="52" rx="22" fill="#f8f5ec" stroke="#d6cfbd" stroke-width="2"/><rect x="560" y="-26" width="420" height="52" rx="22" fill="url(#rollG)"/>
+      <path d="M690 -26 V26 M830 -26 V26" stroke="#b8383b" stroke-width="4"/>
+    </g>
+    <g transform="translate(0 400)">
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="#2a2016" opacity=".25" filter="url(#soft)" transform="translate(10 18)"/>
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="url(#stick)"/>
+      <rect x="560" y="-26" width="420" height="52" rx="22" fill="#b8383b"/><rect x="560" y="-26" width="420" height="52" rx="22" fill="url(#rollG)"/>
+      <path d="M710 -26 V26 M840 -26 V26" stroke="#e9e1cc" stroke-width="4"/>
+    </g>
+    <g transform="translate(0 490)">
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="#2a2016" opacity=".25" filter="url(#soft)" transform="translate(10 18)"/>
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="url(#stick)"/>
+      <rect x="560" y="-26" width="420" height="52" rx="22" fill="#d9a826"/><rect x="560" y="-26" width="420" height="52" rx="22" fill="url(#rollG)"/>
+      <path d="M690 -26 V26 M820 -26 V26" stroke="#e9e1cc" stroke-width="4"/>
+    </g>
+    <g transform="translate(0 580)">
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="#2a2016" opacity=".25" filter="url(#soft)" transform="translate(10 18)"/>
+      <rect x="160" y="-6" width="900" height="12" rx="6" fill="url(#stick)"/>
+      <rect x="560" y="-26" width="420" height="52" rx="22" fill="#34589c"/><rect x="560" y="-26" width="420" height="52" rx="22" fill="url(#rollG)"/>
+      <path d="M700 -26 V26 M830 -26 V26" stroke="#e9e1cc" stroke-width="4"/>
+    </g>
+    <!-- 대 끝을 함께 묶은 오색실 -->
+    <path d="M300 200 C290 300 290 500 300 600" stroke="#8a2e24" stroke-width="8" fill="none"/>
+    <path d="M312 200 C302 300 302 500 312 600" stroke="#d9a826" stroke-width="5" fill="none"/>
+  </g>
+  <rect width="1200" height="800" fill="#ffe2b0" opacity=".06"/>
+</svg>

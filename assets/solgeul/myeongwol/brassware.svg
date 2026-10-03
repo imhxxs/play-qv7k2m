@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <title>놋그릇 닦는 날 (2026.02.14)</title>
+  <!-- 다은 블로그 '놋그릇 닦는 날'. 창작 일러스트. 신문지 위 촛대 둘, 향로 하나, 놋잔 하나, 검게 물든 짚, 기왓가루. -->
+  <defs>
+    <linearGradient id="news" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcd8cc"/><stop offset="1" stop-color="#c7c2b4"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a6324"/><stop offset=".3" stop-color="#e9c46e"/><stop offset=".45" stop-color="#fff0bd"/><stop offset=".65" stop-color="#c9973f"/><stop offset="1" stop-color="#6e4c18"/></linearGradient>
+    <radialGradient id="cup" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#fff2c2"/><stop offset=".4" stop-color="#deb562"/><stop offset="1" stop-color="#7d5820"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <rect width="1200" height="800" fill="#6a5845"/>
+  <!-- 신문지 -->
+  <g transform="rotate(-3 600 420)">
+    <rect x="80" y="90" width="1040" height="660" fill="url(#news)"/>
+    <g fill="#a9a395" opacity=".7">
+      <rect x="120" y="120" width="420" height="34"/>
+      <rect x="120" y="176" width="200" height="8"/><rect x="120" y="192" width="200" height="8"/><rect x="120" y="208" width="190" height="8"/><rect x="120" y="224" width="200" height="8"/><rect x="120" y="240" width="170" height="8"/>
+      <rect x="340" y="176" width="200" height="8"/><rect x="340" y="192" width="200" height="8"/><rect x="340" y="208" width="200" height="8"/><rect x="340" y="224" width="180" height="8"/>
+      <rect x="600" y="120" width="480" height="8"/><rect x="600" y="136" width="480" height="8"/><rect x="600" y="152" width="460" height="8"/><rect x="600" y="168" width="480" height="8"/>
+      <rect x="120" y="640" width="300" height="8"/><rect x="120" y="656" width="300" height="8"/><rect x="120" y="672" width="280" height="8"/><rect x="900" y="640" width="190" height="8"/><rect x="900" y="656" width="190" height="8"/>
+    </g>
+  </g>
+  <!-- 그림자 -->
+  <g fill="#2e2418" opacity=".45" filter="url(#soft)">
+    <ellipse cx="290" cy="640" rx="90" ry="20"/><ellipse cx="480" cy="640" rx="90" ry="20"/><ellipse cx="740" cy="640" rx="140" ry="26"/><ellipse cx="960" cy="600" rx="80" ry="18"/>
+  </g>
+  <!-- 촛대 둘 -->
+  <g>
+    <ellipse cx="290" cy="626" rx="76" ry="16" fill="#6e4c18"/><path d="M214 626 C230 600 350 600 366 626 Z" fill="url(#gold)"/>
+    <rect x="280" y="300" width="20" height="310" fill="url(#gold)"/>
+    <ellipse cx="290" cy="420" rx="26" ry="10" fill="url(#gold)"/><ellipse cx="290" cy="300" rx="46" ry="12" fill="url(#gold)"/>
+    <rect x="282" y="262" width="16" height="40" fill="#8a6324"/>
+  </g>
+  <g>
+    <ellipse cx="480" cy="626" rx="76" ry="16" fill="#6e4c18"/><path d="M404 626 C420 600 540 600 556 626 Z" fill="url(#gold)"/>
+    <rect x="470" y="300" width="20" height="310" fill="url(#gold)"/>
+    <ellipse cx="480" cy="420" rx="26" ry="10" fill="url(#gold)"/><ellipse cx="480" cy="300" rx="46" ry="12" fill="url(#gold)"/>
+    <rect x="472" y="262" width="16" height="40" fill="#8a6324"/>
+  </g>
+  <!-- 향로 -->
+  <g transform="translate(740 520)">
+    <path d="M-120 0 C-116 80 116 80 120 0 Z" fill="url(#gold)"/>
+    <ellipse rx="120" ry="24" fill="#c9973f"/><ellipse rx="104" ry="18" fill="#6e4c18"/>
+    <path d="M-80 66 l-16 56 h18 l14 -46 Z M80 66 l16 56 h-18 l-14 -46 Z M-8 80 v44 h16 v-44 Z" fill="#8a6324"/>
+    <path d="M-120 0 C-116 80 116 80 120 0" fill="none" stroke="#fff0bd" stroke-width="3" opacity=".6"/>
+  </g>
+  <!-- 놋잔 -->
+  <g transform="translate(960 560)">
+    <ellipse cy="30" rx="62" ry="12" fill="#6e4c18"/>
+    <path d="M-50 -30 C-46 20 -20 30 0 30 C20 30 46 20 50 -30 Z" fill="url(#cup)"/>
+    <ellipse cy="-30" rx="50" ry="12" fill="#e9c46e"/><ellipse cy="-28" rx="42" ry="8" fill="#a77c32"/>
+    <path d="M-34 -10 C-30 10 -18 18 -6 20" fill="none" stroke="#fff6d4" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <!-- 짚과 기왓가루 -->
+  <g stroke-linecap="round">
+    <g stroke="#d9b765" stroke-width="5"><path d="M120 720 L400 640 M130 730 L410 652 M140 742 L420 664 M126 712 L396 630 M150 748 L424 676"/></g>
+    <g stroke="#2a2420" stroke-width="6" opacity=".85"><path d="M360 650 L410 636 M368 662 L418 648 M372 674 L424 662"/></g>
+    <path d="M140 712 C200 700 240 760 160 760 Z" fill="#c9a24e"/>
+  </g>
+  <path d="M560 720 C600 690 680 690 720 720 C690 736 600 736 560 720 Z" fill="#9b8f80"/>
+  <g fill="#ffd9a0" opacity=".07"><rect width="1200" height="800"/></g>
+</svg>

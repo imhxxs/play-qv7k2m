@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<script src="../play-gate.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#3b1660">
+<title>1:1 문의 | 선희당</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Song+Myung&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="sh-main" id="main">
+  <div class="sh-wrap">
+    <p class="sh-crumb">홈 › 1:1 문의</p>
+    <h1 class="sh-h1">1:1 문의<small>궁금하신 점을 남겨 주시면 메일로 답변드립니다</small></h1>
+
+    <div class="sh-split">
+      <div>
+        <section class="sh-card" id="q-card" aria-labelledby="q-h">
+          <h2 class="sh-sec__h" id="q-h">문의하기</h2>
+          <form class="sh-form" id="q-form" novalidate>
+            <div class="sh-field">
+              <label for="q-type">문의 유형</label>
+              <select class="sh-select" id="q-type" name="qtype">
+                <option>상담 문의</option>
+                <option>선생님 문의</option>
+                <option>결제·요금</option>
+                <option>선희보살님께</option>
+                <option>기타</option>
+              </select>
+            </div>
+            <div class="sh-field">
+              <label for="q-mail">답변 받을 메일</label>
+              <input class="sh-input" id="q-mail" type="text" readonly aria-describedby="q-mail-hint">
+              <p class="sh-hint" id="q-mail-hint">답변은 누리메일로 갑니다.</p>
+            </div>
+            <div class="sh-field">
+              <label for="q-subject">제목<span class="sh-req">*</span></label>
+              <input class="sh-input" id="q-subject" name="subject" type="text" maxlength="60" autocomplete="off" required>
+            </div>
+            <div class="sh-field">
+              <label for="q-body">내용<span class="sh-req">*</span></label>
+              <textarea class="sh-textarea" id="q-body" name="body" maxlength="1000" required placeholder="문의하실 내용을 적어 주세요."></textarea>
+              <p class="sh-hint">실제 개인정보(실명·연락처·주소)는 적지 마세요.</p>
+            </div>
+            <p class="sh-err" id="q-err" role="alert"></p>
+            <div class="sh-actions">
+              <button class="sh-btn" type="submit">문의 보내기</button>
+              <button class="sh-btn sh-btn--ghost" type="button" id="q-clear">내 입력 삭제</button>
+            </div>
+            <p class="sh-status" id="q-status" role="status"></p>
+          </form>
+        </section>
+        <div id="q-done" hidden></div>
+
+        <section class="sh-card sh-sec" aria-labelledby="mine-h">
+          <h2 class="sh-sec__h" id="mine-h">내 문의 내역</h2>
+          <ul class="sh-mine" id="q-mine"></ul>
+        </section>
+      </div>
+
+      <aside>
+        <section aria-labelledby="faq-h">
+          <h2 class="sh-sec__h" id="faq-h">자주 묻는 질문</h2>
+          <div class="sh-faq">
+            <details><summary>무료 신점은 몇 번까지 되나요?</summary><p>무료 신점은 1인 1회 제공됩니다. 신청 뒤 1분 안에 담당 선생님이 배정되어 메일로 풀이를 보내 드려요.</p></details>
+            <details><summary>060 전화 요금은 얼마인가요?</summary><p>30초당 1,300원(부가세 포함)입니다. 통화 시작 전에 요금 안내가 나갑니다. 만 19세 미만은 이용할 수 없습니다.</p></details>
+            <details><summary>원하는 선생님을 고를 수 있나요?</summary><p>전화 상담은 상담사 30인 메뉴에서 선생님 내선 번호를 눌러 고르실 수 있습니다. 무료 신점은 자동으로 배정됩니다.</p></details>
+            <details><summary>선희보살님께 직접 상담받을 수 있나요?</summary><p>선희보살님 직접 상담은 매주 화·목 예약제입니다. 지금은 상중이라 진오귀굿을 마칠 때까지 쉬십니다. 보살님께 드리는 말씀은 문의 유형 ‘선희보살님께’로 남겨 주세요.</p></details>
+            <details><summary>지난 상담은 어디서 보나요?</summary><p><a href="saju.html#history">오늘의 사주 › 지난 상담 다시 보기</a>에서 신청하실 때 적은 이름과 생년월일로 조회하실 수 있습니다.</p></details>
+            <details><summary>몸이 아픈데 신병일까요?</summary><p>몸이 아프시면 먼저 병원에 다녀오세요. 선희보살님께서 늘 당부하시는 말씀입니다.</p></details>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+</main>
+<script type="module" src="qna.js"></script>
+</body>
+</html>
