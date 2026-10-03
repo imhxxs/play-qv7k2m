@@ -240,7 +240,7 @@ export function renderObangLock(el, { game, post, key }) {
     tick();
     restTimer = setInterval(tick, 250);
     msg.classList.add('is-warn');
-    msg.innerHTML = `${BELL}방울이 멎을 때까지 기다린다.`;
+    msg.innerHTML = `${BELL}세 번 틀렸다. 깃발을 내려놓고 숨을 고른다.`;
   }
 
   // 다른 탭에서 열었으면 이 탭도 열린 모습으로
